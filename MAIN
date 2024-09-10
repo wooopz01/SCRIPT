@@ -44,7 +44,7 @@ local accountType, associatedMainAccount = getAccountType(player.Name)
 -- Script execution based on account type
 if accountType == "main" then
     -- Main account script
-    script_key = "SdSxADrwmvDyPXCMEMJjTYbMqERqhkdR"
+    script_key = "zqwzxgEAaCWNbCoFdbyHmrjEyNpMQifM"
     getgenv().SelectedPlayer = player.Name -- Main Account name, to which gems will be sent
     getgenv().MainAccount = true -- Set True if it's the account to receive gems
     getgenv().AccountForMainToFolow = ""
