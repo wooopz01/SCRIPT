@@ -70,7 +70,7 @@ elseif accountType == "sub" then
     getgenv().AccountForMainToFolow = ""
     getgenv().EnableAccountForMainFolow = false -- Main joins a low server with an account already in server
     getgenv().MainAccountSetting = { -- Unit To Sell
-        Units = {"Electric Cyborg", "Magic Arrow", "Legion Veteran", "Legion Assassin", "Blood Demon", "Fire Swordsman", "Magic Arrow", "Cursed Archer", "Ocean Guardian"},
+        Units = {""},
         ManuallyClaimBooth = false,
     }
     getgenv().AltAccountSetting = {
