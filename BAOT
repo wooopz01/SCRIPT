@@ -9,7 +9,7 @@ getgenv().Config = {
         ["ID"] = 0,
         ["Ping"] = false,
         ["Result"] = true,
-        ["URL"] = "https://discord.com/api/webhooks/1212627729305051187/lUlSvaD42dQupaEGkZ_7tLIE0GRddPge4Z9Nxp_dr_Dz5tXC7nqBdJHAxhW7OAf37Z1H"
+        ["URL"] = "https://discord.com/api/webhooks/1282612040288043110/5CRJlNWpbvZwagbUbDd4rg_HFrDtb7KnCIQFh9F4NbhjYZIUXa7Xu5WYqGAJRyrcysto"
     },
     ["Safety Players"] = {},
     ["Auto Summon"] = false,
