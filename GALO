@@ -1,3 +1,11 @@
+repeat task.wait() until game:IsLoaded() 
+getgenv().Hermanos_Settings = {
+    ['key'] = 'f673bea6-ed5c-4825-a8f8-75e2218a584c',
+    ['PC'] = 'DDC-1',
+    ['mode'] = 'Website', --- Duo, Description, Website
+}
+task.spawn(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/hermanos-dev/hermanos-script/main/ad-main.lua'))() end)
+
 getgenv().Config = {
     ["Ignore Shiny Sell Rarity"] = false,
     ["blackScreen"] = false,
