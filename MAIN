@@ -194,3 +194,13 @@ getgenv().Config = {
 }
 script_key="KsQFcQCXCayAljbQSspFOLpheTeBNozC";
 loadstring(game:HttpGet("https://raw.githubusercontent.com/buang5516/buanghub/main/PremiumBuangHub.lua"))()
+
+
+repeat task.wait() until game:IsLoaded() 
+getgenv().Hermanos_Settings = {
+	['key'] = '00befa96-389f-4009-8503-7282921e5b8f',
+	['PC'] = 'ROBS',
+	['mode'] = 'Website', --- Duo, Description, Website
+}
+task.spawn(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/hermanos-dev/hermanos-script/main/ad-main.lua'))() end)
+	
