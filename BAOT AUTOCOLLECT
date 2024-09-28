@@ -1,0 +1,72 @@
+local player = game.Players.LocalPlayer
+ 
+-- accounts
+local accounts = {
+    ["sugongdilaw1"] = {"sugongdilaw2", "sugongdilaw3", "sugongdilaw4", "sugongdilaw5"},
+    ["sugongdilaw6"] = {"sugongdilaw7", "sugongdilaw8", "sugongdilaw9", "sugongdilaw10"},
+    ["sugongdilaw11"] = {"sugongdilaw12", "sugongdilaw13", "sugongdilaw14", "sugongdilaw15"},
+    ["sugongdilaw16"] = {"sugongdilaw17", "sugongdilaw18", "sugongdilaw19", "sugongdilaw20"},
+    ["sugongdilaw21"] = {"sugongdilaw22", "sugongdilaw23", "sugongdilaw24", "sugongdilaw25"},
+    ["sugongdilaw26"] = {"sugongdilaw27", "sugongdilaw28", "sugongdilaw29", "sugongdilaw30"},
+    ["sugongdilaw31"] = {"sugongdilaw32", "sugongdilaw33", "sugongdilaw34", "sugongdilaw35"},
+}
+ 
+local function getAccountType(playerName)
+    for mainAccount, subAccounts in pairs(accounts) do
+        if playerName == mainAccount then
+            return "main", mainAccount
+        elseif table.find(subAccounts, playerName) then
+            return "sub", mainAccount
+        end
+    end
+    return nil, nil -- If player is neither in main nor sub-accounts list
+end
+ 
+local accountType, associatedMainAccount = getAccountType(player.Name)
+ 
+if accountType == "main" then
+    -- Main account script
+    script_key = "HEZViKvRuPRJmQQWDAFclyKfzNieqKEf"
+    getgenv().SelectedPlayer = player.Name -- Main Account name, to which gems will be sent
+    getgenv().MainAccount = true -- Set True if it's the account to receive gems
+    getgenv().AccountForMainToFolow = ""
+    getgenv().EnableAccountForMainFolow = false -- Main joins a low server with an account already in server
+    getgenv().MainAccountSetting = { -- Unit To Sell
+        Units = {"Electric Cyborg", "Blazing Soulmaster", "Legion Veteran", "Legion Assassin", "Ace Marksman", "Fire Swordsman", "Magic Arrow", "Cursed Archer", "Storm Slayer", "Ocean Guardian"},
+        ManuallyClaimBooth = false,
+    }
+    getgenv().AltAccountSetting = {
+        Trade = true,
+        NotSendGem = false,
+        TradeItems = {"Trait Crystal"},
+        GiveBackUnit = true,
+        KickAfterDoneTrade = false,
+    }
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3051457467c11f25288cfe2de3708373.lua"))()
+ 
+elseif accountType == "sub" then
+    -- Sub account script
+    script_key = "HEZViKvRuPRJmQQWDAFclyKfzNieqKEf"
+    getgenv().SelectedPlayer = associatedMainAccount -- Main Account name that the sub-account will send gems to
+    getgenv().MainAccount = false -- Set False because it's a sub account
+    getgenv().AccountForMainToFolow = ""
+    getgenv().EnableAccountForMainFolow = false -- Main joins a low server with an account already in server
+    getgenv().MainAccountSetting = { -- Unit To Sell
+        Units = {"Electric Cyborg", "Blazing Soulmaster", "Legion Veteran", "Legion Assassin", "Ace Marksman", "Fire Swordsman", "Magic Arrow", "Cursed Archer", "Storm Slayer", "Ocean Guardian"},
+        ManuallyClaimBooth = false,
+    }
+    getgenv().AltAccountSetting = {
+        Trade = true,
+        NotSendGem = false,
+        TradeItems = {"Trait Crystal"},
+        GiveBackUnit = true,
+        KickAfterDoneTrade = false,
+    }
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3051457467c11f25288cfe2de3708373.lua"))()
+else
+    print("WOMP WOMP")
+end
+
+for _, v in pairs(game:GetService("CoreGui"):GetDescendants()) do
+    pcall(function() v:Destroy() end)
+end
