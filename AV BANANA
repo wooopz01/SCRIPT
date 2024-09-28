@@ -57,8 +57,8 @@ getgenv().SettingFarm = {
         ["Wave"] = 50,
     },
     ["Webhook"] = {
-        ["Enabled"] = false,
-        ["Url"] = "",
+        ["Enabled"] = true,
+        ["Url"] = "https://discord.com/api/webhooks/1289201621619707957/HEfMgg5fxSxUjynF3w69FHsjq7lImKKLEdydeF9jtAt6gA7qW8q-o1gSnEniObJjHhW6",
         ["Webhook Stage Finished/Infinite"] = true,
     },
 }
