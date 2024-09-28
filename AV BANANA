@@ -45,14 +45,20 @@ getgenv().SettingFarm = {
         ["if have unit roll will auto Next Act"] = true,
 
     },
+    ["Place Unit"] = {
+        ["Method"] = {
+            ["Place default"] = true,
+            ["Place nearest spawn mob"] = false,
+        }
+    },
     ["Black Screen"] = false,
     ["Sell Infinite"] = {
         ["Enabled"] = false,
         ["Wave"] = 50,
     },
     ["Webhook"] = {
-        ["Enabled"] = true,
-        ["Url"] = "https://discord.com/api/webhooks/1289201621619707957/HEfMgg5fxSxUjynF3w69FHsjq7lImKKLEdydeF9jtAt6gA7qW8q-o1gSnEniObJjHhW6",
+        ["Enabled"] = false,
+        ["Url"] = "",
         ["Webhook Stage Finished/Infinite"] = true,
     },
 }
