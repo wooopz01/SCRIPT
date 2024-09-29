@@ -9,6 +9,14 @@ local accounts = {
     ["sugongdilaw21"] = {"sugongdilaw22", "sugongdilaw23", "sugongdilaw24", "sugongdilaw25"},
     ["sugongdilaw26"] = {"sugongdilaw27", "sugongdilaw28", "sugongdilaw29", "sugongdilaw30"},
     ["sugongdilaw31"] = {"sugongdilaw32", "sugongdilaw33", "sugongdilaw34", "sugongdilaw35"},
+    ["sugongdilaw36"] = {"sugongdilaw37", "sugongdilaw38", "sugongdilaw39", "sugongdilaw40"},
+    ["sugongdilaw41"] = {"sugongdilaw42", "sugongdilaw43", "sugongdilaw44", "sugongdilaw45"},
+    ["sugongdilaw46"] = {"sugongdilaw47", "sugongdilaw48", "sugongdilaw49", "sugongdilaw50"},
+    ["sugongdilaw51"] = {"sugongdilaw52", "sugongdilaw53", "sugongdilaw54", "sugongdilaw55"},
+    ["sugongdilaw56"] = {"sugongdilaw57", "sugongdilaw58", "sugongdilaw59", "sugongdilaw60"},
+    ["sugongdilaw61"] = {"sugongdilaw62", "sugongdilaw63", "sugongdilaw64", "sugongdilaw65"},
+    ["sugongdilaw66"] = {"sugongdilaw67", "sugongdilaw68", "sugongdilaw69", "sugongdilaw70"},
+    ["sugongdilaw71"] = {"sugongdilaw72", "sugongdilaw73", "sugongdilaw74", "sugongdilaw75"},
 }
  
 local function getAccountType(playerName)
