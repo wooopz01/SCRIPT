@@ -7,7 +7,7 @@ wait(5) -- Put this for make sure script will execute
 _G.Webhook  = {['WebhookLink'] = 'Link', ['SendWebhookReward'] = true} -- Notify when end match
 _G.SettingsAD = {
     ["LeaveAtWave"] = 31,
-    ["DelayStartLobby"] = 10,
+    ["DelayStartLobby"] = 5,
     ["MethodLeave"] = "Sell", -- Sell, Leave,
     ["ReplayInStoryMode"] = false, -- Use when u want to play only story mode ( next time will go to next chapter too when disconnect )
     ["BlackScreen"] = true,
