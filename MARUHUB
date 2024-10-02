@@ -10,7 +10,7 @@ _G.SettingsAD = {
     ["DelayStartLobby"] = 5,
     ["MethodLeave"] = "Sell", -- Sell, Leave,
     ["ReplayInStoryMode"] = false, -- Use when u want to play only story mode ( next time will go to next chapter too when disconnect )
-    ["BlackScreen"] = true,
+    ["BlackScreen"] = false,
     ["EquipBest"] = true,
     ["SpeedModifier"] = 2
 }
