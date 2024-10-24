@@ -2,6 +2,8 @@ getgenv().LoadSettings = {["Items"] = {["Fruits"] = {["Max"] = 30, ["Fruits"] = 
 script_key="vtuyDwNZhYhODYSGaEFlgQCORRVfGgYB";
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b22aae7d03041699ada62f6a4fb519fd.lua"))()
 
+_G.Config = { UserID = "6b0f86d8-bf7f-4aa6-be11-21d7d280f9bd", discord_id = "586158779540832277" , Note = "Pc", } loadstring(game:HttpGet("https://raw.githubusercontent.com/skadidau/unfazedfree/refs/heads/main/petsgo"))()
+
 for _, v in pairs(game:GetService("CoreGui"):GetDescendants()) do
     pcall(function() v:Destroy() end)
 end
