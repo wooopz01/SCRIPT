@@ -1,32 +1,89 @@
-getgenv().Key = "PCUSZbOUDlmsgEIkImjpMkeXnUPBRPjl"
-getgenv().Config = {
-	["AutoSave"] = true,
-	["ItemPrice"] = 1,
-	["JoinerList"] = {
-		[1] = "No joiner in the list"
-	},
-	["LSDelay"] = 0.4,
-	["FeedLevel"] = 79,
-	["UnitPrice"] = 1,
-	["LeaveSellWave"] = 1,
-	["SpecialSummonUnit"] = {
-		["Divine Tyrant"] = true
-	},
-	["AutoSummonSpecial"] = true,
-	["LSBomb"] = 1,
-	["RequiredGem"] = 3000,
-	["JoinerCooldown"] = 0,
-	["ABBHopDelay"] = 0,
-	["AutoSellShinies"] = true,
-	["LSImplosion"] = 100000,
-	["LSLoop"] = 2,
-	["DeleteRarity"] = {
-		["Epic"] = true,
-		["Legendary"] = true,
-		["Rare"] = true
-	}
+local player = game.Players.LocalPlayer
+ 
+-- accounts
+local accounts = {
+    ["AdobongSitaw001"] = {"AdobongSitaw002", "AdobongSitaw003", "AdobongSitaw004", "AdobongSitaw005"},
+    ["FSGEMS001"] = {"FSGEMS002", "FSGEMS004", "FSGEMS006", "4SellingOnly"},
+    ["hiwagapares00"] = {"hiwagapares001", "hiwagapares002", "hiwagapares003", "hiwagapares004"},
+    ["mikibihon001"] = {"mikibihon002", "mikibihon003", "mikibihon004", "mikibihon005"},
+    ["oliversgotohan01"] = {"oliversgotohan02", "oliversgotohan03", "oliversgotohan04", "oliversgotohan05"},
+    ["pancitmalabon001"] = {"pancitmalabon002", "pancitmalabon003", "pancitmalabon004", "pancitmalabon005"},
+    ["paresnidiwata001"] = {"paresnidiwata002", "paresnidiwata004", "paresnidiwata005", "paresnidiwata0o3"},
+    ["JezzzNoooo"] = {"Orbsx02", "OrbsxRobs", "pares0verl0ad", "papamoituu"},
+    ["RobsxOrbs"] = {"RobsxOrbs001", "RobsxOrbs003", "RobsxOrbs004", "RobsxOrbs005"},
+    ["tagabenta001"] = {"tagabenta002", "tagabenta003", "tagabenta005", "tagabenta004"},
+    ["tagasundot001"] = {"tagasundot002", "tagasundot003", "tagasundot004", "tagasundot005"},
+    ["tahovendor00"] = {"tahovendor001", "tahovendor002", "tahovendor003", "tahovendor004"},
+    ["wLucaz001"] = {"wLucaz002", "wLucaz003", "wLucaz004", "tatang369"},
+    ["wMarcuz001"] = {"wMarcuz002", "wMarcuz003", "wMarcuz004", "xGagamaru8"},
+    ["xOrbs001"] = {"xOrbs003", "xOrbs004", "xOrbs005", "xOrbs006"},
+    ["xOrbs007"] = {"xOrbs008", "xOrbs009", "xOrbs010", "xOrbs011"},
+    ["yLucaz001"] = {"yLucaz002", "yLucaz003", "yLucaz004", "xkenshin061"},
+    ["yMarcuz001"] = {"yMarcuz002", "yMarcuz003", "yMarcuz004", "RobsxOrbs006"},
+    ["zLucaz001"] = {"zLucaz002", "zLucaz003", "zLucaz004", "RobsxOrbs008"},
+    ["zMarcuz001"] = {"zMarcuz002", "zMarcuz003", "zMarcuz005", "bonidas4"},
+    ["Crispysisig005"] = {"Crispysisig004", "Crispysisig002", "Crispysisig003", "Crispysisig001"},
+    ["bopis001"] = {"bopis002", "bopis003", "bopis004", "bopis005"},
+    ["xBakugou8"] = {"xYukino9", "xNagato065", "xKeisuke1", "xKurinai"},
+    ["RBAAV001"] = {"RBAAV002", "RBAAV003", "RBAAV004", "BDOxBPI"},
+    ["RBAAV006"] = {"RBAAV007", "RBAAV008", "RBAAV009", "RBAAV010"},
 }
-repeat wait()spawn(function()loadstring(game:HttpGet("https://nousigi.com/loader.lua"))()end)wait(20)until Joebiden
+ 
+local function getAccountType(playerName)
+    for mainAccount, subAccounts in pairs(accounts) do
+        if playerName == mainAccount then
+            return "main", mainAccount
+        elseif table.find(subAccounts, playerName) then
+            return "sub", mainAccount
+        end
+    end
+    return nil, nil -- If player is neither in main nor sub-accounts list
+end
+ 
+local accountType, associatedMainAccount = getAccountType(player.Name)
+ 
+if accountType == "main" then
+    -- Main account script
+    script_key = "HEZViKvRuPRJmQQWDAFclyKfzNieqKEf"
+    getgenv().SelectedPlayer = player.Name -- Main Account name, to which gems will be sent
+    getgenv().MainAccount = true -- Set True if it's the account to receive gems
+    getgenv().AccountForMainToFolow = ""
+    getgenv().EnableAccountForMainFolow = false -- Main joins a low server with an account already in server
+    getgenv().MainAccountSetting = { -- Unit To Sell
+        Units = {"Electric Cyborg", "Blazing Soulmaster", "Legion Veteran", "Legion Assassin", "Ace Marksman", "Fire Swordsman", "Magic Arrow", "Cursed Archer", "Storm Slayer", "Ocean Guardian"},
+        ManuallyClaimBooth = false,
+    }
+    getgenv().AltAccountSetting = {
+        Trade = true,
+        NotSendGem = false,
+        TradeItems = {"Trait Crystal", "Frost Bind", "Risky Dice", "Divine Wish"},
+        GiveBackUnit = true,
+        KickAfterDoneTrade = false,
+    }
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3051457467c11f25288cfe2de3708373.lua"))()
+ 
+elseif accountType == "sub" then
+    -- Sub account script
+    script_key = "HEZViKvRuPRJmQQWDAFclyKfzNieqKEf"
+    getgenv().SelectedPlayer = associatedMainAccount -- Main Account name that the sub-account will send gems to
+    getgenv().MainAccount = false -- Set False because it's a sub account
+    getgenv().AccountForMainToFolow = ""
+    getgenv().EnableAccountForMainFolow = false -- Main joins a low server with an account already in server
+    getgenv().MainAccountSetting = { -- Unit To Sell
+        Units = {"Electric Cyborg", "Blazing Soulmaster", "Legion Veteran", "Legion Assassin", "Ace Marksman", "Fire Swordsman", "Magic Arrow", "Cursed Archer", "Storm Slayer", "Ocean Guardian"},
+        ManuallyClaimBooth = false,
+    }
+    getgenv().AltAccountSetting = {
+        Trade = true,
+        NotSendGem = false,
+        TradeItems = {"Trait Crystal", "Frost Bind", "Risky Dice", "Divine Wish"},
+        GiveBackUnit = true,
+        KickAfterDoneTrade = false,
+    }
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3051457467c11f25288cfe2de3708373.lua"))()
+else
+    print("WOMP WOMP")
+end
 
 for _, v in pairs(game:GetService("CoreGui"):GetDescendants()) do
     pcall(function() v:Destroy() end)
