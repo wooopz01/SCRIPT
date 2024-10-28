@@ -1,4 +1,4 @@
-getgenv().Key = "VaAGXkAGcmCaCdvemZHszGQBmGhJdQrJ"
+getgenv().Key = "XbakEiHQFaQOPkRupBPzPyiWWlfEaTGA"
 getgenv().Config = {
     ["AutoSave"] = true,
     ["ItemPrice"] = 1,
