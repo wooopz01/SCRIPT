@@ -1,4 +1,4 @@
-```getgenv().Key = "PCUSZbOUDlmsgEIkImjpMkeXnUPBRPjl"
+getgenv().Key = "PCUSZbOUDlmsgEIkImjpMkeXnUPBRPjl"
 getgenv().Config = {
     ["AutoSave"] = true,
     ["ItemPrice"] = 1,
@@ -26,4 +26,4 @@ getgenv().Config = {
         ["Rare"] = true
     }
 }
-repeat wait()spawn(function()loadstring(game:HttpGet("https://nousigi.com/loader.lua"))()end)wait(20)until Joebiden```
+repeat wait()spawn(function()loadstring(game:HttpGet("https://nousigi.com/loader.lua"))()end)wait(20)until Joebiden
