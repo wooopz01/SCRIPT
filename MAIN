@@ -1,29 +1,5 @@
-getgenv().Key = "PCUSZbOUDlmsgEIkImjpMkeXnUPBRPjl"
-getgenv().Config = {
-    ["AutoSave"] = true,
-    ["ItemPrice"] = 1,
-    ["JoinerList"] = {
-        [1] = "No joiner in the list"
-    },
-    ["LSDelay"] = 0.4,
-    ["FeedLevel"] = 79,
-    ["UnitPrice"] = 1,
-    ["LeaveSellWave"] = 1,
-    ["SpecialSummonUnit"] = {
-        ["Divine Tyrant"] = true
-    },
-    ["AutoSummonSpecial"] = true,
-    ["LSBomb"] = 1,
-    ["RequiredGem"] = 3000,
-    ["JoinerCooldown"] = 0,
-    ["ABBHopDelay"] = 0,
-    ["AutoSellShinies"] = true,
-    ["LSImplosion"] = 100000,
-    ["LSLoop"] = 2,
-    ["DeleteRarity"] = {
-        ["Epic"] = true,
-        ["Legendary"] = true,
-        ["Rare"] = true
-    }
-}
-repeat wait()spawn(function()loadstring(game:HttpGet("https://nousigi.com/loader.lua"))()end)wait(20)until Joebiden
+for _, v in pairs(game:GetService("CoreGui"):GetDescendants()) do
+    pcall(function() v:Destroy() end)
+end
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/wooopz01/SCRIPT/main/MAIN"))()
