@@ -2,36 +2,12 @@ local player = game.Players.LocalPlayer
  
 -- accounts
 local accounts = {
-    ["sugongdilaw1"] = {"sugongdilaw2", "sugongdilaw3", "sugongdilaw4", "sugongdilaw5"},
-    ["sugongdilaw6"] = {"sugongdilaw7", "sugongdilaw8", "sugongdilaw9", "sugongdilaw10"},
-    ["sugongdilaw11"] = {"sugongdilaw12", "sugongdilaw13", "sugongdilaw14", "sugongdilaw15"},
-    ["sugongdilaw16"] = {"sugongdilaw17", "sugongdilaw18", "sugongdilaw19", "sugongdilaw20"},
-    ["sugongdilaw21"] = {"sugongdilaw22", "sugongdilaw23", "sugongdilaw24", "sugongdilaw25"},
-    ["sugongdilaw26"] = {"sugongdilaw27", "sugongdilaw28", "sugongdilaw29", "sugongdilaw30"},
-    ["sugongdilaw31"] = {"sugongdilaw32", "sugongdilaw33", "sugongdilaw34", "sugongdilaw35"},
-    ["sugongdilaw36"] = {"sugongdilaw37", "sugongdilaw38", "sugongdilaw39", "sugongdilaw40"},
-    ["sugongdilaw41"] = {"sugongdilaw42", "sugongdilaw43", "sugongdilaw44", "sugongdilaw45"},
-    ["sugongdilaw46"] = {"sugongdilaw47", "sugongdilaw48", "sugongdilaw49", "sugongdilaw50"},
-    ["sugongdilaw51"] = {"sugongdilaw52", "sugongdilaw53", "sugongdilaw54", "sugongdilaw55"},
-    ["sugongdilaw56"] = {"sugongdilaw57", "sugongdilaw58", "sugongdilaw59", "sugongdilaw60"},
-    ["sugongdilaw61"] = {"sugongdilaw62", "sugongdilaw63", "sugongdilaw64", "sugongdilaw65"},
-    ["sugongdilaw66"] = {"sugongdilaw67", "sugongdilaw68", "sugongdilaw69", "sugongdilaw70"},
-    ["sugongdilaw71"] = {"sugongdilaw72", "sugongdilaw73", "sugongdilaw74", "sugongdilaw75"},
-    ["sugongdilaw76"] = {"sugongdilaw77", "sugongdilaw78", "sugongdilaw79", "sugongdilaw80"},
-    ["sugongdilaw81"] = {"sugongdilaw82", "sugongdilaw83", "sugongdilaw84", "sugongdilaw85"},
-    ["sugongdilaw86"] = {"sugongdilaw87", "sugongdilaw88", "sugongdilaw89", "sugongdilaw90"},
-    ["sugongdilaw91"] = {"sugongdilaw92", "sugongdilaw93", "sugongdilaw94", "sugongdilaw95"},
-    ["sugongdilaw96"] = {"sugongdilaw97", "sugongdilaw98", "sugongdilaw99", "sugongdilaw100"},
-    ["sinutabs1"] = {"sinutabs2", "sinutabs3", "sinutabs4", "sinutabs5"},
-    ["sinutabs6"] = {"sinutabs7", "sinutabs8", "sinutabs9", "sinutabs10"},
-    ["sinutabs11"] = {"sinutabs12", "sinutabs13", "sinutabs14", "sinutabs15"},
-    ["sinutabs16"] = {"sinutabs17", "sinutabs18", "sinutabs19", "sinutabs20"},
-    ["sinutabs21"] = {"sinutabs22", "sinutabs23", "sinutabs24", "sinutabs25"},
-    ["sinutabs26"] = {"sinutabs27", "sinutabs28", "sinutabs29", "sinutabs30"},
-    ["caretender001"] = {"caretender002", "caretender003", "caretender004", "caretender005"},
-    ["caretender006"] = {"caretender007", "caretender008", "caretender009", "caretender010"},
-    ["caretender011"] = {"caretender012", "caretender013", "caretender014", "caretender015"},
-    ["caretender016"] = {"caretender017", "caretender018", "caretender019", "caretender020"},
+    ["sugongdilaw1"] = {"sugongdilaw6", "sugongdilaw11", "sugongdilaw16", "sugongdilaw21"},
+    ["sugongdilaw26"] = {"sugongdilaw31", "sugongdilaw36", "sugongdilaw41", "sugongdilaw46"},
+    ["sugongdilaw51"] = {"sugongdilaw56", "sugongdilaw61", "sugongdilaw66", "sugongdilaw71"},
+    ["sugongdilaw76"] = {"sugongdilaw81", "sugongdilaw86", "sugongdilaw91", "sugongdilaw96"},
+    ["sinutabs1"] = {"sinutabs6", "sinutabs11", "sinutabs16", "sinutabs21"},
+    ["sinutabs26"] = {"caretender001", "caretender006", "caretender011", "caretender016"},
 }
  
 local function getAccountType(playerName)
@@ -60,7 +36,7 @@ if accountType == "main" then
     }
     getgenv().AltAccountSetting = {
         Trade = true,
-        NotSendGem = false,
+        NotSendGem = true,
         TradeItems = {"Trait Crystal", "Risky Dice", "Frost Bind"},
         GiveBackUnit = true,
         KickAfterDoneTrade = false,
@@ -80,7 +56,7 @@ elseif accountType == "sub" then
     }
     getgenv().AltAccountSetting = {
         Trade = true,
-        NotSendGem = false,
+        NotSendGem = true,
         TradeItems = {"Trait Crystal", "Risky Dice", "Frost Bind"},
         GiveBackUnit = true,
         KickAfterDoneTrade = false,
