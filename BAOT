@@ -60,7 +60,7 @@ if accountType == "main" then
     }
     getgenv().AltAccountSetting = {
         Trade = true,
-        NotSendGem = true,
+        NotSendGem = false,
         TradeItems = {"Trait Crystal", "Risky Dice", "Frost Bind"},
         GiveBackUnit = true,
         KickAfterDoneTrade = false,
@@ -80,7 +80,7 @@ elseif accountType == "sub" then
     }
     getgenv().AltAccountSetting = {
         Trade = true,
-        NotSendGem = true,
+        NotSendGem = false,
         TradeItems = {"Trait Crystal", "Risky Dice", "Frost Bind"},
         GiveBackUnit = true,
         KickAfterDoneTrade = false,
