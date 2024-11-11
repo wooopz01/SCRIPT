@@ -37,10 +37,10 @@ getgenv().SettingFarm ={
     ["Auto Pole"] = true,
     ["Cursed Dual Katana"] = true,
     ["SoulGuitar"] = true,
-    ["Shark Anchor"] = false, --i have cdk and god and soulguitar
+    ["Shark Anchor"] = true, --i have cdk and god and soulguitar
     ["Farm Mastery Fruit If Lvl Max"] = false,
     ["Farm Max All Mastery Sword"] = false, --- i need have cdk and godhuman
-    ["Hop Fruit 1M Quest Third Sea"] = true,
+    ["Hop Fruit 1M Quest Third Sea"] = false,
     ["White Screen"] = false,
     ["Hop if Near Farm Area"] = true,
     ["Auto Race V2-V3"] = true,
@@ -52,16 +52,16 @@ getgenv().SettingFarm ={
     },
     ["Buy Haki Color Legendary"] = false, --- it will buy if u have sgt and godhuman and dont have Valkyrie Helm
     ["Select Hop"] = { -- 70% will have it
-        ["Hop Find Rip Indra Get Valkyrie Helm"] = true, -- u need have godhuman and max level
-        ["Hop Find Full Moon Soul Guitar"] = true,
-        ["Hop Find Rip Indra Get Tushita"] = true, --- u need have sgt and godhuman
-        ["Hop Find Raids Castle [CDK]"] = true,
-        ["Hop Find Cake Queen [CDK]"] = true,
-        ["Hop Find Soul Reaper [CDK]"] = true,
-        ["Hop Find Darkbeard [SG]"] = true,
+        ["Hop Find Rip Indra Get Valkyrie Helm"] = false, -- u need have godhuman and max level
+        ["Hop Find Full Moon Soul Guitar"] = false,
+        ["Hop Find Rip Indra Get Tushita"] = false, --- u need have sgt and godhuman
+        ["Hop Find Raids Castle [CDK]"] = false,
+        ["Hop Find Cake Queen [CDK]"] = false,
+        ["Hop Find Soul Reaper [CDK]"] = false,
+        ["Hop Find Darkbeard [SG]"] = false,
     },
     ["Race"] = {
-        ["Enabled"] = true,
+        ["Enabled"] = false,
         ["Auto Roll Race"] = false,
         ["Select Race"] =  "", -- Human, Mink, Fishman
     },
