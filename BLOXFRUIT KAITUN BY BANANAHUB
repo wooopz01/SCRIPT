@@ -85,11 +85,11 @@ _G.SwordSettings = { -- ดาบที่จะทำ
     ['BuddySword'] = true,
     ['TwinHooks'] = true,
     ['HallowScryte'] = true,
-    ['TrueTripleKatana'] = true,
+    ['TrueTripleKatana'] = false,
     ['CursedDualKatana'] = true
 }
 _G.SharkAnchor_Settings = {
-    ["Enabled_Farm"] = true,
+    ["Enabled_Farm"] = false,
     ['FarmAfterMoney'] = 2500000
 }
 _G.GunSettings = { -- ปืนที่จะทำ
