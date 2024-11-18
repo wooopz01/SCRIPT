@@ -1,15 +1,3 @@
-for _, v in pairs(game:GetService("CoreGui"):GetDescendants()) do
-    pcall(function() v:Destroy() end)
-end
-
-repeat task.wait() until game:IsLoaded() 
-getgenv().Hermanos_Settings = {
-	['key'] = '588af8e4-8345-424c-9c87-9500cd96277f',
-	['PC'] = 'DDC-1',
-	['mode'] = 'Website', --- Duo, Description, Website
-}
-task.spawn(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/hermanos-dev/hermanos-script/main/ad-main.lua'))() end)
-
 getgenv().Config = {
     ["Ignore Shiny Sell Rarity"] = false,
     ["blackScreen"] = false,
@@ -206,3 +194,13 @@ getgenv().Config = {
 }
 script_key="KsQFcQCXCayAljbQSspFOLpheTeBNozC";
 loadstring(game:HttpGet("https://raw.githubusercontent.com/buang5516/buanghub/main/PremiumBuangHub.lua"))()
+
+
+repeat task.wait() until game:IsLoaded() 
+getgenv().Hermanos_Settings = {
+	['key'] = '588af8e4-8345-424c-9c87-9500cd96277f',
+	['PC'] = 'DDC-1',
+	['mode'] = 'Website', --- Duo, Description, Website
+}
+task.spawn(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/hermanos-dev/hermanos-script/main/ad-main.lua'))() end)
+	
