@@ -1,0 +1,31 @@
+_G.Settings = {
+    ["AfkCheckTime"] = 300, -- Seconds
+    ["AutoFishing"] = true,
+    ["SellFish"] = {
+        ["Enable"] = true,
+        ["Method"] = {
+            ["Event"] = true,
+            ["Enchant"] = true,
+            ["Mythical"] = true,
+            ["Legenday"] = true
+        }
+    },
+    ['MakeRod'] = {'Aurora Rod', 'Trident Rod'},
+    ['MethodShake'] = "Fast", -- Fast, Fix bug
+    ["Instant_Coin"] = true,
+    ["SetSteek"] = 100,
+    ["FpsBoost"] = false,
+    ["Black_Screen"] = true
+}
+getgenv().Key = "MARU-PD0YY-D22X-BM8VA-2CKI-K2YOV"
+getgenv().id = "586158779540832277"
+getgenv().Script_Mode = "Kaitun_Script"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
+
+
+repeat task.wait() until game:IsLoaded() 
+getgenv().Hermanos_Settings = {
+	['key'] = '00befa96-389f-4009-8503-7282921e5b8f',
+	['PC'] = 'DDC-1',
+}
+task.spawn(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/hermanos-dev/hermanos-script/main/fisch-main.lua'))() end)
