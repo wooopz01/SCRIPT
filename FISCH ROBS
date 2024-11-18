@@ -1,3 +1,7 @@
+if isfolder("Maru Hub Premium Scripts") then
+    delfolder("Maru Hub Premium Scripts")
+end
+
 _G.Settings = {
     ["AfkCheckTime"] = 300, -- Seconds
     ["AutoFishing"] = true,
