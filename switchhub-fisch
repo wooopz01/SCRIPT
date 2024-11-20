@@ -1,7 +1,3 @@
-for _, v in pairs(game:GetService("CoreGui"):GetDescendants()) do
-    pcall(function() v:Destroy() end)
-end
-
 if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
 
 script_key="UfLRWXEfEKWcBDIkXOuWWQWBcpHYCila";
