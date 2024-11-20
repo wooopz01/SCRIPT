@@ -1,0 +1,4 @@
+if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
+
+script_key="UfLRWXEfEKWcBDIkXOuWWQWBcpHYCila";
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/d1d62ce4521c8ea3876c60930bab8e7d.lua"))()
