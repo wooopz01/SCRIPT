@@ -9,5 +9,5 @@ getgenv().Setting = {
     ['Faster Farm Level 500'] = true -- This function will work once you get the Trident Rod and will farm on islands that give high levels
 }
 getgenv().Mode = 'Kaitun'
-script_key="KEY";
+script_key="UfLRWXEfEKWcBDIkXOuWWQWBcpHYCila";
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/dfec52493db2cbed3488e938e296c3ab.lua"))()
