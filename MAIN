@@ -1,206 +1,101 @@
-getgenv().Config = {
-    ["Ignore Shiny Sell Rarity"] = false,
-    ["blackScreen"] = false,
-    ["Enable Auto Send Trade"] = false,
-    ["Harden Portal Select"] = "",
-    ["ConvertSolar"] = 0,
-    ["Enable Auto Join Player"] = false,
-    ["Webhook"] = {
-        ["ID"] = 0,
-        ["Ping"] = false,
-        ["Result"] = true,
-        ["URL"] = "https://discord.com/api/webhooks/1212627729305051187/lUlSvaD42dQupaEGkZ_7tLIE0GRddPge4Z9Nxp_dr_Dz5tXC7nqBdJHAxhW7OAf37Z1H"
-    },
-    ["Safety Players"] = {},
-    ["Auto Summon"] = false,
-    ["Auto Leave Wave"] = true,
-    ["Summon Gems"] = 0,
-    ["Record Options"] = "Money",
-    ["Auto Convert Solar"] = false,
-    ["Summon Unit"] = "",
-    ["Auto TP to Athenyx"] = false,
-    ["Ignore Shiny Auto Sell Rarity"] = true,
-    ["Auto Start Time Delay"] = 1,
-    ["Auto Lobby TP on Time"] = false,
-    ["Auto Convert Tickets"] = false,
-    ["Enable Auto 3x Speed"] = true,
-    ["ConvertTickets"] = 0,
-    ["Auto Tower"] = false,
-    ["Trade Main Account"] = false,
-    ["SelectItemsToTrade"] = {},
-    ["Auto Next"] = true,
-    ["Auto Portal"] = true,
-    ["IgnoreChallengeRewards"] = {},
-    ["Enable Sell Rarity"] = false,
-    ["Macro Mode Select"] = "Story",
-    ["Auto Portal Mode"] = {
-        [1] = "Demon"
-    },
-    ["asd"] = "",
-    ["AutoChallenge"] = false,
-    ["mapSelect"] = "MobCity",
-    ["ConvertAqua"] = 0,
-    ["Auto Sell Rarity"] = {},
-    ["Raid Buy List"] = {},
-    ["TP Lobby Time"] = 10,
-    ["2x Speed Wave"] = 0,
-    ["3x Speed Wave"] = 0,
-    ["Send Gems Players"] = {},
-    ["Auto Joiner Player Select"] = "",
-    ["Selected Portal Tiers"] = {
-        [1] = "Rare",
-        [2] = "Epic",
-        [3] = "Legendary",
-        [4] = "Mythic",
-        [5] = "Secret"
-    },
-    ["Enable Auto Story"] = false,
-    ["WebhookPingSelected"] = {},
-    ["modeSelect"] = "Infinite",
-    ["Selected Raids"] = {},
-    ["Hide Key"] = "U",
-    ["Macros Selected"] = {
-        ["Challenge"] = {
-            ["MobCity"] = "woop_mob"
-        },
-        ["Infinite"] = {
-            ["MobCity"] = "woop_mob"
-        },
-        ["HallOfMirrors"] = {
-            ["Normal"] = "",
-            ["Nightmare"] = "",
-            ["Hard"] = "",
-            ["Easy"] = ""
-        },
-        ["Portal"] = {
-            ["Demon"] = "woop_yuno_portal"
-        },
-        ["Raid"] = {},
-        ["Story"] = {
-            ["MobCity"] = "woop_mob"
-        },
-        ["Tower"] = {
-            ["Map1"] = "",
-            ["Map2"] = "",
-            ["Map5"] = "",
-            ["Map3"] = "",
-            ["Map4"] = ""
-        }
-    },
-    ["TP Lobby"] = false,
-    ["Auto Claim Quests"] = true,
-    ["Auto Hide Name"] = false,
-    ["Enable Safety Players"] = false,
-    ["Auto Raid (Lobby)"] = false,
-    ["Reroll Lock"] = {},
-    ["Ping On Secret Drop"] = false,
-    ["SelectUnitsToTrade"] = {},
-    ["Auto TP Raid Open"] = false,
-    ["Enable Auto Delete Rarity"] = false,
-    ["Auto Leave when No Enemy Spawn"] = true,
-    ["Auto Convert Aqua"] = false,
-    ["Auto Raid"] = false,
-    ["Export File"] = "",
-    ["dsa2"] = 0,
-    ["Auto Convert Flame"] = false,
-    ["dsa"] = 0,
-    ["Join Priority"] = {
-        ["1"] = "Auto Portal",
-        ["3"] = "Auto Join Map",
-        ["2"] = "Auto Challenge",
-        ["5"] = "Auto Story",
-        ["4"] = "Auto Challenge",
-        ["7"] = "Auto Portal",
-        ["6"] = "Auto Join Map"
-    },
-    ["Auto Trade"] = false,
-    ["Black Screen"] = false,
-    ["dsa3"] = 0,
-    ["Auto Sell Farms"] = false,
-    ["Auto Claim Battlepass"] = true,
-    ["CloudSave"] = {},
-    ["Enable Auto Harden"] = false,
-    ["Ping User"] = false,
-    ["Hide Additional Frame"] = false,
-    ["IgnoreChallenge"] = {},
-    ["Auto Start Delay"] = 0,
-    ["Enable Auto Sell Rarity"] = false,
-    ["Auto Joiner Player"] = false,
-    ["Selected Traits Reroll"] = {},
-    ["Auto Story"] = false,
-    ["Step Delay"] = 0.3,
-    ["Ping On Selected Item"] = false,
-    ["Auto Trait Reroll"] = false,
-    ["Enable Delete Rarity"] = false,
-    ["IgnoreChallengeMap"] = {
-        [1] = "MobCity"
-    },
-    ["Auto Leave"] = true,
-    ["Auto Leave on Wave"] = false,
-    ["AutoStart"] = true,
-    ["Auto Replay"] = true,
-    ["Enable Auto Challenge"] = false,
-    ["Auto Reroll Option"] = "",
-    ["Booth Snipe"] = {},
-    ["Auto Join Map"] = false,
-    ["Auto Start Game/Skip"] = false,
-    ["AutoJoinMap"] = true,
-    ["Auto Story Mode"] = "Automatic",
-    ["TP Delay"] = 3,
-    ["Main Account"] = false,
-    ["Selected Macro"] = "",
-    ["Auto Start Option"] = "Player + Time",
-    ["friendSelect"] = false,
-    ["TP Lobby when RAID OPEN"] = false,
-    ["Summon Select"] = "1",
-    ["difficultySelect"] = "Hard",
-    ["Harden Portal Tier"] = {},
-    ["Play Macro"] = true,
-    ["Raid2 Buy List"] = {},
-    ["Summon Mode"] = "All Gems",
-    ["Auto Send Gems"] = false,
-    ["AutoLeaveOnWave"] = 31,
-    ["Enable Auto Portal"] = false,
-    ["FPS Boost"] = false,
-    ["Auto Start"] = false,
-    ["Auto Skip Wave"] = true,
-    ["Auto Buy Raid2"] = false,
-    ["Selected Story"] = "FooshaVillage_Chapter1",
-    ["Walk when Auto Join"] = false,
-    ["Auto Sell Units"] = false,
-    ["Summon Banner"] = "Standard",
-    ["Auto Buy Raid"] = false,
-    ["Auto Delete Rarity"] = {},
-    ["PingSelected"] = false,
-    ["Auto Booth Sniper"] = false,
-    ["Auto Hide UI on Execute"] = true,
-    ["Import Mode"] = "Link",
-    ["Auto Try Reconnect"] = true,
-    ["Auto Reroll"] = false,
-    ["FirstTime"] = true,
-    ["actSelect"] = "6",
-    ["Auto Execute"] = true,
-    ["TradePlayer"] = "",
-    ["AutoSellFarmsWave"] = 1,
-    ["ConvertFlame"] = 0,
-    ["Select Hardened"] = false,
-    ["Enable Auto 2x Speed"] = true,
-    ["Record Macro"] = false,
-    ["Large Window"] = false,
-    ["Friends Only"] = false,
-    ["Delete Map"] = true,
-    ["Auto Sell Wave"] = 1,
-    ["Result Webhook"] = false
+local player = game.Players.LocalPlayer
+ 
+-- accounts
+local accounts = {
+    ["AdobongSitaw001"] = {"AdobongSitaw002", "AdobongSitaw003", "AdobongSitaw004", "AdobongSitaw005"},
+    ["FSGEMS001"] = {"FSGEMS002", "FSGEMS004", "FSGEMS006", "4SellingOnly"},
+    ["hiwagapares00"] = {"hiwagapares001", "hiwagapares002", "hiwagapares003", "hiwagapares004"},
+    ["mikibihon001"] = {"mikibihon002", "mikibihon003", "mikibihon004", "mikibihon005"},
+    ["oliversgotohan01"] = {"oliversgotohan02", "oliversgotohan03", "oliversgotohan04", "oliversgotohan05"},
+    ["pancitmalabon001"] = {"pancitmalabon002", "pancitmalabon003", "pancitmalabon004", "pancitmalabon005"},
+    ["paresnidiwata001"] = {"paresnidiwata002", "paresnidiwata004", "paresnidiwata005", "paresnidiwata0o3"},
+    ["JezzzNoooo"] = {"Orbsx02", "OrbsxRobs", "pares0verl0ad", "papamoituu"},
+    ["RobsxOrbs"] = {"RobsxOrbs001", "RobsxOrbs003", "RobsxOrbs004", "RobsxOrbs005"},
+    ["tagabenta001"] = {"tagabenta002", "tagabenta003", "tagabenta005", "tagabenta004"},
+    ["tagasundot001"] = {"dinuguan001", "tagasundot003", "tagasundot004", "tagasundot005"},
+    ["tahovendor00"] = {"tahovendor001", "tahovendor002", "tahovendor003", "tahovendor004"},
+    ["wLucaz001"] = {"wLucaz002", "wLucaz003", "wLucaz004", "tatang369"},
+    ["wMarcuz001"] = {"wMarcuz002", "wMarcuz003", "wMarcuz004", "xGagamaru8"},
+    ["xOrbs001"] = {"xOrbs003", "xOrbs004", "xOrbs005", "xOrbs006"},
+    ["xOrbs007"] = {"xOrbs008", "xOrbs009", "xOrbs010", "xOrbs011"},
+    ["yLucaz001"] = {"yLucaz002", "yLucaz003", "yLucaz004", "xkenshin061"},
+    ["yMarcuz001"] = {"yMarcuz002", "yMarcuz003", "yMarcuz004", "RobsxOrbs006"},
+    ["zLucaz001"] = {"zLucaz002", "zLucaz003", "zLucaz004", "RobsxOrbs008"},
+    ["zMarcuz001"] = {"zMarcuz002", "zMarcuz003", "zMarcuz005", "bonidas4"},
+    ["Crispysisig005"] = {"Crispysisig004", "Crispysisig002", "Crispysisig003", "Crispysisig001"},
+    ["xBakugou8"] = {"xYukino9", "xNagato065", "xKeisuke1", "xKurinai"},
+    ["RBAAV001"] = {"RBAAV002", "RBAAV003", "RBAAV004", "BDOxBPI"},
+    ["RBAAV006"] = {"RBAAV007", "RBAAV008", "RBAAV009", "RBAAV010"},
+    ["Haruhisa844"] = {"Osuzu886", "Akutsu234", "Aletta5116", "Anju5072"},
+    ["sampalok001"] = {"sampalok0O2", "sampalok0O3", "sampalok0O4", "sampalok0O5"},
+    ["Ohhgweeen"] = {"rambutan0o2", "rambutan0o5", "hinata163549", "pandesal0o5"},
+    ["papaitan0o1"] = {"papaitan0o2", "papaitan0o3", "papaitan0o4", "dinuguan004"},
+    ["Miyazono200"] = {"Kaori06557", "Arima1829", "Kousei176", "Tsubaki1395"},
+    ["bangsilong001"] = {"bangsilong002", "bangsilong003", "bangsilong004", "bangsilong005"},
+    ["Majablanca001"] = {"dinuguan002", "Majablanca00three", "Majablanca004", "Majablanca005"},
+    ["lansones001"] = {"lansones0o3", "rambutan0o1", "dinuguan005", "lansones005"},
+    ["karekare0o1"] = {"karekare0o2", "karekare0o3", "karekare0o4", "karekare0o5"},
+    ["pancithabhab001"] = {"pancithabhab002", "pancithabhab003", "pancithabhab004", "pancithabhab005"},
+    ["pancithabhab006"] = {"pancithabhab007", "pancithabhab00eyt", "pancithabhab009", "pancithabhab010"},
+    ["bopis001"] = {"bopis003", "bopis004", "bopis005"},
 }
-script_key="KsQFcQCXCayAljbQSspFOLpheTeBNozC";
-loadstring(game:HttpGet("https://raw.githubusercontent.com/buang5516/buanghub/main/PremiumBuangHub.lua"))()
+ 
+local function getAccountType(playerName)
+    for mainAccount, subAccounts in pairs(accounts) do
+        if playerName == mainAccount then
+            return "main", mainAccount
+        elseif table.find(subAccounts, playerName) then
+            return "sub", mainAccount
+        end
+    end
+    return nil, nil -- If player is neither in main nor sub-accounts list
+end
+ 
+local accountType, associatedMainAccount = getAccountType(player.Name)
+ 
+if accountType == "main" then
+    -- Main account script
+    script_key = "HEZViKvRuPRJmQQWDAFclyKfzNieqKEf"
+    getgenv().SelectedPlayer = player.Name -- Main Account name, to which gems will be sent
+    getgenv().MainAccount = true -- Set True if it's the account to receive gems
+    getgenv().AccountForMainToFolow = ""
+    getgenv().EnableAccountForMainFolow = false -- Main joins a low server with an account already in server
+    getgenv().MainAccountSetting = { -- Unit To Sell
+        Units = {"Electric Cyborg", "Blazing Soulmaster", "Legion Veteran", "Legion Assassin", "Ace Marksman", "Fire Swordsman", "Magic Arrow", "Cursed Archer", "Storm Slayer", "Ocean Guardian"},
+        ManuallyClaimBooth = false,
+    }
+    getgenv().AltAccountSetting = {
+        Trade = true,
+        NotSendGem = false,
+        TradeItems = {"Trait Crystal", "Frost Bind", "Risky Dice", "Divine Wish"},
+        GiveBackUnit = true,
+        KickAfterDoneTrade = false,
+    }
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3051457467c11f25288cfe2de3708373.lua"))()
+ 
+elseif accountType == "sub" then
+    -- Sub account script
+    script_key = "HEZViKvRuPRJmQQWDAFclyKfzNieqKEf"
+    getgenv().SelectedPlayer = associatedMainAccount -- Main Account name that the sub-account will send gems to
+    getgenv().MainAccount = false -- Set False because it's a sub account
+    getgenv().AccountForMainToFolow = ""
+    getgenv().EnableAccountForMainFolow = false -- Main joins a low server with an account already in server
+    getgenv().MainAccountSetting = { -- Unit To Sell
+        Units = {"Electric Cyborg", "Blazing Soulmaster", "Legion Veteran", "Legion Assassin", "Ace Marksman", "Fire Swordsman", "Magic Arrow", "Cursed Archer", "Storm Slayer", "Ocean Guardian"},
+        ManuallyClaimBooth = false,
+    }
+    getgenv().AltAccountSetting = {
+        Trade = true,
+        NotSendGem = false,
+        TradeItems = {"Trait Crystal", "Frost Bind", "Risky Dice", "Divine Wish"},
+        GiveBackUnit = true,
+        KickAfterDoneTrade = false,
+    }
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3051457467c11f25288cfe2de3708373.lua"))()
+else
+    print("WOMP WOMP")
+end
 
-
-repeat task.wait() until game:IsLoaded() 
-getgenv().Hermanos_Settings = {
-	['key'] = '00befa96-389f-4009-8503-7282921e5b8f',
-	['PC'] = 'ROBS',
-	['mode'] = 'Website', --- Duo, Description, Website
-}
-task.spawn(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/hermanos-dev/hermanos-script/main/ad-main.lua'))() end)
-	
+for _, v in pairs(game:GetService("CoreGui"):GetDescendants()) do
+    pcall(function() v:Destroy() end)
+end
