@@ -1,0 +1,22 @@
+if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
+
+_G.Setting = {
+    ['Evo Race V4'] = { -- Setting Team / ตั้งค่าทีม
+        ['Helper'] = "mayoo992", -- Helper / ผู้ช่วย
+        ['Helper2'] = "xTheGamer95", -- Helper2 / ผู้ช่วยคนที่ 2
+        ['Farm'] = { -- Farming V4 / ตัวที่ต้องการทำ V4
+            "xSabo70",
+            "xAkira82",
+            "xHiroshi31",
+            "xOsamu46",
+            "xGohan54",
+            "xMakoto9"
+        } 
+    },
+    -- Booster
+    ['White Screen'] = true, 
+    ['FPS Booster'] = true 
+}
+
+script_key="dcrPKPxEBCLfBojuHMApCKMaBHLMNnDo";
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a159ea6da893f7f2246021b9d14f480d.lua"))()
