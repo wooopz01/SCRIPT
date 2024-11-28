@@ -1,4 +1,4 @@
-game:GetService("ReplicatedStorage").__ServerBrowser:InvokeServer("teleport","b1f5d9d8-ed67-4796-b639-5c4f65df2a42")
+game:GetService("ReplicatedStorage").__ServerBrowser:InvokeServer("teleport","207b88f0-771a-4d88-881d-5e64a3c30137")
 
 if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
 
