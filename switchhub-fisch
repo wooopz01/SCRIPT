@@ -1,14 +1,14 @@
 if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
 getgenv().Setting = {
-    -- เลือกเบ็ดที่คุณต้องการ
+    -- Choose the hook you want.
     ['Trident Rod'] = true,
     ['No Life Rod'] = true,
     ['Sunken Rod'] = true,
     ['Rod Of The Depths'] = true,
-    -- ฟังชั่นเสริม
-    ['FPS Booster'] = true, -- ภาพกาก
-    ['Disibled Gui'] = true, -- ปิดหน้า Gui
-    ['Faster Farm Level 500'] = true --ฟังชั่นนี้จะทำงานเมื่อได้ Trident Rod แล้วและจะไปฟามเกาะที่ได้เวลเยอะๆ
+    -- Additional functions
+    ['FPS Booster'] = true, -- rubbish picture
+    ['Disibled Gui'] = true, -- Close Gui page.
+    ['Faster Farm Level 500'] = true --This function will work when you get the Trident Rod and will go to farm islands that have a lot of level.
 }
 getgenv().Mode = 'Kaitun'
 script_key="UfLRWXEfEKWcBDIkXOuWWQWBcpHYCila";
