@@ -85,7 +85,7 @@ _G.SwordSettings = { -- ดาบที่จะทำ
     ['BuddySword'] = true,
     ['TwinHooks'] = true,
     ['HallowScryte'] = true,
-    ['TrueTripleKatana'] = false,
+    ['TrueTripleKatana'] = true,
     ['CursedDualKatana'] = true
 }
 _G.SharkAnchor_Settings = {
