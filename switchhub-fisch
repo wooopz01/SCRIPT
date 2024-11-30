@@ -7,7 +7,7 @@ getgenv().Setting = {
     ['Rod Of The Depths'] = true,
     -- Additional functions
     ['FPS Booster'] = true, -- rubbish picture
-    ['Disibled Gui'] = true, -- Close Gui page.
+    ['Disibled Gui'] = false, -- Close Gui page.
     ['Faster Farm Level 500'] = true --This function will work when you get the Trident Rod and will go to farm islands that have a lot of level.
 }
 getgenv().Mode = 'Kaitun'
