@@ -14,8 +14,8 @@ _G.Settings = {
     ['MethodShake'] = "Fast", -- Fast, Fix bug
     ["Instant_Coin"] = true,
     ["SetSteek"] = 100,
-    ["FpsBoost"] = false,
-    ["Black_Screen"] = true
+    ["FpsBoost"] = true,
+    ["Black_Screen"] = false
 }
 getgenv().Key = "MARU-PD0YY-D22X-BM8VA-2CKI-K2YOV"
 getgenv().id = "586158779540832277"
