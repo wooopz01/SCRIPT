@@ -1,23 +1,54 @@
-_G.Settings = {
-    ["AfkCheckTime"] = 300, -- Seconds
-    ["AutoFishing"] = true,
-    ["SellFish"] = {
-        ["Enable"] = true,
-        ["Method"] = {
-            ["Event"] = true,
-            ["Enchant"] = true,
-            ["Mythical"] = true,
-            ["Legenday"] = true
+repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+getgenv().Key = ""
+getgenv().SettingFarm = {
+    ["Hide UI"] = false,
+    ["White Screen"] = false,
+    ["Auto Sell"] = {
+        ["Enabled"] = true,
+        ["Rarity"] = {
+            Legendary = false,
+            Mythical = false, 
+            Exotic = false,
+            Limited = false,
+            Divine = false,
+            Relic = false,
         }
     },
-    ['MakeRod'] = {'Aurora Rod', 'Trident Rod'},
-    ['MethodShake'] = "Fast", -- Fast, Fix bug
-    ["Instant_Coin"] = true,
-    ["SetSteek"] = 100,
-    ["FpsBoost"] = true,
-    ["Black_Screen"] = false
+    ["Webhook"] = {
+        ["Fish Catched"] = {
+            ["Enable"] = false,
+            ["Minimum Weight"] = 1000,
+            ["Rarity"] = {
+                ["Mythical"] = true,
+                ["Exotic"] = true,
+                ["Divine"] = true,
+                ["Relic"] = true,
+                ["Limited"] = true
+            }
+        },
+        ["URL"] = ""
+    },
+    ["Auto Buy Luck"] = true, -- have trident rod
+    ["Auto Bait"] = {
+        ["Buy Bait"] = false,
+        ["Amount Buy Bait"] = 10,
+        ["Use Bait Random"] = false,
+        ["Select Bait"] = {
+            ["Enabled"] = false,
+            ["Bait"]  = "Rapid Catcher",
+        }
+    },
+    ["Rejoin"] = {
+        ["Enabled"] = false,
+        ["Time"] = 20 ---minute
+    },
+    ["Hop Server"] = {
+        ["Hop Find WhirlPool Get Isonade"] = true,
+        ["Hop Server When Hight Ping"] = {
+            ["Enabled"] = false,
+            ["Ping"] = 100,
+        }
+    }
 }
-getgenv().Key = "MARU-PD0YY-D22X-BM8VA-2CKI-K2YOV"
-getgenv().id = "586158779540832277"
-getgenv().Script_Mode = "Kaitun_Script"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/refs/heads/main/BananaCat-KaitunFisch.lua"))()
