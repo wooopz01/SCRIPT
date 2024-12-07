@@ -1,3 +1,4 @@
+getgenv().getconnections = function(...) return(...) end
 getgenv().Key = "PCUSZbOUDlmsgEIkImjpMkeXnUPBRPjl"
 getgenv().Config = {
     ["AutoSave"] = true,
