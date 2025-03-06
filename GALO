@@ -1,17 +1,4 @@
-local player = game.Players.LocalPlayer
- 
--- accounts
-local accounts = {
-    ["halimawdu23"] = {"lemoncarrier22", "lemoncarrier23", "lemoncarrier24", "lemoncarrier25"},
-    ["craftedmarl1"] = {"craftedmarl2", "craftedmarl3", "craftedmarl4", "craftedmarl5"},
-    ["craftedmarl6"] = {"craftedmarl7", "craftedmarl8", "craftedmarl9", "craftedmarl10"},
-    ["craftedmarl11"] = {"craftedmarl12", "craftedmarl13", "craftedmarl14", "craftedmarl15"},
-    ["craftedmarl16"] = {"craftedmarl17", "craftedmarl18", "craftedmarl19", "craftedmarl20"},
-    ["craftedmarl21"] = {"craftedmarl22", "craftedmarl23", "craftedmarl24", "craftedmarl25"},
-    ["halimawdu1"] = {"halimawdu2", "halimawdu3", "halimawdu4", "halimawdu5"},
-    ["halimawdu6"] = {"halimawdu7", "halimawdu8", "halimawdu9", "halimawdu10"},
-    ["halimawdu11"] = {"halimawdu12", "halimawdu13", "halimawdu14", "halimawdu15"},
-    ["halimawdu22"] = {"halimawdu17", "halimawdu18getgenv().Config = {
+getgenv().Config = {
     ["Ignore Shiny Sell Rarity"] = false,
     ["blackScreen"] = false,
     ["Enable Auto Send Trade"] = false,
@@ -215,74 +202,4 @@ getgenv().Hermanos_Settings = {
 	['PC'] = 'DDC-1',
 	['mode'] = 'Website', --- Duo, Description, Website
 }
-task.spawn(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/hermanos-dev/hermanos-script/main/ad-main.lua'))() end)", "halimawdu20", "halimawdu24"},
-    ["dighigh1"] = {"dighigh2", "dighigh3", "dighigh4", "dighigh5"},
-    ["dighigh6"] = {"dighigh7", "dighigh8", "dighigh9", "dighigh10"},
-    ["kaspoy1"] = {"halimawdu25", "dighigh13", "dighigh14", "dighigh15"},
-    ["sugongdilaw16"] = {"sugongdilaw17", "sugongdilaw18", "sugongdilaw19", "sugongdilaw20"},
-    ["sugongdilaw11"] = {"sugongdilaw12", "sugongdilaw13", "sugongdilaw14", "sugongdilaw15"},
-    ["sugongdilaw91"] = {"sugongdilaw92", "sugongdilaw93", "sugongdilaw94", "sugongdilaw95"},
-    ["sugongdilaw31"] = {"sugongdilaw32", "sugongdilaw33", "sugongdilaw34", "sugongdilaw97"},
-    ["sugongdilaw21"] = {"sugongdilaw96", "sugongdilaw23", "sugongdilaw24", "sugongdilaw25"},
-    ["sugongdilaw6"] = {"sugongdilaw7", "sugongdilaw8", "sugongdilaw9", "sugongdilaw10"},
-}
- 
-local function getAccountType(playerName)
-    for mainAccount, subAccounts in pairs(accounts) do
-        if playerName == mainAccount then
-            return "main", mainAccount
-        elseif table.find(subAccounts, playerName) then
-            return "sub", mainAccount
-        end
-    end
-    return nil, nil -- If player is neither in main nor sub-accounts list
-end
- 
-local accountType, associatedMainAccount = getAccountType(player.Name)
- 
-if accountType == "main" then
-    -- Main account script
-    script_key = "HEZViKvRuPRJmQQWDAFclyKfzNieqKEf"
-    getgenv().SelectedPlayer = player.Name -- Main Account name, to which gems will be sent
-    getgenv().MainAccount = true -- Set True if it's the account to receive gems
-    getgenv().AccountForMainToFolow = ""
-    getgenv().EnableAccountForMainFolow = false -- Main joins a low server with an account already in server
-    getgenv().MainAccountSetting = { -- Unit To Sell
-        Units = {"Electric Cyborg", "Blazing Soulmaster", "Legion Veteran", "Legion Assassin", "Ace Marksman", "Fire Swordsman", "Magic Arrow", "Cursed Archer", "Storm Slayer", "Ocean Guardian"},
-        ManuallyClaimBooth = false,
-    }
-    getgenv().AltAccountSetting = {
-        Trade = true,
-        NotSendGem = true,
-        TradeItems = {"Trait Crystal", "Risky Dice", "Frost Bind"},
-        GiveBackUnit = true,
-        KickAfterDoneTrade = false,
-    }
-    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3051457467c11f25288cfe2de3708373.lua"))()
- 
-elseif accountType == "sub" then
-    -- Sub account script
-    script_key = "HEZViKvRuPRJmQQWDAFclyKfzNieqKEf"
-    getgenv().SelectedPlayer = associatedMainAccount -- Main Account name that the sub-account will send gems to
-    getgenv().MainAccount = false -- Set False because it's a sub account
-    getgenv().AccountForMainToFolow = ""
-    getgenv().EnableAccountForMainFolow = false -- Main joins a low server with an account already in server
-    getgenv().MainAccountSetting = { -- Unit To Sell
-        Units = {"Electric Cyborg", "Blazing Soulmaster", "Legion Veteran", "Legion Assassin", "Ace Marksman", "Fire Swordsman", "Magic Arrow", "Cursed Archer", "Storm Slayer", "Ocean Guardian"},
-        ManuallyClaimBooth = false,
-    }
-    getgenv().AltAccountSetting = {
-        Trade = true,
-        NotSendGem = true,
-        TradeItems = {"Trait Crystal", "Risky Dice", "Frost Bind"},
-        GiveBackUnit = true,
-        KickAfterDoneTrade = false,
-    }
-    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3051457467c11f25288cfe2de3708373.lua"))()
-else
-    print("WOMP WOMP")
-end
-
-for _, v in pairs(game:GetService("CoreGui"):GetDescendants()) do
-    pcall(function() v:Destroy() end)
-end
+task.spawn(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/hermanos-dev/hermanos-script/main/ad-main.lua'))() end)
