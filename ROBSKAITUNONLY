@@ -26,7 +26,7 @@ getgenv().Key = "cf535dc10c6b5af654e92fcf"
             ["Godhuman"] =  true,
             ["Skull Guitar"] = true,
             ["Mirror Fractal"] = true,
-            ["Cursed Dual Katana"] = true,
+            ["Cursed Dual Katana"] = false,
             ["Upgrade Race V2-V3"] = true,
             ["Auto Pull Lever"] = true,
         },
@@ -49,7 +49,7 @@ getgenv().Key = "cf535dc10c6b5af654e92fcf"
         },
         ["Sniper Fruit Shop"] = {
             ["Enabled"] = true, -- Auto Buy Fruit in Shop Mirage and Normal
-            ["Fruit"] = {"Rocket-Rocket"},
+            ["Fruit"] = {"Leopard-Leopard","Kitsune-Kitsune","Dragon-Dragon","Yeti-Yeti","Gas-Gas"},
         },
         ["Lock Fruit"] = {},
         ["Webhook"] = {
