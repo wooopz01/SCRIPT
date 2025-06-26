@@ -1,0 +1,146 @@
+getgenv().Config = {
+    ["Time To Sell"] = 35, -- Seconds
+    ["Craft Event"] = {
+        ["Crafters Seed Pack"] = false,
+        ["Anti Bee Egg"] = true
+    },
+    ["Dont Open Pack"] = false,
+    ["Dont Use Flower Seed Pack"] = false, -- If u Enable Crafters Seed Pack pls enable this
+    ["Seed"] = {
+        ["Moon Melon"] = 100,
+        ["Elephant Ears"] = 100,
+        ["Sunflower"] = 100,
+        ["Parasol Flower"] = 100,
+        ["Pear"] = 100,
+        ["Rosy Delight"] = 100,
+        ["Cantaloupe"] = 100,
+        ["Tomato"] = 100,
+        ["Loquat"] = 60,
+        ["Pineapple"] = 60,
+        ["Bell Pepper"] = 60,
+        ["Green Apple"] = 60,
+        ["Feijoa"] = 60,
+        ["Avocado"] = 60,
+        ["Sugar Apple"] = 60,
+        ["Banana"] = 60,
+        ["Prickly Pear"] = 60,
+        ["Watermelon"] = 60,
+        ["Kiwi"] = 60
+    },
+    ["FPS"] = 3,
+    ["Egg"] = {
+        ["Mythical Egg"] = {
+            ["Buy"] = true,
+            ["Place"] = true,
+            ["Priority"] = 5
+        },
+        ["Anti Bee Egg"] = {
+            ["Place"] = true,
+            ["Priority"] = 1
+        },
+        ["Night Egg"] = {
+            ["Place"] = true,
+            ["Priority"] = 4
+        },
+        ["Bug Egg"] = {
+            ["Buy"] = true,
+            ["Place"] = true,
+            ["Priority"] = 2
+        },
+        ["Paradise Egg"] = {
+            ["Buy"] = true,
+            ["Place"] = true,
+            ["Priority"] = 3
+        }
+    },
+    ["Honey Item"] = {
+        ["Nectarine"] = false,
+        ["Flower Seed Pack"] = false,
+        ["Honey Sprinkler"] = false,
+        ["Bee Egg"] = true,
+        ["Pollen Radar"] = false,
+        ["Nectar Staff"] = false,
+        ["Nectarshade"] = false,
+        ["Lavender"] = false,
+        ["Hive Fruit"] = false
+    },
+    ["Sprinkler"] = {
+        ["Place Sprinkler"] = true,
+        ["Buy Sprinkler"] = true,
+        ["Basic Sprinkler"] = true,
+        ["Advanced Sprinkler"] = true,
+        ["Master Sprinkler"] = true,
+        ["Godly Sprinkler"] = true
+    },
+    ["Plant Candy"] = false,
+    ["PetNeedSend"] = {"Queen Bee", "Red Fox", "Dragonfly", "Disco Bee", "Butterfly", "Mimic Octopus"},
+    ["Destroy Mode"] = {
+        ["Auto Destroy when have money"] = 1000000, -- its will destroy all trees select when money >= select
+        ["Trees"] = {"Nightshade", "Raspberry", "Succulent", "Violet Corn", "Crocus", "Rose", "Pink Lily", "Foxglove", "Strawberry", "Blueberry", "Corn", "Orange Tulip", "Tomato", "Carrot", "Apple", "Cactus", "Pumpkin", "Dragon Fruit", "Mushroom", "Coconut", "Mango", "Glowshroom", "Pepper", "Cacao"}
+    },
+    ["Url"] = "", -- Webhook 
+
+    ["Boost FPS"] = true,
+    ["Black Screen"] = true,
+    ["Note"] = "Cyndral Hub",
+    ["Pet Mode"] = {
+        ["Sell Pet"] = true,
+        ["Equip Pet"] = true,
+        ["Name Pet Equip"] = {
+            ["Grey Mouse"] = true,
+            ["Brown Mouse"] = true,
+            ["Moth"] = true,
+            ["Night Owl"] = true,
+            ["Wasp"] = true,
+            ["Tarantula Hawk"] = true,
+            ["Silver Monkey"] = true,
+            ["Blood Kiwi"] = true
+        },
+        ["Rarity"] = { -- Rarity Sell Pet
+            ["Common"] = true,
+            ["Uncommon"] = true,
+            ["Rare"] = true,
+            ["Legendary"] = false,
+            ["Divine"] = false,
+            ["Mythical"] = false
+        },
+        ["Upgrade Slot Egg"] = {
+            ["Enable"] = true,
+            ["Black List Pet For Upgrade Slots"] = {"Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee",
+                                                    "Butterfly", "Mimic Octopus", "Moth"}
+        },
+        ["Pet Dont Delete"] = {"Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee", "Butterfly", "Mimic Octopus"}
+    },
+    ["Webhook Mode"] = {
+        ["Enable Send Pet Weight"] = false,
+        ["Weight"] = 10 -- if Weight >= 10 they will send wh
+    },
+    ["Rejoin After X Time"] = 60, -- Minutes
+    ["Mutation Skips"] = { -- Skip Havest
+        ["Pollinated"] = false,
+        ["Disco"] = false,
+        ["Twisted"] = false,
+        ["Wet"] = false,
+        ["Choc"] = false,
+        ["Bloodlit"] = false,
+        ["Celestial"] = false,
+        ["Moonlit"] = false,
+        ["Chilled"] = false,
+        ["Zombified"] = false,
+        ["Plasma"] = false,
+        ["Burnt"] = false,
+        ["Frozen"] = false,
+        ["Voidtouched"] = false,
+        ["HoneyGlazed"] = false,
+        ["Shocked"] = false
+    }
+}
+setfpscap(getgenv().Config["FPS"])
+repeat wait() until game:IsLoaded()
+wait(10)
+script_key="aPEOtSMZkvftUMIvirVmLUGZgjnZApnt";
+repeat
+    wait()
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/392bd177458276c103d5ec042d7d4e38.lua"))()
+    task.wait(10)
+until getgenv().Loaded 
