@@ -1,146 +1,102 @@
+repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+getgenv().Key = "cf535dc10c6b5af654e92fcf"
 getgenv().Config = {
-    ["Time To Sell"] = 35, -- Seconds
-    ["Craft Event"] = {
-        ["Crafters Seed Pack"] = false,
-        ["Anti Bee Egg"] = true
-    },
-    ["Dont Open Pack"] = false,
-    ["Dont Use Flower Seed Pack"] = false, -- If u Enable Crafters Seed Pack pls enable this
-    ["Seed"] = {
-        ["Moon Melon"] = 100,
-        ["Elephant Ears"] = 100,
-        ["Sunflower"] = 100,
-        ["Parasol Flower"] = 100,
-        ["Pear"] = 100,
-        ["Rosy Delight"] = 100,
-        ["Cantaloupe"] = 100,
-        ["Tomato"] = 100,
-        ["Loquat"] = 60,
-        ["Pineapple"] = 60,
-        ["Bell Pepper"] = 60,
-        ["Green Apple"] = 60,
-        ["Feijoa"] = 60,
-        ["Avocado"] = 60,
-        ["Sugar Apple"] = 60,
-        ["Banana"] = 60,
-        ["Prickly Pear"] = 60,
-        ["Watermelon"] = 60,
-        ["Kiwi"] = 60
-    },
-    ["FPS"] = 3,
-    ["Egg"] = {
-        ["Mythical Egg"] = {
-            ["Buy"] = true,
-            ["Place"] = true,
-            ["Priority"] = 5
-        },
-        ["Anti Bee Egg"] = {
-            ["Place"] = true,
-            ["Priority"] = 1
-        },
-        ["Night Egg"] = {
-            ["Place"] = true,
-            ["Priority"] = 4
-        },
-        ["Bug Egg"] = {
-            ["Buy"] = true,
-            ["Place"] = true,
-            ["Priority"] = 2
-        },
-        ["Paradise Egg"] = {
-            ["Buy"] = true,
-            ["Place"] = true,
-            ["Priority"] = 3
-        }
-    },
-    ["Honey Item"] = {
-        ["Nectarine"] = false,
-        ["Flower Seed Pack"] = false,
-        ["Honey Sprinkler"] = false,
-        ["Bee Egg"] = true,
-        ["Pollen Radar"] = false,
-        ["Nectar Staff"] = false,
-        ["Nectarshade"] = false,
-        ["Lavender"] = false,
-        ["Hive Fruit"] = false
-    },
-    ["Sprinkler"] = {
-        ["Place Sprinkler"] = true,
-        ["Buy Sprinkler"] = true,
-        ["Basic Sprinkler"] = true,
-        ["Advanced Sprinkler"] = true,
-        ["Master Sprinkler"] = true,
-        ["Godly Sprinkler"] = true
-    },
-    ["Plant Candy"] = false,
-    ["PetNeedSend"] = {"Queen Bee", "Red Fox", "Dragonfly", "Disco Bee", "Butterfly", "Mimic Octopus"},
-    ["Destroy Mode"] = {
-        ["Auto Destroy when have money"] = 1000000, -- its will destroy all trees select when money >= select
-        ["Trees"] = {"Nightshade", "Raspberry", "Succulent", "Violet Corn", "Crocus", "Rose", "Pink Lily", "Foxglove", "Strawberry", "Blueberry", "Corn", "Orange Tulip", "Tomato", "Carrot", "Apple", "Cactus", "Pumpkin", "Dragon Fruit", "Mushroom", "Coconut", "Mango", "Glowshroom", "Pepper", "Cacao"}
-    },
-    ["Url"] = "", -- Webhook 
-
-    ["Boost FPS"] = true,
-    ["Black Screen"] = true,
-    ["Note"] = "Cyndral Hub",
-    ["Pet Mode"] = {
-        ["Sell Pet"] = true,
-        ["Equip Pet"] = true,
-        ["Name Pet Equip"] = {
-            ["Grey Mouse"] = true,
-            ["Brown Mouse"] = true,
-            ["Moth"] = true,
-            ["Night Owl"] = true,
-            ["Wasp"] = true,
-            ["Tarantula Hawk"] = true,
-            ["Silver Monkey"] = true,
-            ["Blood Kiwi"] = true
-        },
-        ["Rarity"] = { -- Rarity Sell Pet
-            ["Common"] = true,
-            ["Uncommon"] = true,
-            ["Rare"] = true,
-            ["Legendary"] = false,
-            ["Divine"] = false,
-            ["Mythical"] = false
-        },
-        ["Upgrade Slot Egg"] = {
-            ["Enable"] = true,
-            ["Black List Pet For Upgrade Slots"] = {"Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee",
-                                                    "Butterfly", "Mimic Octopus"}
-        },
-        ["Pet Dont Delete"] = {"Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee", "Butterfly", "Mimic Octopus", "Moth", "Grey Mouse", "Brown Mouse", "Night Owl", "Tarantula Hawk", "Blood Kiwi", "Peacock"}
-    },
-    ["Webhook Mode"] = {
-        ["Enable Send Pet Weight"] = false,
-        ["Weight"] = 10 -- if Weight >= 10 they will send wh
-    },
-    ["Rejoin After X Time"] = 60, -- Minutes
-    ["Mutation Skips"] = { -- Skip Havest
-        ["Pollinated"] = true,
-        ["Disco"] = true,
-        ["Twisted"] = true,
-        ["Wet"] = true,
-        ["Choc"] = true,
-        ["Bloodlit"] = true,
-        ["Celestial"] = true,
-        ["Moonlit"] = true,
-        ["Chilled"] = true,
-        ["Zombified"] = true,
-        ["Plasma"] = true,
-        ["Burnt"] = true,
-        ["Frozen"] = true,
-        ["Voidtouched"] = true,
-        ["HoneyGlazed"] = true,
-        ["Shocked"] = true
-    }
+	["Auto Delete Pet"] = false,
+	["Auto Harvest Fruit Summer"] = true,
+	["Webhook Profile"] = false,
+	["Auto Plant Egg"] = true,
+	["Select Item Craft"] = {
+		["Anti Bee Egg"] = true
+	},
+	["Auto Give Pollinated For Onett"] = false,
+	["Use Save Position"] = true,
+	["Auto Plant Seed"] = true,
+	["Ping Discord"] = false,
+	["ESP Farm Player Other"] = false,
+	["Auto Buy Shop Honey"] = true,
+	["Start ESP EGG"] = false,
+	["Auto Load Script"] = true,
+	["Auto Collect Egg"] = true,
+	["Auto Use Gear"] = false,
+	["Auto Delete Plant"] = false,
+	["Spam Join"] = false,
+	["Start ESP"] = false,
+	["Auto Buy Egg"] = true,
+	["Input Url Webhook"] = "",
+	["Auto Delete Fruit"] = false,
+	["Webhook Collect Egg"] = true,
+	["Auto Craft"] = true,
+	["Select Gear"] = {
+		["Advanced Sprinkler"] = true,
+		["Tanning Mirror"] = true,
+		["Master Sprinkler"] = true,
+		["Basic Sprinkler"] = true,
+		["Godly Sprinkler"] = true
+	},
+	["Auto Sell"] = false,
+	["Auto Feed Pet"] = true,
+	["Select Seed Plant"] = {
+		["Prickly Pear Seed"] = true,
+		["Elephant Ears Seed"] = true,
+		["Rosy Delight Seed"] = true,
+		["Parasol Flower Seed"] = true,
+		["Pear Seed"] = true,
+		["Cantaloupe Seed"] = true,
+		["Moon Melon Seed"] = true,
+		["Sunflower Seed"] = true,
+		["Watermelon Seed"] = true,
+		["Pineapple Seed"] = true,
+		["Banana Seed"] = true,
+		["Sugar Apple"] = true,
+		["Feijoa Seed"] = true,
+		["Kiwi Seed"] = true,
+		["Bell Pepper Seed"] = true,
+		["Pear Seed"] = true,
+		["Loquat Seed"] = true,
+		["Avocado Seed"] = true,
+		["Green Apple Seed"] = true,
+		["Tomato Seed"] = true
+	},
+	["Auto Buy Seed"] = true,
+	["Auto Buy Gear"] = true,
+	["Boost Fps"] = true,
+	["Ignore Variant or Mutation"] = false,
+	["Auto Collect"] = false,
+	["Auto Collect Pollinated if Have"] = false,
+	["Select Item Shop Honey"] = {
+		["Flower Seed Pack"] = false,
+		["Bee Egg"] = true
+	},
+	["Select Egg"] = {
+		["Rare Summer Egg"] = false,
+		["Bug Egg"] = true,
+		["Premium Anti Bee Egg"] = true,
+		["Common Summer Egg"] = false,
+		["Bee Egg"] = true,
+		["Mythical Egg"] = true,
+		["Paradise Egg"] = true,
+		["Anti Bee Egg"] = true
+	},
+	["Select Egg Plant"] = {
+		["Paradise Egg"] = true,
+		["Night Egg"] = true,
+		["Anti Bee Egg"] = true,
+		["Bug Egg"] = true,
+		["Mythical Egg"] = true
+	},
+	["Select Seed"] = {
+		["Watermelon Seed"] = true,
+		["Pineapple Seed"] = true,
+		["Banana Seed"] = true,
+		["Sugar Apple"] = true,
+		["Feijoa Seed"] = true,
+		["Tomato Seed"] = true,
+		["Bell Pepper Seed"] = true,
+		["Kiwi Seed"] = true,
+		["Loquat Seed"] = true,
+		["Avocado Seed"] = true,
+		["Green Apple Seed"] = true,
+		["Prickly Pear Seed"] = true
+	}
 }
-setfpscap(getgenv().Config["FPS"])
-repeat wait() until game:IsLoaded()
-wait(10)
-script_key="aPEOtSMZkvftUMIvirVmLUGZgjnZApnt";
-repeat
-    wait()
-    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/392bd177458276c103d5ec042d7d4e38.lua"))()
-    task.wait(10)
-until getgenv().Loaded 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
