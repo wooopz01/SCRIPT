@@ -55,7 +55,7 @@ getgenv().Config = {
 		["Loquat Seed"] = true,
 		["Avocado Seed"] = true,
 		["Green Apple Seed"] = true,
-		["Tomato Seed"] = true
+		["Tomato Seed"] = false
 	},
 	["Auto Buy Seed"] = true,
 	["Auto Buy Gear"] = true,
