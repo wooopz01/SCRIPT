@@ -86,6 +86,11 @@ getgenv().Config = {
 		["Mythical Egg"] = true
 	},
 	["Select Seed"] = {
+		["Elephant Ears Seed"] = true,
+		["Rosy Delight Seed"] = true,
+		["Parasol Flower Seed"] = true,
+		["Pear Seed"] = true,
+		["Cantaloupe Seed"] = true,
 		["Watermelon Seed"] = true,
 		["Pineapple Seed"] = true,
 		["Banana Seed"] = true,
