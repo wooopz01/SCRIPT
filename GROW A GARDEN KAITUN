@@ -34,7 +34,7 @@ getgenv().Config = {
 		["Godly Sprinkler"] = true
 	},
 	["Auto Sell"] = false,
-	["Auto Feed Pet"] = true,
+	["Auto Feed Pet"] = false,
 	["Select Seed Plant"] = {
 		["Prickly Pear Seed"] = true,
 		["Elephant Ears Seed"] = true,
