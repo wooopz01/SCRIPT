@@ -42,7 +42,6 @@ getgenv().Config = {
 		["Parasol Flower Seed"] = true,
 		["Pear Seed"] = true,
 		["Cantaloupe Seed"] = true,
-		["Moon Melon Seed"] = true,
 		["Sunflower Seed"] = true,
 		["Watermelon Seed"] = true,
 		["Pineapple Seed"] = true,
