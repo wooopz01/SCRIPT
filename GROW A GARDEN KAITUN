@@ -1,69 +1,189 @@
-if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
-getgenv().Script_Mode = "Kaitun_Script"
-_G.Settings = {
-    SeedsSetting = {
-        "Sugar Apple",
-        "Kiwi",
-        "Bell Pepper",
-        "Prickly Pear",
-        "Feijoa",
-        "Parasol Flower",
-        "Rosy Delight",
-        "Loquat",
-        "Elephant Ears",
-    },
-    SprinklerSettings = {
-        Limit = 2,
-        StartBuyWhen = 10000000,
-        SelectSprinklers = {
-            "Basic Sprinkler",
-            "Advanced Sprinkler",
-            "Master Sprinkler",
-            "Godly Sprinkler"
-        }
-    },
-    EggSettings = {
-        StartBuyEggWhen = 150000,
-        SelectEggs = {
-            "Bug Egg",
-            "Mythical Egg",
-            "Paradise Egg",
-            "Bee Egg",
-            "Anti Bee Egg",
-            "Rare Summer Egg",
-            "Common Summer Egg",
-            "Premium Anti Bee Egg"
-        },
-    },
-    SelectHoneyStocks = {
-        "Bee Egg"
-    },
-    DestroySettings = {
-        DestroyWhenMoney = 500000,
-        SelectTrees = {"Strawberry", "Blueberry", "Corn"}
-    },
-    Webhook = "",
-    PetSettings = {
-        Sell = {
-        },
-        UpgradeSlots = {
-        },
-        Equip = {
-        }
-    },
-    CraftSettings = {
-        Enabled = True,
-        Workbench = "Anti Bee Egg",
-        SeedEventWorkbench = "Anti Bee Egg"
-    },
-    SummerHarvestSettings = {
-        SubmitHeld = true
-    },
-    UseSeedPack = false,
-    UpgradePetSlots = 2,
-    SendHoneyMachineQuests = true
+repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+getgenv().Key = "cf535dc10c6b5af654e92fcf"
+getgenv().Config = {
+	["Auto Delete Pet"] = false,
+	["Auto Harvest Fruit Summer"] = true,
+	["Webhook Profile"] = false,
+	["Auto Plant Egg"] = true,
+	["Select Item Craft"] = {
+		["Anti Bee Egg"] = true
+	},
+	["Auto Give Pollinated For Onett"] = false,
+	["Use Save Position"] = true,
+	["Delete Notification"] = false,
+	["Auto Plant Seed"] = true,
+	["Ping Discord"] = false,
+	["ESP Farm Player Other"] = false,
+	["Auto Buy Shop Honey"] = true,
+	["Start ESP EGG"] = false,
+	["Auto Load Script"] = true,
+	["Auto Collect Egg"] = true,
+	["Auto Use Gear"] = false,
+	["Auto Delete Plant"] = false,
+	["Spam Join"] = false,
+	["Start Boost"] = false,
+	["Start ESP"] = false,
+	["Auto Buy Egg"] = true,
+	["Input Url Webhook"] = "",
+	["Auto Delete Fruit"] = false,
+	["Webhook Collect Egg"] = true,
+	["Auto Craft"] = true,
+	["Select Gear"] = {
+		["Advanced Sprinkler"] = true,
+		["Tanning Mirror"] = true,
+		["Master Sprinkler"] = true,
+		["Basic Sprinkler"] = true,
+		["Godly Sprinkler"] = true
+	},
+	["Auto Sell"] = false,
+	["Select Egg"] = {
+		["Rare Summer Egg"] = false,
+		["Common Summer Egg"] = true,
+		["Premium Anti Bee Egg"] = true,
+		["Anti Bee Egg"] = true,
+		["Bee Egg"] = true,
+		["Paradise Egg"] = true,
+		["Mythical Egg"] = true,
+		["Bug Egg"] = true
+	},
+	["Select Seed Plant"] = {
+		["Avocado Seed"] = false,
+		["Pear Seed"] = false,
+		["Tomato Seed"] = false,
+		["Green Apple Seed"] = false,
+		["Pineapple Seed"] = false,
+		["Banana Seed"] = false,
+		["Cantaloupe Seed"] = false,
+		["Watermelon Seed"] = false,
+		["Sugar Apple"] = true,
+		["Kiwi Seed"] = true,
+		["Bell Pepper Seed"] = true,
+		["Prickly Pear Seed"] = true,
+		["Feijoa Seed"] = true,
+		["Parasol Flower Seed"] = true,
+		["Rosy Delight Seed"] = true,
+		["Loquat Seed"] = true,
+		["Elephant Ears Seed"] = true
+	},
+	["Auto Buy Gear"] = true,
+	["Auto Feed Pet"] = false,
+	["Boost Fps"] = true,
+	["Ignore Variant or Mutation"] = false,
+	["Auto Collect"] = false,
+	["Auto Collect Pollinated if Have"] = false,
+	["Select Item Shop Honey"] = {
+		["Flower Seed Pack"] = false,
+		["Bee Egg"] = true
+	},
+	["Auto Buy Seed"] = true,
+	["Select Egg Plant"] = {
+		["Paradise Egg"] = true,
+		["Bug Egg"] = true,
+		["Anti Bee Egg"] = true,
+		["Mythical Egg"] = true,
+		["Night Egg"] = true,
+		["Rare Summer Egg"] = true,
+		["Rare Egg"] = true,
+		["Common Summer Egg"] = true
+	},
+	["Select Seed"] = {
+		["Prickly Pear Seed"] = true,
+		["Sugar Apple"] = true,
+		["Feijoa Seed"] = true,
+		["Bell Pepper Seed"] = true,
+		["Pear Seed"] = true,
+		["Loquat Seed"] = true,
+		["Rosy Delight Seed"] = true,
+		["Cantaloupe Seed"] = true,
+		["Kiwi Seed"] = true,
+		["Parasol Flower Seed"] = true,
+		["Elephant Ears Seed"] = true
+	}
 }
-getgenv().Key = "MARU-PD0YY-D22X-BM8VA-2CKI-K2YOV"
-getgenv().id = "586158779540832277"
-getgenv().Script_Mode = "Kaitun_Script"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
+
+spawn(function()
+    wait(5)
+
+    local playerGui = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+    local screenGui = Instance.new("ScreenGui", playerGui)
+    screenGui.Name = "FPSDisplay"
+    screenGui.ResetOnSpawn = false
+
+    local title = Instance.new("TextLabel", screenGui)
+    title.Size = UDim2.new(0, 250, 0, 25)
+    title.Position = UDim2.new(0, 10, 0, 10)
+    title.BackgroundTransparency = 1
+    title.TextColor3 = Color3.fromRGB(255, 255, 0)
+    title.TextStrokeTransparency = 0.5
+    title.TextXAlignment = Enum.TextXAlignment.Left
+    title.Font = Enum.Font.Code
+    title.TextSize = 18
+    title.Text = "Binini Hub Cat Hub W Config "
+
+    local fpsLabel = Instance.new("TextLabel", screenGui)
+    fpsLabel.Size = UDim2.new(0, 250, 0, 25)
+    fpsLabel.Position = UDim2.new(0, 10, 0, 35)
+    fpsLabel.BackgroundTransparency = 1
+    fpsLabel.TextColor3 = Color3.fromRGB(0, 255, 0)
+    fpsLabel.TextXAlignment = Enum.TextXAlignment.Left
+    fpsLabel.Font = Enum.Font.Code
+    fpsLabel.TextSize = 16
+    fpsLabel.Text = "FPS: ..."
+
+    local timeLabel = Instance.new("TextLabel", screenGui)
+    timeLabel.Size = UDim2.new(0, 250, 0, 25)
+    timeLabel.Position = UDim2.new(0, 10, 0, 60)
+    timeLabel.BackgroundTransparency = 1
+    timeLabel.TextColor3 = Color3.fromRGB(0, 170, 255)
+    timeLabel.TextXAlignment = Enum.TextXAlignment.Left
+    timeLabel.Font = Enum.Font.Code
+    timeLabel.TextSize = 16
+    timeLabel.Text = "Time: 00:00:00"
+
+    local startTime = tick()
+    spawn(function()
+        while true do
+            local t = tick() - startTime
+            local h = math.floor(t / 3600)
+            local m = math.floor((t % 3600) / 60)
+            local s = math.floor(t % 60)
+            timeLabel.Text = string.format("Time: %02d:%02d:%02d", h, m, s)
+            wait(1)
+        end
+    end)
+
+    local fps = 0
+    spawn(function()
+        local counter = 0
+        local lastTime = tick()
+        game:GetService("RunService").RenderStepped:Connect(function()
+            counter = counter + 1
+            if tick() - lastTime >= 1 then
+                fps = counter
+                counter = 0
+                lastTime = tick()
+                fpsLabel.Text = "FPS: " .. tostring(fps)
+            end
+        end)
+    end)
+
+    local Lighting = game:GetService("Lighting")
+    local Terrain = workspace:FindFirstChildOfClass("Terrain")
+    sethiddenproperty(Lighting, "Technology", Enum.Technology.Compatibility)
+    Lighting.GlobalShadows = false
+    Lighting.FogEnd = math.huge
+    Lighting.Brightness = 5
+    Lighting.ClockTime = 14
+    Lighting.OutdoorAmbient = Color3.new(1, 1, 1)
+    Lighting.Ambient = Color3.new(1, 1, 1)
+    if Terrain then
+        Terrain.WaterWaveSize = 0
+        Terrain.WaterWaveSpeed = 0
+        Terrain.WaterReflectance = 0
+        Terrain.WaterTransparency = 1
+    end
+    settings().Rendering.QualityLevel = Enum.QualityLevel.Level01
+    settings().Rendering.MeshPartDetailLevel = Enum.MeshPartDetailLevel.Level02
+    settings().Rendering.EagerBulkExecution = false
+end)
