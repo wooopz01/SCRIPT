@@ -63,7 +63,8 @@ getgenv().Config = {
 		["Parasol Flower Seed"] = true,
 		["Rosy Delight Seed"] = true,
 		["Loquat Seed"] = true,
-		["Elephant Ears Seed"] = true
+		["Elephant Ears Seed"] = true,
+		["Pitcher Plant Seed"] = true
 	},
 	["Auto Buy Gear"] = true,
 	["Auto Feed Pet"] = false,
@@ -97,7 +98,8 @@ getgenv().Config = {
 		["Cantaloupe Seed"] = true,
 		["Kiwi Seed"] = true,
 		["Parasol Flower Seed"] = true,
-		["Elephant Ears Seed"] = true
+		["Elephant Ears Seed"] = true,
+		["Pitcher Plant Seed"] = true
 	}
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
