@@ -15,9 +15,10 @@ getgenv().Config = {
 	["Ping Discord"] = false,
 	["ESP Farm Player Other"] = false,
 	["Select Item Shop Summer"] = {
-		["Hamster"] = true,
-		["Summer Seed Pack"] = true,
 		["Oasis Egg"] = true,
+		["Hamster"] = true,
+		["Traveler's Fruit"] = true,
+		["Summer Seed Pack"] = true,
 		["Lily of the Valley Seed"] = true
 	},
 	["Auto Buy Shop Honey"] = true,
