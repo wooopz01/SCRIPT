@@ -14,6 +14,12 @@ getgenv().Config = {
 	["Auto Plant Seed"] = true,
 	["Ping Discord"] = false,
 	["ESP Farm Player Other"] = false,
+	["Select Item Shop Summer"] = {
+		["Hamster"] = true,
+		["Summer Seed Pack"] = true,
+		["Oasis Egg"] = true,
+		["Lily of the Valley Seed"] = true
+	},
 	["Auto Buy Shop Honey"] = true,
 	["Start ESP EGG"] = false,
 	["Auto Load Script"] = true,
@@ -24,17 +30,12 @@ getgenv().Config = {
 	["Start Boost"] = false,
 	["Start ESP"] = false,
 	["Auto Buy Egg"] = true,
+	["Webhook Collect Egg"] = true,
 	["Input Url Webhook"] = "",
 	["Auto Delete Fruit"] = false,
-	["Webhook Collect Egg"] = true,
 	["Auto Craft"] = true,
-	["Select Gear"] = {
-		["Advanced Sprinkler"] = true,
-		["Tanning Mirror"] = true,
-		["Master Sprinkler"] = true,
-		["Basic Sprinkler"] = true,
-		["Godly Sprinkler"] = true
-	},
+	["Ignore Variant or Mutation"] = false,
+	["Auto Buy Seed"] = true,
 	["Auto Sell"] = false,
 	["Select Egg"] = {
 		["Rare Summer Egg"] = false,
@@ -47,62 +48,71 @@ getgenv().Config = {
 		["Bug Egg"] = true
 	},
 	["Select Seed Plant"] = {
-		["Avocado Seed"] = false,
-		["Pear Seed"] = false,
-		["Tomato Seed"] = false,
-		["Green Apple Seed"] = false,
-		["Pineapple Seed"] = false,
-		["Banana Seed"] = false,
-		["Cantaloupe Seed"] = false,
+		["Pitcher Plant Seed"] = true,
 		["Watermelon Seed"] = false,
 		["Sugar Apple"] = true,
-		["Kiwi Seed"] = true,
+		["Tomato Seed"] = false,
 		["Bell Pepper Seed"] = true,
+		["Green Apple Seed"] = false,
 		["Prickly Pear Seed"] = true,
+		["Pineapple Seed"] = false,
+		["Banana Seed"] = false,
+		["Avocado Seed"] = false,
 		["Feijoa Seed"] = true,
 		["Parasol Flower Seed"] = true,
+		["Pear Seed"] = false,
 		["Rosy Delight Seed"] = true,
+		["Cantaloupe Seed"] = false,
 		["Loquat Seed"] = true,
-		["Elephant Ears Seed"] = true,
-		["Pitcher Plant Seed"] = true
+		["Kiwi Seed"] = true,
+		["Elephant Ears Seed"] = true
 	},
-	["Auto Buy Gear"] = true,
 	["Auto Feed Pet"] = false,
+	["Auto Buy Gear"] = true,
 	["Boost Fps"] = true,
-	["Ignore Variant or Mutation"] = false,
+	["Auto Buy Shop Summer"] = true,
 	["Auto Collect"] = false,
 	["Auto Collect Pollinated if Have"] = false,
 	["Select Item Shop Honey"] = {
 		["Flower Seed Pack"] = false,
 		["Bee Egg"] = true
 	},
-	["Auto Buy Seed"] = true,
+	["Select Gear"] = {
+		["Advanced Sprinkler"] = true,
+		["Tanning Mirror"] = true,
+		["Master Sprinkler"] = true,
+		["Basic Sprinkler"] = true,
+		["Godly Sprinkler"] = true
+	},
 	["Select Egg Plant"] = {
-		["Paradise Egg"] = true,
+		["Oasis Egg"] = true,
 		["Bug Egg"] = true,
-		["Anti Bee Egg"] = true,
+		["Common Summer Egg"] = true,
 		["Mythical Egg"] = true,
-		["Night Egg"] = true,
+		["Rare Egg"] = true,
 		["Rare Summer Egg"] = true,
-		["Rare Egg"] = false,
-		["Common Summer Egg"] = true
+		["Anti Bee Egg"] = true,
+		["Night Egg"] = true,
+		["Paradise Egg"] = true,
+		["Premium Anti Bee Egg"] = true
 	},
 	["Select Seed"] = {
+		["Pitcher Plant Seed"] = true,
 		["Prickly Pear Seed"] = true,
 		["Sugar Apple"] = true,
 		["Feijoa Seed"] = true,
+		["Kiwi Seed"] = true,
 		["Bell Pepper Seed"] = true,
 		["Pear Seed"] = true,
-		["Loquat Seed"] = true,
 		["Rosy Delight Seed"] = true,
-		["Cantaloupe Seed"] = true,
-		["Kiwi Seed"] = true,
+		["Loquat Seed"] = true,
 		["Parasol Flower Seed"] = true,
-		["Elephant Ears Seed"] = true,
-		["Pitcher Plant Seed"] = true
+		["Cantaloupe Seed"] = true,
+		["Elephant Ears Seed"] = true
 	}
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
+
 
 spawn(function()
     wait(5)
