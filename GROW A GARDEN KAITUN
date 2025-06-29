@@ -103,3 +103,419 @@ getgenv().Config = {
 	}
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
+
+local function logDebug(message)
+    print("[DEBUG] " .. tostring(message))
+end
+
+local Player = game:GetService("Players").LocalPlayer
+local function getFarm()
+    local success, farm = pcall(function()
+        for _, farm in ipairs(workspace:WaitForChild("Farm", 10):GetChildren()) do
+            local owner = farm:WaitForChild("Important", 5).Data.Owner.Value
+            if owner == Player.Name then
+                return farm
+            end
+        end
+        return nil
+    end)
+    if success and farm then
+        logDebug("Found farm owned by " .. Player.Name)
+        return farm
+    else
+        warn("Failed to find farm: " .. (success and "No farm found" or tostring(farm)))
+        return nil
+    end
+end
+
+local farm = getFarm()
+local cachedPlayerData = nil
+
+-- FPS Counter with Timer and Color Transition
+local function setupFPSCounter()
+    local PlayerGui = Player:WaitForChild("PlayerGui", 10)
+    if not PlayerGui then
+        warn("PlayerGui not found")
+        return
+    end
+
+    local screenGui = Instance.new("ScreenGui")
+    screenGui.Name = "FPSCounter"
+    screenGui.Parent = PlayerGui
+    screenGui.ResetOnSpawn = false
+    screenGui.IgnoreGuiInset = true
+    screenGui.DisplayOrder = 1000 
+
+    local shoutOutLabel = Instance.new("TextLabel")
+    shoutOutLabel.Size = UDim2.new(0, 300, 0, 60)
+    shoutOutLabel.Position = UDim2.new(0, 10, 1, -70)
+    shoutOutLabel.BackgroundTransparency = 1
+    shoutOutLabel.TextColor3 = Color3.new(1, 0, 0)
+    shoutOutLabel.Text = "SHOUT OUT TO OBII RIEL"
+    shoutOutLabel.TextSize = 32
+    shoutOutLabel.Font = Enum.Font.SourceSans
+    shoutOutLabel.Parent = screenGui
+
+    local fpsLabel = Instance.new("TextLabel")
+    fpsLabel.Size = UDim2.new(0, 150, 0, 50)
+    fpsLabel.Position = UDim2.new(1, -160, 0, 10)
+    fpsLabel.BackgroundColor3 = Color3.new(0, 0, 0)
+    fpsLabel.BackgroundTransparency = 0
+    fpsLabel.BorderSizePixel = 2
+    fpsLabel.BorderColor3 = Color3.new(1, 1, 1)
+    fpsLabel.TextColor3 = Color3.new(1, 1, 1)
+    fpsLabel.TextSize = 20
+    fpsLabel.Font = Enum.Font.SourceSansBold
+    fpsLabel.Text = "FPS: 0"
+    fpsLabel.Parent = screenGui
+
+    local timerLabel = Instance.new("TextLabel")
+    timerLabel.Size = UDim2.new(0, 150, 0, 30)
+    timerLabel.Position = UDim2.new(1, -160, 0, 60)
+    timerLabel.BackgroundColor3 = Color3.new(0, 0, 0)
+    timerLabel.BackgroundTransparency = 0
+    timerLabel.BorderSizePixel = 2
+    timerLabel.BorderColor3 = Color3.new(1, 1, 1)
+    timerLabel.TextColor3 = Color3.new(1, 1, 1)
+    timerLabel.TextSize = 20
+    timerLabel.Font = Enum.Font.SourceSansBold
+    timerLabel.Text = "Time: 0:00:00.000"
+    timerLabel.Parent = screenGui
+
+    local pingLabel = Instance.new("TextLabel")
+    pingLabel.Size = UDim2.new(0, 150, 0, 30)
+    pingLabel.Position = UDim2.new(1, -160, 0, 90) -- Ngay dưới timerLabel
+    pingLabel.BackgroundColor3 = Color3.new(0, 0, 0)
+    pingLabel.BackgroundTransparency = 0
+    pingLabel.BorderSizePixel = 2
+    pingLabel.BorderColor3 = Color3.new(1, 1, 1)
+    pingLabel.TextColor3 = Color3.new(1, 1, 1)
+    pingLabel.TextSize = 20
+    pingLabel.Font = Enum.Font.SourceSansBold
+    pingLabel.Text = "Ping: 0 ms"
+    pingLabel.Parent = screenGui
+
+    local startTime = tick()
+    local lastTime = tick()
+    local frameCount = 0
+    local hue = 0
+    local cycleTime = 45
+    local connection
+    connection = game:GetService("RunService").RenderStepped:Connect(function(deltaTime)
+        frameCount = frameCount + 1
+        local currentTime = tick()
+        if currentTime - lastTime >= 0.5 then
+            local fps = math.floor(frameCount / (currentTime - lastTime) + 0.5)
+            fpsLabel.Text = "FPS: " .. fps
+            frameCount = 0
+            lastTime = currentTime
+        end
+        local elapsedTime = (currentTime - startTime) * 1000
+        local hours = math.floor(elapsedTime / 3600000)
+        local minutes = math.floor((elapsedTime % 3600000) / 60000)
+        local seconds = math.floor((elapsedTime % 60000) / 1000)
+        local milliseconds = math.floor(elapsedTime % 1000)
+        timerLabel.Text = "Time: " .. string.format("%d:%02d:%02d.%03d", hours, minutes, seconds, milliseconds)
+
+        
+        local ping = math.floor(game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue())
+        pingLabel.Text = "Ping: " .. ping .. " ms"
+
+        
+        hue = (currentTime / cycleTime) % 1
+        local color = Color3.fromHSV(hue, 1, 1)
+        fpsLabel.TextColor3 = color
+        timerLabel.TextColor3 = color
+        pingLabel.TextColor3 = color
+    end)
+
+    screenGui.AncestryChanged:Connect(function()
+        if not screenGui.Parent then
+            connection:Disconnect()
+        end
+    end)
+
+    logDebug("FPS counter and timer enabled")
+end
+
+
+local function optimizeFPS()
+    if not getgenv().Config["Boost FPS"]["Enabled"] then
+        logDebug("Boost FPS disabled")
+        return
+    end
+
+    local function hideEffects(obj)
+        if obj:IsA("ParticleEmitter") or obj:IsA("Smoke") or obj:IsA("Fire") or obj:IsA("Sparkles") then
+            obj.Enabled = false
+            logDebug("Disabled effect: " .. obj.Name)
+        elseif obj:IsA("BillboardGui") or obj:IsA("SurfaceGui") then
+            obj.Enabled = false
+            logDebug("Disabled GUI: " .. obj.Name)
+        elseif obj:IsA("BasePart") and not obj:FindFirstChildOfClass("Humanoid") then
+            if getgenv().Config["Boost FPS"]["Settings"]["Disable Shadows"] then
+                obj.CastShadow = false
+            end
+            if getgenv().Config["Boost FPS"]["Settings"]["Lower Graphics Quality"] then
+                obj.Material = Enum.Material.SmoothPlastic
+                obj.TextureID = "" -- Tắt texture
+            end
+            logDebug("Optimized part: " .. obj.Name)
+        end
+    end
+
+    local function processWorkspace()
+        for _, obj in pairs(workspace:GetDescendants()) do
+            hideEffects(obj)
+        end
+        logDebug("Processed workspace for effects")
+    end
+
+    processWorkspace()
+
+    workspace.ChildAdded:Connect(function(child)
+        task.defer(function()
+            hideEffects(child)
+            for _, obj in pairs(child:GetDescendants()) do
+                hideEffects(obj)
+            end
+        end)
+    end)
+
+    if getgenv().Config["Boost FPS"]["Settings"]["Lower Graphics Quality"] then
+        settings().Rendering.QualityLevel = 1
+        game:GetService("Lighting").GlobalShadows = false
+        game:GetService("Lighting").FogEnd = 0 -- Tắt fog
+        game:GetService("Lighting").FogStart = 0
+        logDebug("Lowered graphics quality, disabled shadows and fog")
+    end
+
+    if getgenv().Config["Boost FPS"]["Settings"]["Disable Particles"] then
+        local terrain = workspace:FindFirstChild("Terrain")
+        if terrain then
+            terrain.WaterReflectance = 0
+            terrain.WaterTransparency = 1
+            logDebug("Optimized terrain effects")
+        end
+    end
+end
+
+task.spawn(function()
+    setupFPSCounter()
+    optimizeFPS()
+end)
+
+task.spawn(function()
+    local success, err = pcall(function()
+        local DataService = require(game:GetService("ReplicatedStorage"):WaitForChild("Modules", 10).DataService)
+        if typeof(DataService.GetData) == "function" then
+            local old = DataService.GetData
+            DataService.GetData = function(self, ...)
+                local data = old(self, ...)
+                cachedPlayerData = data
+                logDebug("Cached player data")
+                return data
+            end
+        else
+            warn("DataService.GetData is not a function")
+        end
+    end)
+    if not success then
+        warn("Error hooking DataService: " .. tostring(err))
+    end
+end)
+
+task.spawn(function()
+    if not getgenv().Config["Buy Egg"]["Auto Buy Egg"]["Enabled"] then
+        logDebug("Auto Buy Egg disabled")
+        return
+    end
+    while task.wait(getgenv().Config["Buy Egg"]["Auto Buy Egg"]["Delay"]) do
+        local success, err = pcall(function()
+            if not cachedPlayerData or not cachedPlayerData.InventoryData then
+                logDebug("No player data or inventory data")
+                return
+            end
+            local eggCount = 0
+            for _, item in pairs(cachedPlayerData.InventoryData) do
+                if item.ItemType == "PetEgg" then
+                    eggCount = eggCount + (item.ItemData and item.ItemData.Uses or 0)
+                end
+            end
+            if eggCount >= getgenv().Config["Buy Egg"]["Auto Buy Egg"]["Max Inventory"] then
+                logDebug("Egg inventory full: " .. eggCount)
+                return
+            end
+            local remote = game:GetService("ReplicatedStorage"):WaitForChild("GameEvents", 5):FindFirstChild("BuyEventShopStock")
+            if not remote then
+                warn("BuyEventShopStock remote not found")
+                return
+            end
+            for eggName, enabled in pairs(getgenv().Config["Buy Egg"]["Select Egg"]) do
+                if enabled then
+                    local stock = cachedPlayerData.EventShopStock and cachedPlayerData.EventShopStock.Stocks[eggName]
+                    if stock and stock.Stock > 0 then
+                        local fireSuccess, fireErr = pcall(function()
+                            remote:FireServer(eggName)
+                            logDebug("Bought egg: " .. eggName)
+                        end)
+                        if not fireSuccess then
+                            warn("Error buying egg " .. eggName .. ": " .. tostring(fireErr))
+                        end
+                        task.wait(0.5)
+                    else
+                        logDebug("No stock for egg: " .. eggName)
+                    end
+                end
+            end
+        end)
+        if not success then
+            warn("Error in buy egg loop: " .. tostring(err))
+        end
+    end
+end)
+
+task.spawn(function()
+    if not (farm and getgenv().Config["Buy Egg"]["Auto Place Egg"]["Enabled"]) then
+        logDebug("No farm or Auto Place Egg disabled")
+        return
+    end
+    task.wait(5)
+    local function generateEggPositions()
+        local placeEgg = {}
+        local success, base = pcall(function()
+            return farm:WaitForChild("Important", 5).Plant_Locations.Can_Plant.Position
+        end)
+        if not success then
+            warn("Error getting base position: " .. tostring(base))
+            return placeEgg
+        end
+        local gridSize = 4
+        for z = -20, -10, gridSize do
+            for x = -8, 8, gridSize do
+                table.insert(placeEgg, {Used = false, Position = Vector3.new(base.X + x, base.Y, base.Z + z)})
+            end
+        end
+        logDebug("Generated " .. #placeEgg .. " egg positions")
+        return placeEgg
+    end
+    local placeEgg = generateEggPositions()
+    while task.wait(getgenv().Config["Buy Egg"]["Auto Place Egg"]["Delay"]) do
+        local success, err = pcall(function()
+            if not cachedPlayerData or not cachedPlayerData.InventoryData or not Player.Character or not Player.Character.Humanoid then
+                logDebug("No player data, inventory data, character, or humanoid")
+                return
+            end
+            local petEggs = {}
+            for id, item in pairs(cachedPlayerData.InventoryData) do
+                if item.ItemType == "PetEgg" then
+                    table.insert(petEggs, {
+                        id = id,
+                        name = item.ItemData and item.ItemData.EggName or "Unknown",
+                        uses = item.ItemData and item.ItemData.Uses or 0
+                    })
+                end
+            end
+            if #petEggs == 0 then
+                logDebug("No pet eggs in inventory")
+                return
+            end
+            for _, e in ipairs(placeEgg) do e.Used = false end
+            local eggPlaced = 0
+            for _, egg in ipairs(farm:WaitForChild("Important", 5).Objects_Physical:GetChildren()) do
+                if egg.Name ~= "PetEgg" then continue end
+                eggPlaced = eggPlaced + 1
+                local pos = egg.PetEgg.Position
+                for _, entry in ipairs(placeEgg) do
+                    if not entry.Used and math.abs(entry.Position.X - pos.X) <= 1 and math.abs(entry.Position.Z - pos.Z) <= 1 then
+                        entry.Used = true
+                        break
+                    end
+                end
+            end
+            local maxEggs = cachedPlayerData.PetsData and cachedPlayerData.PetsData.MutableStats.MaxEggsInFarm or 10
+            if eggPlaced >= maxEggs then
+                logDebug("Max eggs reached: " .. eggPlaced)
+                return
+            end
+            for _, egg in ipairs(petEggs) do
+                local toolName = egg.name .. " x" .. egg.uses
+                if Player.Backpack:FindFirstChild(toolName) then
+                    local equipSuccess, equipErr = pcall(function()
+                        Player.Character.Humanoid:EquipTool(Player.Backpack[toolName])
+                        logDebug("Equipped egg: " .. toolName)
+                    end)
+                    if not equipSuccess then
+                        warn("Error equipping egg " .. toolName .. ": " .. tostring(equipErr))
+                    end
+                    task.wait(1)
+                else
+                    logDebug("Egg tool not found: " .. toolName)
+                end
+                for _ = 1, egg.uses do
+                    if eggPlaced >= maxEggs then
+                        logDebug("Max eggs reached during placement")
+                        return
+                    end
+                    local target = nil
+                    for _, entry in ipairs(placeEgg) do
+                        if not entry.Used then
+                            target = entry
+                            break
+                        end
+                    end
+                    if not target then
+                        logDebug("No available egg positions")
+                        return
+                    end
+                    local fireSuccess, fireErr = pcall(function()
+                        game:GetService("ReplicatedStorage"):WaitForChild("GameEvents", 5).PetEggService:FireServer("CreateEgg", target.Position)
+                        logDebug("Placed egg at: " .. tostring(target.Position))
+                    end)
+                    if not fireSuccess then
+                        warn("Error placing egg: " .. tostring(fireErr))
+                    end
+                    target.Used = true
+                    eggPlaced = eggPlaced + 1
+                    task.wait(1)
+                end
+            end
+        end)
+        if not success then
+            warn("Error in place egg loop: " .. tostring(err))
+        end
+    end
+end)
+
+task.spawn(function()
+    if not (farm and getgenv().Config["Buy Egg"]["Auto Hatch Egg"]["Enabled"]) then
+        logDebug("No farm or Auto Hatch Egg disabled")
+        return
+    end
+    while task.wait(getgenv().Config["Buy Egg"]["Auto Hatch Egg"]["Delay"]) do
+        local success, err = pcall(function()
+            for _, egg in ipairs(farm:WaitForChild("Important", 5).Objects_Physical:GetChildren()) do
+                if egg.Name ~= "PetEgg" then continue end
+                if egg:GetAttribute("TimeToHatch") == 0 then
+                    local fireSuccess, fireErr = pcall(function()
+                        game:GetService("ReplicatedStorage"):WaitForChild("GameEvents", 5):WaitForChild("PetEggService", 5):FireServer("HatchPet", egg)
+                        logDebug("Hatched egg at: " .. tostring(egg.PetEgg.Position))
+                    end)
+                    if not fireSuccess then
+                        warn("Error hatching egg: " .. tostring(fireErr))
+                    end
+                end
+            end
+        end)
+        if not success then
+            warn("Error in hatch egg loop: " .. tostring(err))
+        end
+    end
+end)
+
+local success, err = pcall(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/refs/heads/main/KaitunGAG.lua"))()
+end)
+if not success then
+    warn("Error loading KaitunGAG.lua: " .. tostring(err))
+end
