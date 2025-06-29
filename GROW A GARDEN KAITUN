@@ -84,7 +84,7 @@ getgenv().Config = {
 		["Mythical Egg"] = true,
 		["Night Egg"] = true,
 		["Rare Summer Egg"] = true,
-		["Rare Egg"] = true,
+		["Rare Egg"] = false,
 		["Common Summer Egg"] = true
 	},
 	["Select Seed"] = {
