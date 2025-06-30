@@ -2,6 +2,11 @@ repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
 getgenv().Key = "cf535dc10c6b5af654e92fcf"
 getgenv().Config = {
 	["Auto Delete Pet"] = false,
+	["Select Name Plant Delete"] = {
+		["Avocado"] = true,
+		["Pineapple"] = true,
+		["Green Apple"] = true
+	},
 	["Auto Harvest Fruit Summer"] = true,
 	["Webhook Profile"] = false,
 	["Auto Plant Egg"] = true,
