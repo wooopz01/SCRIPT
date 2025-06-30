@@ -78,7 +78,7 @@ getgenv().Config = {
 		["Rosy Delight Seed"] = true,
 		["Cantaloupe Seed"] = false,
 		["Loquat Seed"] = true,
-		["Kiwi Seed"] = true,
+		["Kiwi Seed"] = false,
 		["Elephant Ears Seed"] = true
 	},
 	["Auto Feed Pet"] = false,
