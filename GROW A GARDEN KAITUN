@@ -49,14 +49,15 @@ getgenv().Config = {
 		["Bug Egg"] = true
 	},
 	["Select Seed Plant"] = {
+		["Rafflesia Seed"] = true,
 		["Purple Dahlia Seed"] = true,
 		["Lily of the Valley Seed"] = true,
-		["Moon Mango"] = true,
+		["Moon Mango Seed"] = true,
 		["Purple Dahlia Seed"] = true,
-		["Beanstalk"] = true,
-		["Moon Melon"] = true,
+		["Beanstalk Seed"] = true,
+		["Moon Melon Seed"] = true,
 		["Easter Egg"] = true,
-		["Ember Lily"] = true,
+		["Ember Lily Seed"] = true,
 		["Watermelon Seed"] = false,
 		["Sugar Apple"] = true,
 		["Tomato Seed"] = false,
@@ -103,6 +104,7 @@ getgenv().Config = {
 		["Premium Anti Bee Egg"] = true
 	},
 	["Select Seed"] = {
+		["Rafflesia Seed"] = true,
 		["Pitcher Plant Seed"] = true,
 		["Prickly Pear Seed"] = true,
 		["Sugar Apple"] = true,
