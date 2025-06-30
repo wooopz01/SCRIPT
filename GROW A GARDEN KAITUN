@@ -31,7 +31,7 @@ getgenv().Config = {
 	["Auto Load Script"] = true,
 	["Auto Collect Egg"] = true,
 	["Auto Use Gear"] = false,
-	["Auto Delete Plant"] = false,
+	["Auto Delete Plant"] = true,
 	["Spam Join"] = false,
 	["Start Boost"] = false,
 	["Start ESP"] = false,
@@ -100,6 +100,7 @@ getgenv().Config = {
 	}
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
+
 
 spawn(function()
     wait(5)
@@ -186,4 +187,3 @@ spawn(function()
     settings().Rendering.MeshPartDetailLevel = Enum.MeshPartDetailLevel.Level02
     settings().Rendering.EagerBulkExecution = false
 end)
-
