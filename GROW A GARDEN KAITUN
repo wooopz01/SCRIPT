@@ -87,6 +87,7 @@ getgenv().Config = {
 		["Premium Anti Bee Egg"] = true
 	},
 	["Select Seed"] = {
+		["Cauliflower Seed"] = true,
 		["Rafflesia Seed"] = true,
 		["Pitcher Plant Seed"] = true,
 		["Prickly Pear Seed"] = true,
