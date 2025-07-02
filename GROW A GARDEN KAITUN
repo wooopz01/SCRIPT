@@ -27,7 +27,7 @@ getgenv().Config = {
 		["Oasis Egg"] = true,
 		["Mutation Spray Burnt"] = true,
 		["Hamster"] = true,
-		["Traveler's Fruit"] = true,
+		["Traveler's Fruit Seed"] = true,
 		["Summer Seed Pack"] = true,
 		["Lily of the Valley Seed"] = true
 	},
