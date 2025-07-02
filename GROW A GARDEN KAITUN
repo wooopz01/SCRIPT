@@ -59,6 +59,7 @@ getgenv().Config = {
 		["Bug Egg"] = true
 	},
 	["Select Seed Plant"] = {
+		["Traveler's Fruit Seed"] = true,
 		["Elephant Ears Seed"] = true,
 		["Moon Melon Seed"] = true,
 		["Sunflower Seed"] = true,
