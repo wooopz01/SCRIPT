@@ -71,7 +71,6 @@ getgenv().Config = {
 		["Rosy Delight Seed"] = true,
 		["Bell Pepper Seed"] = true,
 		["Feijoa Seed"] = true,
-		["Purple Dahlia Seed"] = true,
 		["Moon Mango Seed"] = true,
 		["Loquat Seed"] = true,
 		["Sugar Apple Seed"] = true,
