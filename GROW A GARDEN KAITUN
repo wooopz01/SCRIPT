@@ -115,6 +115,10 @@ getgenv().Config = {
 		["Pumpkin Seed"] = true,
 		["Watermelon Seed"] = true,
 		["Daffodil Seed"] = true,
+		["Apple seed Seed"] = true,
+		["Strawberry Seed"] = true,
+		["Blueberry Seed"] = true,
+		["Orange Tulip Seed"] = true,
 		["Apple seed Seed"] = true
 	},
 	["Ignore Variant or Mutation"] = false,
