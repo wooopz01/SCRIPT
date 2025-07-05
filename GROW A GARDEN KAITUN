@@ -4,6 +4,7 @@ getgenv().Config = {
 	["Auto Delete Pet"] = false,
 	["Select Name Plant Delete"] = {
 		["Avocado"] = true,
+		["Tomato"] = true,
 		["Pineapple"] = true,
 		["Green Apple"] = true
 	},
