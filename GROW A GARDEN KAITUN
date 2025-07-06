@@ -76,6 +76,7 @@ getgenv().Config = {
 		["Night Egg"] = true,
 		["Bug Egg"] = true,
 		["Rare Summer Egg"] = true,
+		["Rare Egg"] = true,
 		["Common Egg"] = true
 	},
 	["Auto Gift"] = false,
@@ -147,7 +148,9 @@ getgenv().Config = {
 		["Dinosaur Egg"] = true,
 		["Legendary Egg"] = true,
 		["Rare Summer Egg"] = true,
-		["Common Summer Egg"] = true
+		["Common Summer Egg"] = true,
+		["Rare Egg"] = true,
+		["Common Egg"] = true
 	},
 	["Auto Give Pet For Dinosaur"] = true
 }
