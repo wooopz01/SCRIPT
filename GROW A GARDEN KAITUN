@@ -123,6 +123,7 @@ getgenv().Config = {
 	["Boost Fps"] = true,
 	["Auto Buy Shop Summer"] = false,
 	["Select Rarity Pet Give Dinosaur"] = {
+		["Legendary"] = true,
 		["Rare"] = true,
 		["Common"] = true
 	},
