@@ -53,7 +53,8 @@ getgenv().Config = {
 		["Blueberry Seed"] = true,
 		["Orange Tulip Seed"] = true,
 		["Strawberry Seed"] = true,
-		["Apple seed Seed"] = true
+		["Carrots Seed"] = true,
+		["Apple Seed"] = true
 	},
 	["Fix Auto Gift In Delta"] = false,
 	["Select Gear"] = {
