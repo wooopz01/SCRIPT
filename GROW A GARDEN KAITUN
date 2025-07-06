@@ -28,7 +28,7 @@ getgenv().Config = {
 	},
 	["Auto Give Pollinated For Onett"] = false,
 	["Use Save Position"] = true,
-	["Delete Notification"] = falses,
+	["Delete Notification"] = false,
 	["Auto Plant Seed"] = true,
 	["Ping Discord"] = false,
 	["ESP Farm Player Other"] = false,
