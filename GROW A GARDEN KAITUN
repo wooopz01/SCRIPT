@@ -3,6 +3,7 @@ getgenv().Key = "cf535dc10c6b5af654e92fcf"
 getgenv().Config = {
 	["Auto Delete Pet"] = false,
 	["Select Name Plant Delete"] = {
+		["Strawberry Seed"] = true,
 		["Prickly Pear"] = true,
 		["Pear"] = true,
 		["Feijoa"] = true,
@@ -23,8 +24,7 @@ getgenv().Config = {
 	["Webhook Profile"] = false,
 	["Auto Plant Egg"] = true,
 	["Select Item Craft"] = {
-		["Anti Bee Egg"] = true,
-		["Guanabana"] = true
+		["Anti Bee Egg"] = true
 	},
 	["Auto Give Pollinated For Onett"] = false,
 	["Use Save Position"] = true,
@@ -116,9 +116,6 @@ getgenv().Config = {
 		["Watermelon Seed"] = true,
 		["Daffodil Seed"] = true,
 		["Apple seed Seed"] = true,
-		["Strawberry Seed"] = true,
-		["Blueberry Seed"] = true,
-		["Orange Tulip Seed"] = true,
 		["Apple seed Seed"] = true
 	},
 	["Ignore Variant or Mutation"] = false,
