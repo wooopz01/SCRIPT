@@ -52,6 +52,7 @@ getgenv().Config = {
 		["Strawberry Seed"] = true,
 		["Blueberry Seed"] = true,
 		["Orange Tulip Seed"] = true,
+		["Strawberry Seed"] = true,
 		["Apple seed Seed"] = true
 	},
 	["Fix Auto Gift In Delta"] = false,
@@ -115,7 +116,6 @@ getgenv().Config = {
 		["Pumpkin Seed"] = true,
 		["Watermelon Seed"] = true,
 		["Daffodil Seed"] = true,
-		["Apple seed Seed"] = true,
 		["Apple seed Seed"] = true
 	},
 	["Ignore Variant or Mutation"] = false,
@@ -123,6 +123,7 @@ getgenv().Config = {
 	["Boost Fps"] = true,
 	["Auto Buy Shop Summer"] = false,
 	["Select Rarity Pet Give Dinosaur"] = {
+		["Rare"] = true,
 		["Common"] = true
 	},
 	["Auto Collect Pollinated if Have"] = false,
