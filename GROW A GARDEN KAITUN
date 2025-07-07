@@ -154,8 +154,7 @@ getgenv().Config = {
 		["Night Egg"] = true,
 		["Bug Egg"] = true,
 		["Rare Summer Egg"] = true,
-		["Rare Egg"] = true,
-		["Common Egg"] = true
+		["Rare Egg"] = true
 	},
 	["Auto Gift"] = false,
 	["Auto Buy Shop Honey"] = true,
