@@ -24,7 +24,8 @@ getgenv().Config = {
 	["Webhook Profile"] = false,
 	["Auto Plant Egg"] = true,
 	["Select Item Craft"] = {
-		["Anti Bee Egg"] = true
+		["Anti Bee Egg"] = true,
+		["Reclaimer"] = true
 	},
 	["Auto Give Pollinated For Onett"] = false,
 	["Use Save Position"] = true,
@@ -128,6 +129,7 @@ getgenv().Config = {
 	},
 	["Fix Auto Gift In Delta"] = false,
 	["Select Gear"] = {
+		["Harvest Tool"] = true,
 		["Advanced Sprinkler"] = true,
 		["Tanning Mirror"] = true,
 		["Master Sprinkler"] = true,
