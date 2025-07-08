@@ -190,7 +190,7 @@ getgenv().Config = {
 		["Apple Seed"] = true
 	},
 	["Ignore Variant or Mutation"] = false,
-	["Auto Feed Pet"] = false,
+	["Auto Feed Pet"] = true,
 	["Boost Fps"] = true,
 	["Auto Buy Shop Summer"] = true,
 	["Select Rarity Pet Give Dinosaur"] = {
