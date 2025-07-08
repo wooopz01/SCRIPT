@@ -129,7 +129,6 @@ getgenv().Config = {
 	},
 	["Fix Auto Gift In Delta"] = false,
 	["Select Gear"] = {
-		["Harvest Tool"] = true,
 		["Advanced Sprinkler"] = true,
 		["Tanning Mirror"] = true,
 		["Master Sprinkler"] = true,
