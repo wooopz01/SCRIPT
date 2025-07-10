@@ -27,7 +27,7 @@ getgenv().Config = {
 		["Anti Bee Egg"] = true
 	},
 	["Auto Give Pollinated For Onett"] = false,
-	["Use Save Position"] = true,
+	["Use Save Position"] = false,
 	["Delete Notification"] = false,
 	["Auto Plant Seed"] = true,
 	["Ping Discord"] = false,
