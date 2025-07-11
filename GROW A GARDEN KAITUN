@@ -18,6 +18,7 @@ getgenv().Config = {
 		["Blood Banana"] = true,
 		["Cantaloupe"] = true,
 		["Rafflesia"] = true,
+		["Apple"] = true,
 		["Banana"] = true
 	},
 	["Auto Harvest Fruit Summer"] = false,
