@@ -185,6 +185,7 @@ getgenv().Config = {
 		["Fennec Fox"] = true,
 		["Seal"] = true,
 		["Crab"] = true,
+		["Dog"] = true,
 		["Seagull"] = true,
 		["Sand Snake"] = true,
 		["Sea Otter"] = true,
@@ -208,7 +209,8 @@ getgenv().Config = {
 		["Rare Egg"] = true,
 		["Night Egg"] = true,
 		["Common Summer Egg"] = true,
-		["Rare Summer Egg"] = true
+		["Rare Summer Egg"] = true,
+		["Common Egg"] = true
 	},
 	["Select Seed"] = {
 		["Bamboo Seed"] = true,
