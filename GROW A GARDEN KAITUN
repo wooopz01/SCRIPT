@@ -81,7 +81,8 @@ getgenv().Config = {
 		["Cactus Seed"] = true,
 		["Coconut Seed"] = true,
 		["Pumpkin Seed"] = true,
-		["Daffodil Seed"] = true,
+		["Dragon Fruit Seed"] = true,
+		["Blueberry Seed"] = true,
 		["Mango Seed"] = true,
 		["Cacao Seed"] = true,
 		["Grape Seed"] = true,
@@ -213,6 +214,7 @@ getgenv().Config = {
 	},
 	["Select Seed"] = {
 		["Bamboo Seed"] = true,
+		["Blueberry Seed"] = true,
 		["Watermelon Seed"] = true,
 		["Cactus Seed"] = true,
 		["Coconut Seed"] = true,
