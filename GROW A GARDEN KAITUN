@@ -228,21 +228,3 @@ getgenv().Config = {
 	}
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
-
-local player = game:GetService("Players").LocalPlayer
-local playerGui = player:WaitForChild("PlayerGui")
-
-local gui = Instance.new("ScreenGui")
-gui.Name = "BlackScreen"
-gui.IgnoreGuiInset = true
-gui.ResetOnSpawn = false
-gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-gui.DisplayOrder = 2 ^ 31 - 1
-gui.Parent = playerGui
-
-local bg = Instance.new("Frame")
-bg.BackgroundColor3 = Color3.new(0, 0, 0)
-bg.Size = UDim2.new(1, 0, 1, 0)
-bg.Position = UDim2.new(0, 0, 0, 0)
-bg.ZIndex = 0
-bg.Parent = gui
