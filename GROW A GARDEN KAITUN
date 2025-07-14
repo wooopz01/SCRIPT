@@ -20,7 +20,8 @@ getgenv().Config = {
 	["Webhook Profile"] = false,
 	["Auto Plant Egg"] = true,
 	["Select Item Craft"] = {
-		["Anti Bee Egg"] = true
+		["Anti Bee Egg"] = true,
+		["Small Treat"] = true
 	},
 	["Auto Give Pollinated For Onett"] = false,
 	["Use Save Position"] = false,
@@ -44,6 +45,9 @@ getgenv().Config = {
 	},
 	["Auto Gift"] = false,
 	["Select Gear"] = {
+		["Levelup Lollipop"] = true,
+		["Medium Treat"] = true,
+		["Medium Toy"] = true,
 		["Advanced Sprinkler"] = true,
 		["Tanning Mirror"] = true,
 		["Master Sprinkler"] = true,
