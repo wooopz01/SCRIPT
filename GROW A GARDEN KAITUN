@@ -118,6 +118,8 @@ getgenv().Config = {
 		["Bee Egg"] = true
 	},
 	["Select Pet Dont Delete"] = {
+		["Ankylosaurus"] = true,
+		["Spinosaurus"] = true,
 		["Brontosaurus"] = true,
 		["Kiwi"] = true,
 		["Panda"] = true,
@@ -197,6 +199,7 @@ getgenv().Config = {
 		["Red Giant Ant"] = true
 	},
 	["Select Egg Plant"] = {
+		["Primal Egg"] = true,
 		["Bug Egg"] = true,
 		["Legendary Egg"] = true,
 		["Mythical Egg"] = true,
