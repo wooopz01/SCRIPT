@@ -20,6 +20,7 @@ getgenv().Config = {
 	["Webhook Profile"] = false,
 	["Auto Plant Egg"] = true,
 	["Select Item Craft"] = {
+		["Small Treat"] = true,
 		["Anti Bee Egg"] = true
 	},
 	["Auto Give Pollinated For Onett"] = false,
@@ -44,13 +45,16 @@ getgenv().Config = {
 	},
 	["Auto Gift"] = false,
 	["Select Gear"] = {
-		["Levelup Lollipop"] = true,
-		["Medium Treat"] = true,
-		["Medium Toy"] = true,
 		["Advanced Sprinkler"] = true,
 		["Tanning Mirror"] = true,
 		["Master Sprinkler"] = true,
+		["Medium Treat"] = true,
+		["Small Treat"] = true,
+		["Small Toy"] = true,
+		["Medium Pet Size Boost"] = true,
 		["Basic Sprinkler"] = true,
+		["Levelup Lollipop"] = true,
+		["Medium Toy"] = true,
 		["Godly Sprinkler"] = true
 	},
 	["Start ESP EGG"] = false,
@@ -58,7 +62,7 @@ getgenv().Config = {
 	["Auto Load Script"] = true,
 	["Auto Delete Sprinkler"] = false,
 	["Auto Collect Egg"] = true,
-	["Auto Use Gear"] = false,
+	["Select Gear Use"] = "Medium Pet Size Boost",
 	["Auto Delete Plant"] = true,
 	["Spam Join"] = false,
 	["Auto Open Seed"] = false,
