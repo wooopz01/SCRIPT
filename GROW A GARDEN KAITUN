@@ -20,7 +20,6 @@ getgenv().Config = {
 	["Webhook Profile"] = false,
 	["Auto Plant Egg"] = true,
 	["Select Item Craft"] = {
-		["Small Treat"] = true,
 		["Anti Bee Egg"] = true
 	},
 	["Auto Give Pollinated For Onett"] = false,
