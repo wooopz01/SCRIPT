@@ -89,7 +89,6 @@ getgenv().Config = {
 		["Sugar Apple Seed"] = true,
 		["Burning Bud Seed"] = true,
 		["Beanstalk Seed"] = true,
-		["Dragon Fruit Seed"] = true,
 		["Ember Lily Seed"] = true
 	},
 	["Auto Buy Shop Merchant"] = true,
