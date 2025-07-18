@@ -115,6 +115,7 @@ getgenv().Config = {
 		["Bee Egg"] = true
 	},
 	["Select Pet Dont Delete"] = {
+		["Dilophosaurus"] = true,
 		["Ankylosaurus"] = true,
 		["Spinosaurus"] = true,
 		["Brontosaurus"] = true,
