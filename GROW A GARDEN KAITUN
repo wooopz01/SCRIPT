@@ -92,7 +92,6 @@ getgenv().Config = {
 	["Boost Fps"] = true,
 	["Auto Buy Shop Summer"] = true,
 	["Select Egg"] = {
-		["Premium Anti Bee Egg"] = true,
 		["Common Summer Egg"] = true,
 		["Mythical Egg"] = true,
 		["Oasis Egg"] = true,
