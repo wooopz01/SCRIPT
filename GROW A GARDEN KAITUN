@@ -233,7 +233,7 @@ getgenv().Config = {
 	["Auto Give Tranquil For Panda"] = false,
 	["Select Egg Plant"] = {
 		["Primal Egg"] = true,
-		["Dinosaur Egg"] = true,
+		["Dinosaur Egg"] = true
 	},
 	["Select Seed"] = {
 		["Watermelon Seed"] = true,
