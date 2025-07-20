@@ -214,7 +214,6 @@ getgenv().Config = {
 		["Red Giant Ant"] = true
 	},
 	["Select Egg Plant"] = {
-		["Dinosaur Egg"] = true,
 		["Primal Egg"] = true
 	},
 	["Select Seed"] = {
