@@ -214,18 +214,7 @@ getgenv().Config = {
 	},
 	["Select Egg Plant"] = {
 		["Dinosaur Egg"] = true,
-		["Primal Egg"] = true,
-		["Common Summer Egg"] = true,
-		["Mythical Egg"] = true,
-		["Oasis Egg"] = true,
-		["Paradise Egg"] = true,
-		["Rare Egg"] = true,
-		["Rare Summer Egg"] = true,
-		["Anti Bee Egg"] = true,
-		["Bee Egg"] = true,
-		["Night Egg"] = true,
-		["Bug Egg"] = true,
-		["Legendary Egg"] = true
+		["Primal Egg"] = true
 	},
 	["Select Seed"] = {
 		["Bamboo Seed"] = true,
