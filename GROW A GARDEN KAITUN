@@ -188,7 +188,8 @@ getgenv().Config = {
 		["Legendary Egg"] = true
 	},
 	["Select Item Shop Zen"] = {
-		["Zen Egg"] = true
+		["Zen Egg"] = true,
+		["Pet Shard Tranquil"] = true
 	},
 	["Auto Accept Gift"] = false,
 	["Auto Load Script"] = true,
