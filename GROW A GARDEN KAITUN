@@ -200,7 +200,7 @@ getgenv().Config = {
 	["Auto Delete Plant"] = true,
 	["Spam Join"] = false,
 	["Enable if you dont know how to set idle"] = false,
-	["Auto Give Tranquil For Zen Channeller"] = true,
+	["Auto Give Tranquil For Zen Channeller"] = false,
 	["Start ESP"] = false,
 	["Auto Open Seed"] = false,
 	["Auto Buy Egg"] = true,
@@ -231,7 +231,7 @@ getgenv().Config = {
 		["Flower Seed Pack"] = false,
 		["Bee Egg"] = true
 	},
-	["Auto Give Tranquil For Panda"] = false,
+	["Auto Give Tranquil For Panda"] = true,
 	["Select Egg Plant"] = {
 		["Primal Egg"] = true,
 		["Dinosaur Egg"] = true
