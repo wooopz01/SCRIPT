@@ -1,24 +1,6 @@
 getgenv().Config = {
 	["Auto Delete Pet"] = true,
-	["Select Name Plant Delete"] = 
-		["Cacao"] = true,
-		["Mango"] = true,
-		["Grape"] = true,
-		["Celestiberry"] = true,
-		["Moonglow"] = true,
-		["Starfruit"] = true,
-		["Lily of the Valley"] = true,
-		["Cocovine"] = true,
-		["Purple Dahlia"] = true,
-		["Moonglow"] = true,
-		["Nectarine"] = true,
-		["Foxglove"] = true,
-		["Paradise Petal"] = true,
-		["Pink Lily"] = true,
-		["Lilac"] = true,
-		["Peach"] = true
-	},
-	["Auto Give Pet For Dinosaur"] = false,
+	["Auto Stack Idle Pet"] = false,
 	["Select Pet Dont Delete"] = {
 		["Brontosaurus"] = true,
 		["Kiwi"] = true,
@@ -104,9 +86,38 @@ getgenv().Config = {
 		["Dragonfly"] = true,
 		["Red Giant Ant"] = true
 	},
-	["Auto Harvest Fruit Summer"] = false,
-	["Webhook Profile"] = false,
 	["Auto Collect"] = true,
+	["Auto Mutation Pet"] = false,
+	["Auto Plant Egg"] = true,
+	["Select Item Craft"] = {
+		["Anti Bee Egg"] = true
+	},
+	["Use Save Position"] = false,
+	["Delete Notification"] = false,
+	["Auto Plant Seed"] = true,
+	["Select Item Shop Merchant"] = {
+		["Bee Egg"] = true
+	},
+	["Select Name Plant Delete"] = {
+		["Cacao"] = true,
+		["Mango"] = true,
+		["Grape"] = true,
+		["Celestiberry"] = true,
+		["Moonglow"] = true,
+		["Starfruit"] = true,
+		["Lily of the Valley"] = true,
+		["Cocovine"] = true,
+		["Purple Dahlia"] = true,
+		["Moonglow"] = true,
+		["Nectarine"] = true,
+		["Foxglove"] = true,
+		["Paradise Petal"] = true,
+		["Pink Lily"] = true,
+		["Lilac"] = true,
+		["Peach"] = true
+	},
+	["Ping Discord"] = false,
+	["ESP Farm Player Other"] = false,
 	["Select Gear"] = {
 		["Trower"] = true,
 		["Advanced Sprinkler"] = true,
@@ -122,36 +133,10 @@ getgenv().Config = {
 		["Medium Toy"] = true,
 		["Godly Sprinkler"] = true
 	},
-	["Auto Quest Prehistoric"] = true,
-	["Select Rarity Pet Give Dinosaur"] = {
-		["Common"] = true,
-		["Legendary"] = true,
-		["Uncommon"] = true,
-		["Rare"] = true
-	},
+	["Auto Buy Shop Merchant"] = true,
+	["Auto Delete Sprinkler"] = false,
+	["Auto Buy Seed"] = true,
 	["Auto Gift"] = false,
-	["Auto Mutation Pet"] = false,
-	["Auto Plant Egg"] = true,
-	["Auto Buy Shop Honey"] = true,
-	["Select Item Craft"] = {
-		["Anti Bee Egg"] = true
-	},
-	["Auto Give Pollinated For Onett"] = false,
-	["Auto Feed Pet"] = true,
-	["Use Save Position"] = false,
-	["Delete Notification"] = false,
-	["Auto Plant Seed"] = true,
-	["Start ESP EGG"] = false,
-	["Auto Collect Tranquil if Have"] = true,
-	["Ping Discord"] = false,
-	["ESP Farm Player Other"] = false,
-	["Auto Buy Shop Zen"] = true,
-	["Dupe Money"] = false,
-	["Auto Use Gear"] = false,
-	["Ignore Variant or Mutation"] = false,
-	["Select Item Shop Summer"] = {
-		["Oasis Egg"] = true
-	},
 	["Select Egg"] = {
 		["Bug Egg"] = true,
 		["Common Summer Egg"] = true,
@@ -167,14 +152,14 @@ getgenv().Config = {
 		["Legendary Egg"] = true
 	},
 	["Select Item Shop Zen"] = {
-		["Zen Egg"] = true,
-		["Pet Shard Tranquil"] = true
+		["Pet Shard Tranquil"] = true,
+		["Zen Egg"] = true
 	},
-	["Auto Accept Gift"] = false,
+	["Back Event Dino"] = false,
 	["Auto Load Script"] = true,
-	["Auto Delete Sprinkler"] = false,
+	["Auto Collect Tranquil if Have"] = true,
 	["Auto Collect Egg"] = true,
-	["Select Gear Use"] = false,
+	["Auto Use Gear"] = false,
 	["Auto Delete Plant"] = true,
 	["Spam Join"] = false,
 	["Enable if you dont know how to set idle"] = false,
@@ -182,12 +167,12 @@ getgenv().Config = {
 	["Start ESP"] = false,
 	["Auto Open Seed"] = false,
 	["Auto Buy Egg"] = true,
-	["Webhook Collect Egg"] = true,
-	["Input Url Webhook"] = "",
-	["Auto Delete Fruit"] = false,
+	["Webhook Profile"] = false,
 	["Start Boost"] = false,
+	["Auto Delete Fruit"] = false,
+	["Auto Feed Pet"] = true,
 	["Auto Craft"] = true,
-	["Auto Buy Shop Merchant"] = true,
+	["Webhook Collect Egg"] = false,
 	["Auto Sell"] = true,
 	["Auto Set Idle Pet"] = false,
 	["Select Seed Plant"] = {
@@ -199,16 +184,13 @@ getgenv().Config = {
 		["Beanstalk Seed"] = true,
 		["Ember Lily Seed"] = true
 	},
-	["Auto Buy Seed"] = true,
+	["Auto Buy Shop Zen"] = true,
 	["Auto Buy Gear"] = true,
 	["Boost Fps"] = true,
-	["Auto Buy Shop Summer"] = true,
+	["Ignore Variant or Mutation"] = false,
 	["Fix Auto Gift In Delta"] = false,
-	["Auto Collect Pollinated if Have"] = false,
-	["Select Item Shop Honey"] = {
-		["Flower Seed Pack"] = false,
-		["Bee Egg"] = true
-	},
+	["Auto Accept Gift"] = false,
+	["Start ESP EGG"] = false,
 	["Auto Give Tranquil For Panda"] = true,
 	["Select Egg Plant"] = {
 		["Primal Egg"] = true,
@@ -239,3 +221,88 @@ repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
 getgenv().Key = "a18ef8d47a5f08ff24d885b2" 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
 
+spawn(function()
+    wait(5)
+
+    local playerGui = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+    local screenGui = Instance.new("ScreenGui", playerGui)
+    screenGui.Name = "FPSDisplay"
+    screenGui.ResetOnSpawn = false
+
+    local title = Instance.new("TextLabel", screenGui)
+    title.Size = UDim2.new(0, 250, 0, 25)
+    title.Position = UDim2.new(0, 10, 0, 10)
+    title.BackgroundTransparency = 1
+    title.TextColor3 = Color3.fromRGB(255, 255, 0)
+    title.TextStrokeTransparency = 0.5
+    title.TextXAlignment = Enum.TextXAlignment.Left
+    title.Font = Enum.Font.Code
+    title.TextSize = 18
+    title.Text = "Binini Hub Cat Hub W Config "
+
+    local fpsLabel = Instance.new("TextLabel", screenGui)
+    fpsLabel.Size = UDim2.new(0, 250, 0, 25)
+    fpsLabel.Position = UDim2.new(0, 10, 0, 35)
+    fpsLabel.BackgroundTransparency = 1
+    fpsLabel.TextColor3 = Color3.fromRGB(0, 255, 0)
+    fpsLabel.TextXAlignment = Enum.TextXAlignment.Left
+    fpsLabel.Font = Enum.Font.Code
+    fpsLabel.TextSize = 16
+    fpsLabel.Text = "FPS: ..."
+
+    local timeLabel = Instance.new("TextLabel", screenGui)
+    timeLabel.Size = UDim2.new(0, 250, 0, 25)
+    timeLabel.Position = UDim2.new(0, 10, 0, 60)
+    timeLabel.BackgroundTransparency = 1
+    timeLabel.TextColor3 = Color3.fromRGB(0, 170, 255)
+    timeLabel.TextXAlignment = Enum.TextXAlignment.Left
+    timeLabel.Font = Enum.Font.Code
+    timeLabel.TextSize = 16
+    timeLabel.Text = "Time: 00:00:00"
+
+    local startTime = tick()
+    spawn(function()
+        while true do
+            local t = tick() - startTime
+            local h = math.floor(t / 3600)
+            local m = math.floor((t % 3600) / 60)
+            local s = math.floor(t % 60)
+            timeLabel.Text = string.format("Time: %02d:%02d:%02d", h, m, s)
+            wait(1)
+        end
+    end)
+
+    local fps = 0
+    spawn(function()
+        local counter = 0
+        local lastTime = tick()
+        game:GetService("RunService").RenderStepped:Connect(function()
+            counter = counter + 1
+            if tick() - lastTime >= 1 then
+                fps = counter
+                counter = 0
+                lastTime = tick()
+                fpsLabel.Text = "FPS: " .. tostring(fps)
+            end
+        end)
+    end)
+
+    local Lighting = game:GetService("Lighting")
+    local Terrain = workspace:FindFirstChildOfClass("Terrain")
+    sethiddenproperty(Lighting, "Technology", Enum.Technology.Compatibility)
+    Lighting.GlobalShadows = false
+    Lighting.FogEnd = math.huge
+    Lighting.Brightness = 5
+    Lighting.ClockTime = 14
+    Lighting.OutdoorAmbient = Color3.new(1, 1, 1)
+    Lighting.Ambient = Color3.new(1, 1, 1)
+    if Terrain then
+        Terrain.WaterWaveSize = 0
+        Terrain.WaterWaveSpeed = 0
+        Terrain.WaterReflectance = 0
+        Terrain.WaterTransparency = 1
+    end
+    settings().Rendering.QualityLevel = Enum.QualityLevel.Level01
+    settings().Rendering.MeshPartDetailLevel = Enum.MeshPartDetailLevel.Level02
+    settings().Rendering.EagerBulkExecution = false
+end)
