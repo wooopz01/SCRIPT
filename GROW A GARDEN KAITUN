@@ -130,6 +130,7 @@ getgenv().Config = {
 	["Webhook Profile"] = false,
 	["Auto Collect"] = true,
 	["Select Gear"] = {
+		["Trower"] = true,
 		["Advanced Sprinkler"] = true,
 		["Tanning Mirror"] = true,
 		["Master Sprinkler"] = true,
