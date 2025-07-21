@@ -128,7 +128,7 @@ getgenv().Config = {
 	},
 	["Auto Harvest Fruit Summer"] = false,
 	["Webhook Profile"] = false,
-	["Auto Collect"] = false,
+	["Auto Collect"] = true,
 	["Select Gear"] = {
 		["Advanced Sprinkler"] = true,
 		["Tanning Mirror"] = true,
@@ -209,7 +209,7 @@ getgenv().Config = {
 	["Start Boost"] = false,
 	["Auto Craft"] = true,
 	["Auto Buy Shop Merchant"] = true,
-	["Auto Sell"] = false,
+	["Auto Sell"] = true,
 	["Auto Set Idle Pet"] = false,
 	["Select Seed Plant"] = {
 		["Giant Pinecone Seed"] = true,
