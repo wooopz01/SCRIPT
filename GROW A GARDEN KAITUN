@@ -1,5 +1,3 @@
-repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
-getgenv().Key = "a18ef8d47a5f08ff24d885b2"
 getgenv().Config = {
 	["Auto Delete Pet"] = true,
 	["Select Name Plant Delete"] = 
@@ -237,4 +235,7 @@ getgenv().Config = {
 		["Dragon Fruit Seed"] = true
 	}
 }
+repeat wait() until game:IsLoaded() and game.Players.LocalPlayer 
+getgenv().Key = "a18ef8d47a5f08ff24d885b2" 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
+
