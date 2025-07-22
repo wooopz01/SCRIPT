@@ -157,7 +157,7 @@ getgenv().Config = {
 		["Zen Egg"] = true
 	},
 	["Back Event Dino"] = false,
-	["Auto Load Script"] = true,
+	["Auto Load Script"] = false,
 	["Auto Collect Tranquil if Have"] = true,
 	["Auto Collect Egg"] = true,
 	["Auto Use Gear"] = false,
