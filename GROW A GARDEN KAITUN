@@ -128,20 +128,7 @@ getgenv().Config = {
     },
     ["Select Name Plant Delete"] = {
         ["Cacao"] = true,
-        ["Celestiberry"] = true,
-        ["Cocovine"] = true,
-        ["Foxglove"] = true,
-        ["Grape"] = true,
-        ["Lilac"] = true,
-        ["Lily of the Valley"] = true,
-        ["Mango"] = true,
-        ["Moonglow"] = true,
-        ["Nectarine"] = true,
-        ["Paradise Petal"] = true,
-        ["Peach"] = true,
-        ["Pink Lily"] = true,
-        ["Purple Dahlia"] = true,
-        ["Starfruit"] = true
+        ["Mango"] = true
     },
     ["Auto Craft"] = true,
     ["Auto Use Gear"] = false,
@@ -223,7 +210,6 @@ getgenv().Config = {
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
 getgenv().Key = "a18ef8d47a5f08ff24d885b2"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
-
 
 spawn(function()
     wait(5)
