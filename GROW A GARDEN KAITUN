@@ -173,7 +173,7 @@ getgenv().Config = {
 		["Beanstalk Seed"] = true,
 		["Ember Lily Seed"] = true
 	},
-	["Input Slot Sell"] = 100,
+	["Input Slot Sell"] = 200,
 	["Auto Buy Gear"] = true,
 	["Boost Fps"] = true,
 	["Start ESP EGG"] = false,
