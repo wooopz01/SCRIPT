@@ -30,7 +30,6 @@ getgenv().Config = {
         ["Fennec Fox"] = true,
         ["Firefly"] = true,
         ["Frog"] = true,
-        ["Giant Ant"] = true,
         ["Golden Bee"] = true,
         ["Hamster"] = true,
         ["Hedgehog"] = true,
