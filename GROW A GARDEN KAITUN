@@ -172,8 +172,7 @@ getgenv().Config = {
         ["Anti Bee Egg"] = true,
         ["Bug Egg"] = true,
         ["Dinosaur Egg"] = true,
-        ["Primal Egg"] = true,
-        ["Zen Egg"] = true
+        ["Primal Egg"] = true
     },
     ["Auto Accept Gift"] = false,
     ["Auto Gift"] = false,
