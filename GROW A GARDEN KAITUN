@@ -169,6 +169,10 @@ getgenv().Config = {
         ["Rare Summer Egg"] = true
     },
     ["Select Egg Plant"] = {
+        ["Mythical Egg"] = true,
+        ["Paradise Egg"] = true,
+        ["Anti Bee Egg"] = true,
+        ["Bug Egg"] = true,
         ["Dinosaur Egg"] = true,
         ["Primal Egg"] = true,
         ["Zen Egg"] = true
