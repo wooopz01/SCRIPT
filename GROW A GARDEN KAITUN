@@ -78,6 +78,7 @@ getgenv().Config = {
         ["T-Rex"] = true,
         ["Toucan"] = true,
         ["Turtle"] = true,
+        ["Koi"] = true,
         ["Wasp"] = true,
     },
     ["Auto Plant Egg"] = true,
