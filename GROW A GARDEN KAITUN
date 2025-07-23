@@ -44,7 +44,6 @@ getgenv().Config = {
         ["Mole"] = true,
         ["Moth"] = true,
         ["Night Owl"] = true,
-        ["Nihonzaru"] = true,
         ["Orange Tabby"] = true,
         ["Owl"] = true,
         ["Pack Bee"] = true,
