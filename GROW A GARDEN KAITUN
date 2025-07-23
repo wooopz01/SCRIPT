@@ -59,7 +59,6 @@ getgenv().Config = {
         ["Raccoon"] = true,
         ["Red Dragon"] = true,
         ["Red Fox"] = true,
-        ["Red Giant Ant"] = true,
         ["Rooster"] = true,
         ["Sand Snake"] = true,
         ["Scarlet Macaw"] = true,
