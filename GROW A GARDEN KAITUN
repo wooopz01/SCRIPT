@@ -1,10 +1,14 @@
 getgenv().Config = {
-    ["Auto Delete Pet"] = false,
+    ["Auto Delete Pet"] = true,
     ["Auto Stack Idle Pet"] = false,
     ["Auto Mutation Pet"] = false,
     ["Auto Feed Pet"] = true,
     ["Auto Set Idle Pet"] = false,
     ["Select Pet Dont Delete"] = {
+        ["Raiju"] = true,
+        ["Corrupted Kodama"] = true,
+        ["Kodama"] = true,
+        ["Corrupted Kitsune"] = true,
         ["Ankylosaurus"] = true,
         ["Axolotl"] = true,
         ["Bald Eagle"] = true,
