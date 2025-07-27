@@ -143,6 +143,8 @@ getgenv().Config = {
     ["Select Item Shop Zen"] = {
         ["Koi"] = true,
         ["Pet Shard Tranquil"] = true,
+        ["Pet Shard Corrupted"] = true,
+        ["Raiju"] = true,
         ["Zen Egg"] = true
     },
     ["Auto Collect Egg"] = true,
