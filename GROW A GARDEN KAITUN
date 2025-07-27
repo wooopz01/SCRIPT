@@ -105,7 +105,6 @@ getgenv().Config = {
         ["Watermelon Seed"] = true
     },
     ["Select Seed Plant"] = {
-        ["Bamboo Seed"] = true,
         ["Beanstalk Seed"] = true,
         ["Burning Bud Seed"] = true,
         ["Elephant Ears Seed"] = true,
