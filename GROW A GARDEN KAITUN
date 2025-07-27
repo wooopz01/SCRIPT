@@ -79,6 +79,7 @@ getgenv().Config = {
         ["Strawberry Seed"] = true,
         ["Orange Tulip Seed"] = true,
         ["Corn Seed"] = true,
+        ["Pepper Seed"] = true,
         ["Apple Seed"] = true,
         ["Bamboo Seed"] = true,
         ["Beanstalk Seed"] = true,
