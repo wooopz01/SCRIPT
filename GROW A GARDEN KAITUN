@@ -164,9 +164,9 @@ getgenv().Config = {
         ["Primal Egg"] = true
     },
     ["Auto Accept Gift"] = false,
-	["Auto Give Fruit Kitsune"] = true,
-	["Auto Set Pet Middle Farm Xp With Capybara"] = true,
-	["Auto Corrupt Channeller"] = true,
+    ["Auto Give Fruit Kitsune"] = true,
+    ["Auto Set Pet Middle Farm Xp With Capybara"] = true,
+    ["Auto Corrupt Channeller"] = true,
     ["Auto Gift"] = false,
     ["Fix Auto Gift In Delta"] = false,
     ["Auto Give Tranquil For Zen Channeller"] = true,
