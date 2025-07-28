@@ -26,7 +26,6 @@ getgenv().Config = {
         ["Cooked Owl"] = true,
         ["Cow"] = true,
         ["Deer"] = true,
-        ["Dilophosaurus"] = true,
         ["Disco Bee"] = true,
         ["Dragonfly"] = true,
         ["Echo Frog"] = true,
