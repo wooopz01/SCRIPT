@@ -105,12 +105,6 @@ getgenv().Config = {
         ["Watermelon Seed"] = true
     },
     ["Select Seed Plant"] = {
-        ["Beanstalk Seed"] = true,
-        ["Burning Bud Seed"] = true,
-        ["Elephant Ears Seed"] = true,
-        ["Ember Lily Seed"] = true,
-        ["Giant Pinecone Seed"] = true,
-        ["Sugar Apple Seed"] = true,
         ["Traveler's Fruit Seed"] = true
     },
     ["Select Name Plant Delete"] = {
