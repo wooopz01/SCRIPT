@@ -78,6 +78,7 @@ getgenv().Config = {
     ["Auto Open Seed"] = false,
     ["Auto Buy Seed"] = true,
     ["Select Seed"] = {
+        ["Elder Strawberry Seed"] = true,
         ["Tomato Seed"] = true,
         ["Strawberry Seed"] = true,
         ["Orange Tulip Seed"] = true,
