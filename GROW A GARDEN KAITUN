@@ -108,6 +108,9 @@ getgenv().Config = {
         ["Traveler's Fruit Seed"] = true
     },
     ["Select Name Plant Delete"] = {
+        ["Beanstalk"] = true,
+        ["Ember Lily"] = true,
+        ["Rosy Delight"] = true,
         ["Beanstalk"] = true
     },
     ["Auto Craft"] = true,
