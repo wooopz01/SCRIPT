@@ -73,7 +73,7 @@ getgenv().Config = {
     },
     ["Auto Plant Egg"] = true,
     ["Auto Plant Seed"] = false,
-    ["Auto Delete Plant"] = false,
+    ["Auto Delete Plant"] = true,
     ["Auto Delete Fruit"] = false,
     ["Auto Open Seed"] = false,
     ["Auto Buy Seed"] = true,
@@ -108,7 +108,7 @@ getgenv().Config = {
         ["Traveler's Fruit Seed"] = true
     },
     ["Select Name Plant Delete"] = {
-        ["Carrot"] = true
+        ["Beanstalk"] = true
     },
     ["Auto Craft"] = true,
     ["Auto Use Gear"] = false,
