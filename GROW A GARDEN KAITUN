@@ -72,7 +72,7 @@ getgenv().Config = {
         ["Koi"] = true,
     },
     ["Auto Plant Egg"] = true,
-    ["Auto Plant Seed"] = false,
+    ["Auto Plant Seed"] = true,
     ["Auto Delete Plant"] = true,
     ["Auto Delete Fruit"] = false,
     ["Auto Open Seed"] = true,
