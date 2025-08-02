@@ -129,12 +129,8 @@ getgenv().Config = {
     ["Auto Give Tranquil For Zen Channeller"] = true,
     ["Select Gear Use"] = "Medium Treat",
     ["Select Egg Plant"] = {
-        ["Bug Egg"] = true,
         ["Zen Egg"] = true,
-        ["Mythical Egg"] = true,
-        ["Primal Egg"] = true,
-        ["Anti Bee Egg"] = true,
-        ["Dinosaur Egg"] = true
+        ["Anti Bee Egg"] = true
     },
     ["Select Item Craft"] = {
         ["Anti Bee Egg"] = true
