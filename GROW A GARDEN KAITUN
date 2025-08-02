@@ -115,6 +115,7 @@ getgenv().Config = {
     ["Auto Use Gear"] = false,
     ["Auto Buy Gear"] = true,
     ["Select Gear"] = {
+        ["Grandmaster Sprinkler"] = true,
         ["Trading Ticket"] = true,
         ["Advanced Sprinkler"] = true,
         ["Basic Sprinkler"] = true,
