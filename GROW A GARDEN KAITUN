@@ -5,6 +5,7 @@ getgenv().Config = {
     ["Auto Feed Pet"] = true,
     ["Auto Set Idle Pet"] = false,
     ["Select Pet Dont Delete"] = {
+        ["Capybara"] = true,
         ["Mochi Mouse"] = true,
         ["French Fry Ferret"] = true,
         ["Spaghetti Sloth"] = true,
