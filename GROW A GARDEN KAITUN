@@ -105,6 +105,8 @@ getgenv().Config = {
         ["Serenity Seed"] = true
     },
     ["Select Name Plant Delete"] = {
+        ["Serenity"] = true,
+        ["Zenflare"] = true,
         ["Ember Lily"] = true,
         ["Rosy Delight"] = true,
         ["Beanstalk"] = true
