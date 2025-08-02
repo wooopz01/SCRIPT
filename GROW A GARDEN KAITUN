@@ -64,7 +64,6 @@ getgenv().Config = {
         ["Petal Bee"] = true,
         ["Pig"] = true,
         ["Polar Bear"] = true,
-        ["Praying Mantis"] = true,
         ["Queen Bee"] = true,
         ["Raccoon"] = true,
         ["Raiju"] = true,
