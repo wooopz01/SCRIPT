@@ -1,6 +1,6 @@
 getgenv().Config = {
     ["Auto Delete Pet"] = true,
-	["Input Weight Delete Pet"] = 2,
+    ["Input Weight Delete Pet"] = 2,
     ["Auto Stack Idle Pet"] = false,
     ["Auto Mutation Pet"] = false,
     ["Auto Feed Pet"] = true,
