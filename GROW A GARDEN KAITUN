@@ -1,13 +1,13 @@
 getgenv().Config = {
     ["Auto Delete Pet"] = true,
-    ["Auto Delete Plant"] = false,
+    ["Auto Delete Plant"] = true,
     ["Auto Delete Sprinkler"] = false,
     ["Auto Delete Fruit"] = false,
     ["Input Weight Delete Pet"] = 2,
     ["Delete Notification"] = false,
     ["Select Name Plant Delete"] = {
-        ["Rosy Delight"] = true,
-        ["Ember Lily"] = true,
+        ["Sakura Bush"] = true,
+        ["Serenity"] = true,
         ["Beanstalk"] = true
     },
     ["Select Pet Dont Delete"] = {
@@ -81,7 +81,7 @@ getgenv().Config = {
     },
     ["Auto Rejoin"] = false,
     ["Auto Load Script"] = false,
-    ["Auto Plant Seed"] = false,
+    ["Auto Plant Seed"] = true,
     ["Auto Plant Egg"] = true,
     ["Auto Open Seed"] = false,
     ["Auto Collect"] = true,
@@ -203,7 +203,24 @@ getgenv().Config = {
         ["Giant Pinecone Seed"] = false
     },
     ["Select Seed Plant"] = {
-        ["Serenity Seed"] = true
+        ["Tomato"] = 15,
+        ["Blueberry"] = 10,
+        ["Pepper"] = 10,
+        ["Corn"] = 20,
+        ["Elder Strawberry"] = 5,
+        ["Coconut"] = 5,
+        ["Beanstalk"] = 10,
+        ["Sugar Apple"] = 10,
+        ["Bone Blossom"] = 1,
+        ["Banana"] = 10,
+        ["Cacao"] = 10,
+        ["Watermelon"] = 10,
+        ["Pepper"] = 10,
+        ["Bell Pepper"] = 10,
+        ["Bamboo"] = 20,
+        ["Apple"] = 5,
+        ["Pumpkin"] = 10,
+        ["Giant Pinecone"] = 10,
     }
 }
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
