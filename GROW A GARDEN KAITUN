@@ -81,7 +81,7 @@ getgenv().Config = {
     },
     ["Auto Rejoin"] = false,
     ["Auto Load Script"] = false,
-    ["Auto Plant Seed"] = true,
+    ["Auto Plant Seed"] = false,
     ["Auto Plant Egg"] = true,
     ["Auto Open Seed"] = true,
     ["Auto Collect"] = true,
