@@ -91,7 +91,6 @@ getgenv().Config = {
 		["Hyacinth Macaw"] = true,
 		["Kitsune"] = true,
 		["Kiwi"] = true,
-		["Kodama"] = true,
 		["Koi"] = true,
 		["Meerkat"] = true,
 		["Mimic Octopus"] = true,
