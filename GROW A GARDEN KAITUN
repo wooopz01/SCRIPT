@@ -175,7 +175,18 @@ getgenv().Config = {
 		["Zen Egg"] = true
 	},
 	["Select Seed Plant"] = {
-		["Elder Strawberry"] = true
+		["Elder Strawberry"] = 5,
+		["Bone Blossom"] = 1,
+		["Tomato"] = 5,
+		["Apple"] = 5,
+		["Corn"] = 10,
+		["Sugar Apple"] = 5,
+		["Pumpkin"] = 10,
+		["Coconut"] = 5,
+		["Pepper"] = 10,
+		["Banana"] = 10,
+		["Beanstalk"] = 5,
+		["Bamboo"] = 20
 	},
 	["Select Seed"] = {
 		["Apple Seed"] = true,
