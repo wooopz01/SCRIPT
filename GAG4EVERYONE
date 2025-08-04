@@ -52,13 +52,11 @@ getgenv().Config = {
 	["Use Save Position"] = false,
 	["Webhook Collect Egg"] = false,
 	["Webhook Profile"] = false,
-
 	["Select Name Plant Delete"] = {
 		["Serenity"] = true,
 		["Sakura Bush"] = true,
 		["Zenflare"] = true
 	},
-
 	["Select Pet Dont Delete"] = {
 		["Ankylosaurus"] = true,
 		["Axolotl"] = true,
@@ -127,9 +125,7 @@ getgenv().Config = {
 		["Tarantula Hawk"] = true,
 		["Watering Can"] = true
 	},
-
 	["Select Gear Use"] = "Medium Treat",
-
 	["Select Gear"] = {
 		["Advanced Sprinkler"] = true,
 		["Basic Sprinkler"] = true,
@@ -147,22 +143,18 @@ getgenv().Config = {
 		["Trower"] = true,
 		["Watering Can"] = true
 	},
-
 	["Select Item Craft"] = {
 		["Anti Bee Egg"] = true
 	},
-
 	["Select Item Shop Merchant"] = {
 		["Bee Egg"] = true
 	},
-
 	["Select Item Shop Zen"] = {
 		["Pet Shard Corrupted"] = true,
 		["Pet Shard Tranquil"] = true,
 		["Raiju"] = true,
 		["Zen Egg"] = true
 	},
-
 	["Select Egg"] = {
 		["Anti Bee Egg"] = true,
 		["Bee Egg"] = true,
@@ -176,7 +168,6 @@ getgenv().Config = {
 		["Rare Egg"] = true,
 		["Rare Summer Egg"] = true
 	},
-
 	["Select Egg Plant"] = {
 		["Gourmet Egg"] = true,
 		["Paradise Egg"] = true,
@@ -190,11 +181,9 @@ getgenv().Config = {
 		["Primal Egg"] = true,
 		["Zen Egg"] = true
 	},
-
 	["Select Seed Plant"] = {
 		["Elder Strawberry"] = true
 	},
-
 	["Select Seed"] = {
 		["Apple Seed"] = true,
 		["Bamboo Seed"] = true,
