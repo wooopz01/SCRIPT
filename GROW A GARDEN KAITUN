@@ -9,6 +9,7 @@ getgenv().Config = {
 	["Auto Collect Egg"] = true,
 	["Auto Collect Tranquil if Have"] = false,
 	["Auto Cook based on the Food requested by the NPC"] = true,
+	["Auto Give Food For NPC"] = true,
 	["Auto Corrupt Channeller"] = false,
 	["Auto Craft"] = true,
 	["Auto Delete Fruit"] = false,
