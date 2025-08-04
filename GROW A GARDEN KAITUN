@@ -202,7 +202,7 @@ getgenv().Config = {
         ["Giant Pinecone Seed"] = false
     },
     ["Select Seed Plant"] = {
-        ["Tomato"] = 10
+        ["Elder Strawberry"] = true
     }
 }
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
