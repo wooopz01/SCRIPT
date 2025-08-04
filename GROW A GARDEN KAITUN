@@ -202,24 +202,7 @@ getgenv().Config = {
         ["Giant Pinecone Seed"] = false
     },
     ["Select Seed Plant"] = {
-        ["Tomato"] = 15,
-        ["Blueberry"] = 10,
-        ["Pepper"] = 10,
-        ["Corn"] = 20,
-        ["Elder Strawberry"] = 5,
-        ["Coconut"] = 5,
-        ["Beanstalk"] = 10,
-        ["Sugar Apple"] = 10,
-        ["Bone Blossom"] = 1,
-        ["Banana"] = 10,
-        ["Cacao"] = 10,
-        ["Watermelon"] = 10,
-        ["Pepper"] = 10,
-        ["Bell Pepper"] = 10,
-        ["Bamboo"] = 20,
-        ["Apple"] = 5,
-        ["Pumpkin"] = 10,
-        ["Giant Pinecone"] = 10
+        ["Tomato"] = 10
     }
 }
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
