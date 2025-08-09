@@ -59,6 +59,7 @@ getgenv().Config = {
 		["Zenflare"] = true
 	},
 	["Select Pet Dont Delete"] = {
+		["Junkbot"] = true,
 		["Lobster Thermidor"] = true,
 		["Hotdog Daschund"] = true,
 		["Bacon Pig"] = true,
