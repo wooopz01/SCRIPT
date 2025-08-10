@@ -87,6 +87,7 @@ getgenv().ConfigsKaitun = {
 
 	Gear = {
 		Buy = { 
+			"Grandmaster Sprinkler",
 			"Master Sprinkler",
 			"Godly Sprinkler",
 			"Advanced Sprinkler",
