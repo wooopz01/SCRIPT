@@ -77,6 +77,7 @@ getgenv().ConfigsKaitun = {
 				"Culinarian Chest",
 				"Gourmet Seed Pack",
 				"Sunny-Side Chicken",
+				"Pet Shard Aromatic",
 				-- u can add it more as u want, if it not in list.
 			}
 		},
@@ -114,6 +115,7 @@ getgenv().ConfigsKaitun = {
 		},
 		Lock = {
 			"Master Sprinkler",
+			"Grandmaster Sprinkler",
 			"Godly Sprinkler",
 			"Advanced Sprinkler",
 			"Basic Sprinkler",
@@ -158,12 +160,9 @@ getgenv().ConfigsKaitun = {
 			},
 			["Limit Upgrade"] = 2, -- max is 5 (more than or lower than 1 will do nothing)
 			["Equip When Done"] = {
-				["Tanchozuru"] = { 5, 100, 1 }, -- 5 on the first mean equip only 5 | pet , 100 mean equip only level pet lower than 100 | the one on the last is priority it will ues first if possible 
-				["Ostrich"] = { 3, 100, 2 },
-				["Blood Kiwi"] = { 8, 100 },
-				["Seal"] = { 8, 100 },
-				["Rooster"] = { 8, 100 },
-				["Starfish"] = { 5, 75 },
+				["Brontosaurus"] = { 5, 999, 1 }, -- 5 on the first mean equip only 5 | pet , 100 mean equip only level pet lower than 100 | the one on the last is priority it will ues first if possible 
+				["Bald Eagle"] = { 8, 999, 2 }},
+				["Capybaraa"] = { 5, 999, 3 }},
 			},
 		},
 		Favorite_LockedPet = true,
@@ -182,6 +181,8 @@ getgenv().ConfigsKaitun = {
 			"Tanuki",
 			"Tanchozuru",
 			"Kappa",
+			"Capybara",
+			"Bald Eagle",
 			"Kitsune",
 			"Dilophosaurus",
 			"Moon Cat",
@@ -199,9 +200,8 @@ getgenv().ConfigsKaitun = {
 			"Mimic Octopus",
 			"Red Fox",
 			"Blood Owl",
-			["Starfish"] = 10,
 		},
-		LockPet_Weight = 5, -- if Weight >= 10 they will locked
+		LockPet_Weight = 4, -- if Weight >= 10 they will locked
 	},
 
 	Webhook = {
