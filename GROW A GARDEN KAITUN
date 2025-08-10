@@ -197,7 +197,7 @@ getgenv().ConfigsKaitun = {
 			"Red Fox",
 			"Blood Owl",
 		},
-		LockPet_Weight = 5, -- if Weight >= 10 they will locked
+		LockPet_Weight = 4, -- if Weight >= 10 they will locked
 	},
 
 	Webhook = {
