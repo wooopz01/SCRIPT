@@ -16,16 +16,31 @@ getgenv().ConfigsKaitun = {
 		["Destroy Until"] = 180,
 
 		["Safe Tree"] = {
-			"Moon Blossom",
+			"Bone Blossom",
 			"Fossilight",
 		}
 	},
 
 	Seed = {
 		Buy = {
-			Mode = "Auto", -- Custom , Auto
-			Custom = { -- any fruit u need to place
-				"Carrot",
+			Mode = "Custom", -- Custom , Auto
+			Custom = {
+				"Tomato",
+				"Strawberry",
+				"Bell Pepper",
+				"Blood Banana",
+				"Onion",
+				"Pear",
+				"Grape",
+				"Mushroom",
+				"Pepper",
+				"Cacao",
+				"Beanstalk",
+				"Ember Lily",
+				"Sugar Apple",
+				"Burning Bud",
+				"Giant Pinecone",
+				"Elder Strawberry",
 			}
 		},
 		Place = {
@@ -158,6 +173,7 @@ getgenv().ConfigsKaitun = {
 			"Lobster Thermidor",
 			"Hotdog Daschund",
 			"Gorilla Chef",
+			"Bacon Pig",
 			"Sunny-Side Chicken",
 			"Spaghetti Sloth",
 			"Corrupted Kitsune",
@@ -185,7 +201,7 @@ getgenv().ConfigsKaitun = {
 			"Blood Owl",
 			["Starfish"] = 10,
 		},
-		LockPet_Weight = 7, -- if Weight >= 10 they will locked
+		LockPet_Weight = 5, -- if Weight >= 10 they will locked
 	},
 
 	Webhook = {
