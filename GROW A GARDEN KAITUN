@@ -77,6 +77,7 @@ getgenv().ConfigsKaitun = {
 				"Culinarian Chest",
 				"Gourmet Seed Pack",
 				"Sunny-Side Chicken",
+				"Pet Shard Aromatic",
 				-- u can add it more as u want, if it not in list.
 			}
 		},
