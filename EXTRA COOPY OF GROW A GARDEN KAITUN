@@ -1,249 +1,240 @@
-getgenv().Config = {
-	["Auto Accept Gift"] = false,
-	["Auto Buy Egg"] = true,
-	["Auto Buy Gear"] = true,
-	["Auto Buy Seed"] = true,
-	["Auto Buy Shop Merchant"] = true,
-	["Auto Buy Shop Zen"] = true,
-	["Auto Collect"] = false,
-	["Auto Collect Egg"] = true,
-	["Auto Collect Tranquil if Have"] = false,
-	["Auto Cook based on the Food requested by the NPC"] = true,
-	["Auto Give Food For NPC"] = true,
-	["Auto Corrupt Channeller"] = false,
-	["Auto Craft"] = true,
-	["Auto Delete Fruit"] = false,
-	["Auto Delete Pet"] = true,
-	["Auto Delete Plant"] = true,
-	["Auto Delete Sprinkler"] = false,
-	["Auto Feed Pet"] = true,
-	["Auto Gift"] = false,
-	["Auto Give Tranquil For Panda"] = false,
-	["Auto Give Tranquil For Zen Channeller"] = false,
-	["Auto Give Fruit Kitsune"] = false,
-	["Auto Load Script"] = false,
-	["Auto Mutation Pet"] = false,
-	["Auto Open Seed"] = false,
-	["Auto Plant Egg"] = true,
-	["Auto Plant Seed"] = true,
-	["Auto Rejoin"] = false,
-	["Auto Sell"] = true,
-	["Auto Set Idle Pet"] = false,
-	["Auto Set Pet Middle Farm Xp With Capybara"] = true,
-	["Auto Stack Idle Pet"] = false,
-	["Auto Use Boost XP Or Boost Passive Pet"] = false,
-	["Auto Use Gear"] = false,
-	["Back Event Dino"] = false,
-	["Back Event Zen"] = false,
-	["Auto Cook Custom"] = true,
-	["Select Fruit Slot 1"] = "Bone Blossom",
-	["Select Fruit Slot 2"] = "Elder Strawberry",
-	["Select Fruit Slot 3"] = "Sugar Apple",
-	["Select Fruit Slot 4"] = "Beanstalk",
-	["Select Fruit Slot 5"] = "Pepper",
-	["Boost FPS"] = true,
-	["Buy All Egg"] = true,
-	["Buy All Gear"] = true,
-	["Buy All Seed"] = true,
-	["Delete Notification"] = false,
-	["Enable if you dont know how to set idle"] = false,
-	["ESP Farm Player Other"] = false,
-	["Fix Auto Gift In Delta"] = false,
-	["Ignore Variant or Mutation"] = false,
-	["Input Slot Sell"] = 200,
-	["Input Weight Delete Pet"] = 2.8,
-	["Spam Join"] = false,
-	["Start Boost"] = false,
-	["Start ESP"] = false,
-	["Start ESP EGG"] = false,
-	["Use Save Position"] = false,
-	["Webhook Collect Egg"] = false,
-	["Webhook Profile"] = false,
-	["Select Name Plant Delete"] = {
-		["Serenity"] = true,
-		["Sakura Bush"] = true,
-		["Zenflare"] = true
+getgenv().ConfigsKaitun = {
+	Beta_Fix_Data_Sync = true,
+
+	NoDeletePlayer = false,
+
+	["Block Pet Gift"] = true,
+
+	Collect_Cooldown = 120, -- cooldown to collect fruit
+
+	["Low Cpu"] = true,
+	["Auto Rejoin"] = true,
+
+	["Rejoin When Update"] = false,
+	["Limit Tree"] = {
+		["Limit"] = 200,
+		["Destroy Until"] = 180,
+
+		["Safe Tree"] = {
+			"Bone Blossom",
+			"Fossilight",
+		}
 	},
-	["Select Pet Dont Delete"] = {
-		["Junkbot"] = true,
-		["Lobster Thermidor"] = true,
-		["Hotdog Daschund"] = true,
-		["Bacon Pig"] = true,
-		["Gorilla Chef"] = true,
-		["Sunny-Side Chicken"] = true,
-		["Ankylosaurus"] = true,
-		["Axolotl"] = true,
-		["Bald Eagle"] = true,
-		["Bear Bee"] = true,
-		["Black Bunny"] = true,
-		["Blood Hedgehog"] = true,
-		["Blood Kiwi"] = true,
-		["Blood Owl"] = true,
-		["Brontosaurus"] = true,
-		["Butterfly"] = true,
-		["Capybara"] = true,
-		["Cat"] = true,
-		["Chicken"] = true,
-		["Chicken Zombie"] = true,
-		["Cooked Owl"] = true,
-		["Corrupted Kodama"] = true,
-		["Corrupted Kitsune"] = true,
-		["Cow"] = true,
-		["Deer"] = true,
-		["Disco Bee"] = true,
-		["Echo Frog"] = true,
-		["Fennec Fox"] = true,
-		["Firefly"] = true,
-		["Frog"] = true,
-		["French Fry Ferret"] = true,
-		["Golden Bee"] = true,
-		["Hamster"] = true,
-		["Hedgehog"] = true,
-		["Honey Bee"] = true,
-		["Hyacinth Macaw"] = true,
-		["Kitsune"] = true,
-		["Kiwi"] = true,
-		["Meerkat"] = true,
-		["Mimic Octopus"] = true,
-		["Mochi Mouse"] = true,
-		["Monkey"] = true,
-		["Moon Cat"] = true,
-		["Mole"] = true,
-		["Moth"] = true,
-		["Night Owl"] = true,
-		["Orange Tabby"] = true,
-		["Owl"] = true,
-		["Pack Bee"] = true,
-		["Panda"] = true,
-		["Petal Bee"] = true,
-		["Pig"] = true,
-		["Polar Bear"] = true,
-		["Praying Mantis"] = true,
-		["Queen Bee"] = true,
-		["Raccoon"] = true,
-		["Raiju"] = true,
-		["Red Dragon"] = true,
-		["Red Fox"] = true,
-		["Rooster"] = true,
-		["Sand Snake"] = true,
-		["Sea Otter"] = true,
-		["Silver Monkey"] = true,
-		["Spaghetti Sloth"] = true,
-		["Spinosaurus"] = true,
-		["Starfish"] = true,
-		["T-Rex"] = true,
-		["Tarantula Hawk"] = true,
-		["Watering Can"] = true
+
+	Seed = {
+		Buy = {
+			Mode = "Custom", -- Custom , Auto
+			Custom = {
+				"Tomato",
+				"Strawberry",
+				"Bell Pepper",
+				"Blood Banana",
+				"Onion",
+				"Pear",
+				"Grape",
+				"Mushroom",
+				"Pepper",
+				"Cacao",
+				"Beanstalk",
+				"Ember Lily",
+				"Sugar Apple",
+				"Burning Bud",
+				"Giant Pinecone",
+				"Elder Strawberry",
+			}
+		},
+		Place = {
+			Mode = "Lock", -- Select , Lock
+			Select = {
+				"Carrot"
+			},
+			Lock = {
+				"Maple Apple",
+				"Sunflower",
+				"Dragon Pepper",
+				"Elephant Ears",
+				"Moon Melon",
+				"Easter Egg",
+				"Moon Mango",
+				"Bone Blossom",
+				"Fossilight",
+			}
+		}
 	},
-	["Select Gear Use"] = "Medium Treat",
-	["Select Gear"] = {
-		["Advanced Sprinkler"] = true,
-		["Basic Sprinkler"] = true,
-		["Godly Sprinkler"] = true,
-		["Grandmaster Sprinkler"] = true,
-		["Levelup Lollipop"] = true,
-		["Master Sprinkler"] = true,
-		["Medium Pet Size Boost"] = true,
-		["Medium Toy"] = true,
-		["Medium Treat"] = true,
-		["Small Toy"] = true,
-		["Small Treat"] = true,
-		["Tanning Mirror"] = true,
-		["Trading Ticket"] = true,
-		["Trower"] = true,
-		["Watering Can"] = true
+
+	["Seed Pack"] = {
+		Locked = {
+
+		}
 	},
-	["Select Item Craft"] = {
-		["Anti Bee Egg"] = true
+
+	Events = {
+		["Cook Event"] = {
+			Minimum_Money = 30_000_000, -- minimum money to start play this event
+			Rewards_Item = { -- The top is the most top mean prefered.
+				"Gorilla Chef",
+				"Gourmet Egg",
+				"Culinarian Chest",
+				"Gourmet Seed Pack",
+				"Sunny-Side Chicken",
+				"Pet Shard Aromatic",
+				-- u can add it more as u want, if it not in list.
+			}
+		},
+		["Traveling Shop"] = {
+			"Bee Egg",
+		},
+		Craft = {
+			"Anti Bee Egg",
+		},
+		Shop = {
+			"Zen Egg",
+			"Zen Seed Pack",
+			"Spiked Mango",
+			"Pet Shard Tranquil",
+			"Pet Shard Corrupted",
+			"Koi",
+			"Soft Sunshine",
+			"Sakura Bush",
+			"Raiju",
+		},
+		Start_Do_Honey = 2_000_000 -- start trade fruit for honey at money
 	},
-	["Select Item Shop Merchant"] = {
-		["Bee Egg"] = true
+
+	Gear = {
+		Buy = { 
+			"Grandmaster Sprinkler",
+			"Master Sprinkler",
+			"Godly Sprinkler",
+			"Advanced Sprinkler",
+			"Basic Sprinkler",
+			"Lightning Rod",
+			"Level Up Lollipop",
+			"Medium Treat",
+			"Medium Toy",
+		},
+		Lock = {
+			"Master Sprinkler",
+			"Grandmaster Sprinkler",
+			"Godly Sprinkler",
+			"Advanced Sprinkler",
+			"Basic Sprinkler",
+			"Lightning Rod",
+		},
 	},
-	["Select Item Shop Zen"] = {
-		["Pet Shard Corrupted"] = true,
-		["Pet Shard Tranquil"] = true,
-		["Raiju"] = true,
-		["Zen Egg"] = true
+
+	Eggs = {
+		Place = {
+			"Zen Egg",
+			"Gourmet Egg",
+			"Primal Egg",
+			"Dinosaur Egg",
+			"Oasis Egg",
+			"Anti Bee Egg",
+			"Night Egg",
+			"Bug Egg",
+			"Paradise Egg",
+			"Bee Egg",
+			"Rare Summer Egg",
+			"Mythical Egg",
+			"Common Egg",
+		},
+		Buy = {
+			"Bee Egg",
+			"Oasis Egg",
+			"Paradise Egg",
+			"Anti Bee Egg",
+			"Night Egg",
+			"Rare Summer Egg",
+			"Bug Egg",
+			"Mythical Egg",
+			"Common Egg",
+		}
 	},
-	["Select Egg"] = {
-		["Anti Bee Egg"] = true,
-		["Bee Egg"] = true,
-		["Bug Egg"] = true,
-		["Common Summer Egg"] = true,
-		["Legendary Egg"] = true,
-		["Mythical Egg"] = true,
-		["Night Egg"] = true,
-		["Oasis Egg"] = true,
-		["Paradise Egg"] = true,
-		["Rare Egg"] = true,
-		["Rare Summer Egg"] = true
+
+	Pets = {
+		["Start Delete Pet At"] = 40,
+		["Upgrade Slot"] = {
+			["Pet"] = {
+				["Starfish"] = { 5, 100, 1, true }, -- the "true" on the last is auto equip (use for like only need to use for upgrade pet)
+			},
+			["Limit Upgrade"] = 2, -- max is 5 (more than or lower than 1 will do nothing)
+			["Equip When Done"] = {
+				["Brontosaurus"] = { 5, 999, 1 }, -- 5 on the first mean equip only 5 | pet , 100 mean equip only level pet lower than 100 | the one on the last is priority it will ues first if possible 
+				["Bald Eagle"] = { 8, 999, 2 },
+				["Capybara"] = { 5, 999, 3 },
+			},
+		},
+		Favorite_LockedPet = true,
+		Locked_Pet_Age = 60, -- pet that age > 60 will lock
+		Locked = {
+			"Bald Eagle",
+			"French Fry Ferret",
+			"Lobster Thermidor",
+			"Hotdog Daschund",
+			"Gorilla Chef",
+			"Bacon Pig",
+			"Sunny-Side Chicken",
+			"Spaghetti Sloth",
+			"Corrupted Kitsune",
+			"Raiju",
+			"Kappa",
+			"Capybara",
+			"Bald Eagle",
+			"Kitsune",
+			"Dilophosaurus",
+			"Moon Cat",
+			"Capybara",
+			"Spinosaurus",
+			"Bear Bee",
+			"T-Rex",
+			"Brontosaurus",
+			"Disco Bee",
+			"Butterfly",
+			"Queen Bee",
+			"Dragonfly",
+			"Raccoon",
+			"Fennec Fox",
+			"Mimic Octopus",
+			"Red Fox",
+			"Blood Owl",
+		},
+		LockPet_Weight = 4, -- if Weight >= 10 they will locked
 	},
-	["Select Egg Plant"] = {
-		["Anti Bee Egg"] = true,
-		["Dinosaur Egg"] = true,
-		["Primal Egg"] = true,
-		["Zen Egg"] = true
+
+	Webhook = {
+		UrlPet = "xxx",
+		UrlSeed = "xxx",
+		PcName = "xxx",
+
+		Noti = {
+			Seeds = {
+				"Sunflower",
+				"Dragon Pepper",
+				"Elephant Ears",
+			},
+			SeedPack = {
+				"Idk"
+			},
+			Pets = {
+				"French Fry Ferret",
+				"Corrupted Kitsune",
+				"Kitsune",
+				"Spinosaurus",
+				"T-Rex",
+				"Disco Bee",
+				"Butterfly",
+				"Mimic Octopus",
+				"Queen Bee",
+				"Fennec Fox",
+				"Dragonfly",
+				"Raccoon",
+				"Red Fox",
+			},
+			Pet_Weight_Noti = true,
+		}
 	},
-	["Select Seed Plant"] = {
-		["Elder Strawberry"] = 20,
-		["Bone Blossom"] = 10,
-		["Tomato"] = 20,
-		["Apple"] = 20,
-		["Corn"] = 20,
-		["Sugar Apple"] = 20,
-		["Pumpkin"] = 20,
-		["Coconut"] = 20,
-		["Pepper"] = 20,
-		["Banana"] = 20,
-		["Beanstalk"] = 20,
-		["Bamboo"] = 20
-	},
-	["Select Seed"] = {
-		["Apple Seed"] = true,
-		["Bamboo Seed"] = true,
-		["Beanstalk Seed"] = true,
-		["Blueberry Seed"] = true,
-		["Burning Bud Seed"] = true,
-		["Cacao Seed"] = true,
-		["Cactus Seed"] = true,
-		["Coconut Seed"] = true,
-		["Corn Seed"] = true,
-		["Daffodil Seed"] = true,
-		["Dragon Fruit Seed"] = true,
-		["Elder Strawberry Seed"] = true,
-		["Ember Lily Seed"] = true,
-		["Giant Pinecone Seed"] = true,
-		["Grape Seed"] = true,
-		["Mango Seed"] = true,
-		["Mushroom Seed"] = true,
-		["Orange Tulip Seed"] = true,
-		["Pepper Seed"] = true,
-		["Pumpkin Seed"] = true,
-		["Strawberry Seed"] = true,
-		["Sugar Apple Seed"] = true,
-		["Tomato Seed"] = true,
-		["Traveler's Fruit Seed"] = true,
-		["Watermelon Seed"] = true
-	}
 }
-repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
-getgenv().Key = "a18ef8d47a5f08ff24d885b2"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
+License = "cExMCUG9oEoAMBKGP5f77Tvd9zYu0n54"
 
-local player = game:GetService("Players").LocalPlayer
-local playerGui = player:WaitForChild("PlayerGui")
-
-local gui = Instance.new("ScreenGui")
-gui.Name = "BlackScreen"
-gui.IgnoreGuiInset = true
-gui.ResetOnSpawn = false
-gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-gui.DisplayOrder = 2 ^ 31 - 1
-gui.Parent = playerGui
-
-local bg = Instance.new("Frame")
-bg.BackgroundColor3 = Color3.new(0, 0, 0)
-bg.Size = UDim2.new(1, 0, 1, 0)
-bg.Position = UDim2.new(0, 0, 0, 0)
-bg.ZIndex = 0
-bg.Parent = gui
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
