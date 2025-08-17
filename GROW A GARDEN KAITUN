@@ -156,7 +156,7 @@ getgenv().ConfigsKaitun = {
 		Locked_Pet_Age = 60, -- pet that age > 60 will lock
 		Locked = {
 			"Bald Eagle",
-			"Seedling",
+			"Spriggan",
 			"Golden Goose",
 			"Golem",
 			"Lobster Thermidor",
