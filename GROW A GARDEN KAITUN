@@ -179,7 +179,7 @@ getgenv().ConfigsKaitun = {
 			"Mimic Octopus",
 			"Red Fox",
 			"Blood Owl",
-			["Starfish"] = 10,
+			["Starfish"] = 3,
 		},
 		LockPet_Weight = 4, -- if Weight >= 10 they will locked
 		Ignore_Pet_Weight = {
