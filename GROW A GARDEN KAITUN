@@ -108,8 +108,8 @@ getgenv().ConfigsKaitun = {
 
 	Eggs = {
 		Place = {
-			"Sprout Egg",
 			"Zen Egg",
+			"Sprout Egg",
 			"Gourmet Egg",
 			"Primal Egg",
 			"Dinosaur Egg",
