@@ -109,6 +109,8 @@ getgenv().ConfigsKaitun = {
 			"Medium Toy",
 		},
 		Lock = {
+			"Medium Toy",
+			"Medium Treat",
 			"Pet Shard Tranquil",
 			"Pet Shard Corrupted",
 			"Pet Shard Aromatic",
