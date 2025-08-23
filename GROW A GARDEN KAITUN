@@ -171,6 +171,7 @@ getgenv().ConfigsKaitun = {
 		Favorite_LockedPet = true,
 		Locked_Pet_Age = 45, -- pet that age > 60 will lock
 		Locked = {
+			"Chicken Zombie",
 			"Seedling",
 			"Peach Wasp",
 			"Apple Gazelle",
