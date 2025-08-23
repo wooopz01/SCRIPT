@@ -82,12 +82,17 @@ getgenv().ConfigsKaitun = {
 			-- "Canary Melon",
 			-- "Amberheart",
 			["Spriggan"] = 8,
+			-- Friend Shop
+			"Skyroot Chest",
+			"Pet Shard GiantBean",
 		},
 		["Traveling Shop"] = {
 			"Bee Egg",
 		},
 		Craft = {
 			"Anti Bee Egg",
+			"Pet Shard GiantBean",
+			"Sprout Egg",
 		},
 		Start_Do_Honey = 2_000_000 -- start trade fruit for honey at money
 	},
@@ -142,6 +147,8 @@ getgenv().ConfigsKaitun = {
 			"Mythical Egg",
 		},
 		Buy = {
+			"Rare Egg",
+			"Legendary Egg",
 			"Bee Egg",
 			"Oasis Egg",
 			"Paradise Egg",
@@ -171,6 +178,7 @@ getgenv().ConfigsKaitun = {
 		Favorite_LockedPet = true,
 		Locked_Pet_Age = 45, -- pet that age > 60 will lock
 		Locked = {
+			"Griffin",
 			"Chicken Zombie",
 			"Seedling",
 			"Peach Wasp",
@@ -231,6 +239,7 @@ getgenv().ConfigsKaitun = {
 				"Idk"
 			},
 			Pets = {
+				"Griffin",
 				"Golden Goose",
 				"French Fry Ferret",
 				"Corrupted Kitsune",
