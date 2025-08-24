@@ -99,6 +99,7 @@ getgenv().ConfigsKaitun = {
 
 	Gear = {
 		Buy = { 
+			"Cleansing Pet Shard",
 			"Level Up Lollipop",
 			"Levelup Lollipop",
 			"Grandmaster Sprinkler",
@@ -114,6 +115,7 @@ getgenv().ConfigsKaitun = {
 			"Medium Toy",
 		},
 		Lock = {
+			"Cleansing Pet Shard",
 			"Medium Toy",
 			"Medium Treat",
 			"Pet Shard Tranquil",
