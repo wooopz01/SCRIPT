@@ -297,11 +297,11 @@ getgenv().ConfigsKaitun = {
 	},
 
 	Webhook = {
-		UrlPet = "xxx",
+		UrlPet = "https://discord.com/api/webhooks/1311331541028311101/-uNYW7HT9tCumL0B7-ZVhqLi9r5uVKlk1BhAwBDqzR5BGfofnpAVTyMW4FIGZi_6ejmq",
 		UrlSeed = "xxx",
 		PcName = "xxx",
 
-		Mention = "", -- discord id
+		Mention = "586158779540832277", -- discord id
 
 		Noti = {
 			Seeds = {
