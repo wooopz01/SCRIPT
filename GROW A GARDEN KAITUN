@@ -5,7 +5,7 @@ getgenv().ConfigsKaitun = {
 
 	["Block Pet Gift"] = true,
 
-	Collect_Cooldown = 120, -- cooldown to collect fruit
+	Collect_Cooldown = 60, -- cooldown to collect fruit
 
 	["Low Cpu"] = true,
 	["Auto Rejoin"] = true,
@@ -55,7 +55,7 @@ getgenv().ConfigsKaitun = {
 			["Sugar Apple"] = 4,
 			["Ember Lily"] = 4,
 			["Dragon Fruit"] = 4,
-			Sunbulb = 4,
+			Sunbulb = 8,
 			["Orange Tulip"] = 4,
 			Blueberry = 4,
 			Watermelon = 4,
@@ -140,8 +140,15 @@ getgenv().ConfigsKaitun = {
 		},
 		["Traveling Shop"] = {
 			"Bee Egg",
+			"Paradise Egg", 
+			"Rare Summer Egg", 
+			"Common Summer Egg"
 		},
 		Craft = {
+			"Enchanted Chest",
+			"Fairy Net",
+			"Enchanted Egg",
+			"Enchanted Seed Pack",
 			"Anti Bee Egg",
 			"Pet Shard GiantBean",
 			"Sprout Egg",
@@ -260,6 +267,7 @@ getgenv().ConfigsKaitun = {
 		Favorite_LockedPet = true,
 		Locked_Pet_Age = 60, -- pet that age > 60 will lock
 		Locked = {
+			"Phoenix",
 			"Cockatrice",
 			"Glimmering Sprite",
 			"Gnome",
@@ -271,7 +279,6 @@ getgenv().ConfigsKaitun = {
 			"Green Bean",
 			"Golden Goose",
 			"Spriggan",
-
 			"French Fry Ferret",
 			"Corrupted Kitsune",
 			"Kitsune",
@@ -328,6 +335,7 @@ getgenv().ConfigsKaitun = {
 				"Idk"
 			},
 			Pets = {
+				"Phoenix",
 				"Cockatrice",
 				"Golden Goose",
 				"French Fry Ferret",
