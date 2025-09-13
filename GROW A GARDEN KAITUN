@@ -133,9 +133,11 @@ getgenv().ConfigsKaitun = {
 		MaxMoney_Restocks = 1_000_000_000_000,
 		
 		Shop = { -- un comment to buy
+			"Fall Egg",
+
 			"Enchanted Chest",
-			"Pet Shard Glimmering",
 			"Enchanted Egg",
+			"Pet Shard Glimmering",
 			"Enchanted Seed Pack",
 			-- "Drake",
 			"Pixie Faern",
@@ -225,6 +227,7 @@ getgenv().ConfigsKaitun = {
 
 	Eggs = {
 		Place = {
+			"Fall Egg",
 			"Enchanted Egg",
 			"Sprout Egg",
 			"Gourmet Egg",
@@ -241,12 +244,6 @@ getgenv().ConfigsKaitun = {
 			"Mythical Egg",
 		},
 		Buy = {
-			"Enchanted Egg",
-			"Sprout Egg",
-			"Gourmet Egg",
-			"Zen Egg",
-			"Primal Egg",
-			"Dinosaur Egg",
 			"Oasis Egg",
 			"Anti Bee Egg",
 			"Night Egg",
@@ -284,6 +281,9 @@ getgenv().ConfigsKaitun = {
 		Favorite_LockedPet = true,
 		Locked_Pet_Age = 60, -- pet that age > 60 will lock
 		Locked = {
+			"Sugar Glider",
+			"Space Squirrel",
+			"Swan",
 			"Phoenix",
 			"Shroomie",
 			"Luminous Sprite",
@@ -354,6 +354,8 @@ getgenv().ConfigsKaitun = {
 				"Idk"
 			},
 			Pets = {
+				"Space Squirrel",
+				"Swan",
 				"Phoenix",
 				"Cockatrice",
 				"Golden Goose",
