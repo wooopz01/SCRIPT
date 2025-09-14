@@ -134,6 +134,9 @@ getgenv().ConfigsKaitun = {
 		
 		Shop = { -- un comment to buy
 			"Fall Egg",
+			"Sugar Glider",
+			"Space Squirrel",
+			"Marmot",
 
 			"Enchanted Chest",
 			"Enchanted Egg",
@@ -283,6 +286,7 @@ getgenv().ConfigsKaitun = {
 		Locked = {
 			"Sugar Glider",
 			"Space Squirrel",
+			"Marmot",
 			"Swan",
 			"Phoenix",
 			"Shroomie",
@@ -354,6 +358,9 @@ getgenv().ConfigsKaitun = {
 				"Idk"
 			},
 			Pets = {
+				"Sugar Glider",
+				"Space Squirrel",
+				"Marmot",
 				"Swan",
 				"Phoenix",
 				"Cockatrice",
