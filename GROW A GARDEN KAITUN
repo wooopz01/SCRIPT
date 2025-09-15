@@ -360,7 +360,6 @@ getgenv().ConfigsKaitun = {
 			Pets = {
 				"Sugar Glider",
 				"Space Squirrel",
-				"Marmot",
 				"Swan",
 				"Phoenix",
 				"Cockatrice",
