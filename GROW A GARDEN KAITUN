@@ -137,6 +137,7 @@ getgenv().ConfigsKaitun = {
 			"Sugar Glider",
 			"Space Squirrel",
 			"Marmot",
+			"Golden Acorn",
 
 			"Enchanted Chest",
 			"Enchanted Egg",
@@ -198,6 +199,7 @@ getgenv().ConfigsKaitun = {
 		Lock = {
 			"Cleansing Pet Shard",
 			"Medium Toy",
+			"Golden Acorn",
 			"Medium Treat",
 			"Pet Mutation Shard Tranquil",
 			"Pet Mutation Shard Rainbow",
@@ -284,6 +286,7 @@ getgenv().ConfigsKaitun = {
 		Favorite_LockedPet = true,
 		Locked_Pet_Age = 60, -- pet that age > 60 will lock
 		Locked = {
+			"Barn Owl",
 			"Sugar Glider",
 			"Space Squirrel",
 			"Marmot",
