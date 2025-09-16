@@ -183,7 +183,6 @@ getgenv().ConfigsKaitun = {
 		Buy = { 
 			"Cleansing Pet Shard",
 			"Level Up Lollipop",
-			"Levelup Lollipop",
 			"Grandmaster Sprinkler",
 			"Master Sprinkler",
 			"Godly Sprinkler",
@@ -219,7 +218,6 @@ getgenv().ConfigsKaitun = {
 			"Aromatic Pet Shard",
 			"GiantBean Pet Shard",
 			"Glimmering Pet Shard",
-			"Levelup Lollipop",
 			"Level Up Lollipop",
 			"Grandmaster Sprinkler",
 			"Master Sprinkler",
