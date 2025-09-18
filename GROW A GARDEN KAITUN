@@ -134,9 +134,7 @@ getgenv().ConfigsKaitun = {
 		
 		Shop = { -- un comment to buy
 			"Fall Egg",
-			"Sugar Glider",
 			"Space Squirrel",
-			"Marmot",
 			"Golden Acorn",
 
 			"Enchanted Chest",
