@@ -284,7 +284,6 @@ getgenv().ConfigsKaitun = {
 		Locked = {
 			"Barn Owl",
 			"Space Squirrel",
-			"Marmot",
 			"Swan",
 			"Phoenix",
 			"Luminous Sprite",
@@ -324,6 +323,7 @@ getgenv().ConfigsKaitun = {
 			"Turtle",
 			"Polar Bear",
 			"Monkey",
+			["Marmot"] = 20,
 			["Sea Otter"] = 5,
 			["Sugar Glider"] = 5,
 			["Glimmering Sprite"] = 5,
