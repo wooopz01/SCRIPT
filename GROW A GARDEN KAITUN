@@ -281,13 +281,17 @@ getgenv().ConfigsKaitun = {
 			["Limit Upgrade"] = 5, -- max is 5 (more than or lower than 1 will do nothing)
 			["Equip When Done"] = {
 				["Marmot"] = {8, 100, 1},
-				["Rooster"] = { 8, 100, 2 },
+				["Bald Eagle"] = { 8, 100, 3 },
+				["Rooster"] = { 8, 100, 3 },
 			},
 		},
 		Unfavorite_AllPet = false,
 		Favorite_LockedPet = true,
 		Locked_Pet_Age = 60, -- pet that age > 60 will lock
 		Locked = {
+			"Red Panda",
+			"Mallard",
+			"Woodpecker",
 			"Barn Owl",
 			"Space Squirrel",
 			"Swan",
