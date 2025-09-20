@@ -307,7 +307,7 @@ getgenv().ConfigsKaitun = {
 			"Polar Bear",
 			"Turtle",
 			"Polar Bear",
-			"Monkey",
+			["Monkey"] = 20,
 			["Marmot"] = 20,
 			["Sea Otter"] = 5,
 			["Sugar Glider"] = 5,
