@@ -115,8 +115,6 @@ getgenv().ConfigsKaitun = {
 			"Rake",
 			"Acorn Bell",
 			"Red Panda",
-			"Mallard",
-			"Woodpecker",
 
 			"Enchanted Chest",
 			"Pet Shard Glimmering",
@@ -266,7 +264,6 @@ getgenv().ConfigsKaitun = {
 		Locked = {
 			"Red Panda",
 			"Mallard",
-			"Woodpecker",
 			"Barn Owl",
 			"Space Squirrel",
 			"Swan",
@@ -307,7 +304,8 @@ getgenv().ConfigsKaitun = {
 			"Polar Bear",
 			"Turtle",
 			"Polar Bear",
-			["Monkey"] = 20,
+			["Woodpecker"] = 10,
+			["Monkey"] = 5,
 			["Marmot"] = 20,
 			["Sea Otter"] = 5,
 			["Sugar Glider"] = 5,
