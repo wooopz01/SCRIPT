@@ -230,7 +230,7 @@ getgenv().ConfigsKaitun = {
 		["Auto Feed"] = true,
 
 		MutationPet = {
-			["PET NAME"] = { "Glimmering","... any other" }
+			["Rooster"] = { "Mega","Rainbow" }
 		},
 
 		["Start Delete Pet At"] = 50,
@@ -240,8 +240,7 @@ getgenv().ConfigsKaitun = {
 			},
 			["Limit Upgrade"] = 5, -- max is 5 (more than or lower than 1 will do nothing)
 			["Equip When Done"] = {
-				["Rooster"] = { 8, 123, 1 },
-				["Sunny-Side Chicken"] = { 8, 100, 2 },
+				["Rooster"] = { 8, 111},
 			},
 		},
 		Unfavorite_AllPet = false,
@@ -289,14 +288,8 @@ getgenv().ConfigsKaitun = {
 			"Polar Bear",
 			"Turtle",
 			"Polar Bear",
-			["Spriggan"] = 3,
-			["Mallard"] = 5,
-			["Woodpecker"] = 5,
 			["Monkey"] = 5,
-			["Marmot"] = 5,
 			["Sea Otter"] = 5,
-			["Sugar Glider"] = 5,
-			["Glimmering Sprite"] = 5,
 			["Shroomie"] = 5,
 			["Golem"] = 5,
 			["Starfish"] = 5,
