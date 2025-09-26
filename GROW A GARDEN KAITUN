@@ -288,11 +288,10 @@ getgenv().ConfigsKaitun = {
 			"Polar Bear",
 			"Turtle",
 			"Polar Bear",
-			["Monkey"] = 5,
-			["Sea Otter"] = 5,
+			["Monkey"] = 3,
+			["Sea Otter"] = 3,
 			["Shroomie"] = 5,
 			["Golem"] = 5,
-			["Starfish"] = 5,
 		},
 		LockPet_Weight = 4, -- if Weight >= 10 they will locked
 		Ignore_Pet_Weight = {
