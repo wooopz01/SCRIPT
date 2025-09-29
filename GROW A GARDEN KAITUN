@@ -15,10 +15,29 @@ getgenv().ConfigsKaitun = {
 	["Auto Trade Pet"] = { -- beta idk it work or no
 		["Enabled"] = false, 
 		["Target"] =  { -- multi users
-			"username1",
-			"username2",
+			"ShadeGlide5051",
+			"PrimalEmberdrift1836",
+			"MirageLight5755",
 		},
 		["Pet To Send"] = {
+				"Tiger",
+				"Swan",
+				"Phoenix",
+				"Cockatrice",
+				"Golden Goose",
+				"French Fry Ferret",
+				"Corrupted Kitsune",
+				"Kitsune",
+				"Spinosaurus",
+				"T-Rex",
+				"Disco Bee",
+				"Butterfly",
+				"Mimic Octopus",
+				"Queen Bee",
+				"Fennec Fox",
+				"Dragonfly",
+				"Raccoon",
+				"Red Fox",
 			
 		}
 	},
