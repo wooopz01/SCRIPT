@@ -216,7 +216,10 @@ getgenv().ConfigsKaitun = {
 		MutationPet = {
 			[""] = { "Mega","Rainbow" }
 		},
-
+		["Upgrade Slot"] = {
+			["Pet"] = {
+				["Rooster"] = {8, 101},
+			},
 		["Start Delete Pet At"] = 50,
 		},
 		Unfavorite_AllPet = false,
