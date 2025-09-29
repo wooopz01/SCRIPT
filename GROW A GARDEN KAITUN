@@ -214,7 +214,7 @@ getgenv().ConfigsKaitun = {
 		["Auto Feed"] = true,
 
 		MutationPet = {
-			["Rooster"] = { "Mega","Rainbow" }
+			[""] = { "Mega","Rainbow" }
 		},
 
 		["Start Delete Pet At"] = 50,
