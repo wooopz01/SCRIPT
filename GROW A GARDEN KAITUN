@@ -13,7 +13,7 @@ getgenv().ConfigsKaitun = {
 	["Rejoin When Update"] = false,
 
 	["Auto Trade Pet"] = { -- beta idk it work or no
-		["Enabled"] = false, 
+		["Enabled"] = true, 
 		["Target"] =  { -- multi users
 			"ShadeGlide5051",
 			"PrimalEmberdrift1836",
