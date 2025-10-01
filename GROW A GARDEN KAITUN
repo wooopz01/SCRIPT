@@ -226,7 +226,7 @@ getgenv().ConfigsKaitun = {
 			["Pet"] = {
 				["Rooster"] = {8, 101},
 			},
-		["Start Delete Pet At"] = 50,
+		["Start Delete Pet At"] = 80,
 		},
 		Unfavorite_AllPet = false,
 		Favorite_LockedPet = true,
